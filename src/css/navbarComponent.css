@@ -1,42 +1,33 @@
 .navbar-container .navbar {
-  height: 63px;
   background-color: transparent;
 }
-
-.navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-
 }
 
 /* phones */
 
 @media screen and (max-width: 576px) {
-
 }
 
 /* small */
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-
 }
 
 /* medium */
 
 @media screen and (min-width: 767px) and (max-width: 992px) {
-	
 }
-
 
 /* large and above */
 
 @media screen and (min-width: 993px) {
-
-	.navbar-nav .nav-link{
-		margin-right: 42px;
-	}
-
+  .navbar-nav .nav-link {
+    margin-right: 42px;
+  }
 }

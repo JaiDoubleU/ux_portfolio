@@ -19,7 +19,7 @@ function NavbarComp() {
 
 	return (
 		<div className="navbar-container">
-			<Navbar expand="sm">
+			<Navbar light expand="sm">
 				<div className="container">
 					<NavbarBrand >
 						<Link to="/home" >
