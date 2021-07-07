@@ -7,7 +7,7 @@ import {
 	Nav,
 	NavItem,
 } from 'reactstrap';
-
+import { NavHashLink } from 'react-router-hash-link';
 import { NavLink, Link } from 'react-router-dom';
 import '../css/navbarComponent.css'
 
@@ -30,7 +30,7 @@ function NavbarComp() {
 					<Collapse isOpen={isNavOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavLink className="nav-link" to="/portfolio" activeClassName="selected">Portfolio</NavLink>
+								<NavHashLink className="nav-link" smooth to="/home#portfolio" activeClassName="selected">Portfolio</NavHashLink>
 							</NavItem>
 							<NavItem>
 								<NavLink className="nav-link" to="/about" activeClassName="selected">About</NavLink>
@@ -39,7 +39,7 @@ function NavbarComp() {
 								<NavLink className="nav-link" to="/resume" activeClassName="selected">Resume</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className="nav-link" to="/contact" activeClassName="selected">Contact</NavLink>
+								<NavHashLink className="nav-link" smooth to="#contact" activeClassName="selected">Contact</NavHashLink>
 							</NavItem>
 						</Nav>
 					</Collapse>

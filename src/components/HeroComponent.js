@@ -14,7 +14,7 @@ function Hero() {
                     </p>
                 </div>
             </div>
-            <div className="row heading offset-1">
+            <div id='portfolio' className="row heading offset-1 pt-3">
                 <div className="col">
                     <div className="d-flex mb-5">
                         <p>Portfolio</p>
