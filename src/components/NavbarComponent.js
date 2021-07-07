@@ -8,7 +8,7 @@ import {
 	NavItem,
 } from 'reactstrap';
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import '../css/navbarComponent.css'
 
 
@@ -21,8 +21,10 @@ function NavbarComp() {
 		<div className="navbar-container">
 			<Navbar expand="sm">
 				<div className="container">
-					<NavbarBrand href="/">
-						<img src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
+					<NavbarBrand >
+						<Link to="/home" >
+							<img src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
+						</Link>
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
 					<Collapse isOpen={isNavOpen} navbar>

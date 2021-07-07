@@ -1,0 +1,83 @@
+.footer-container {
+  width: 100%;
+  height: 361px;
+  position: fixed;
+  bottom: 0;
+  background: #F7FFF7;
+}
+
+.footer-container .footer__content {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__content__top__text h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.2px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.footer__content__top {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.footer__content__top__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__content__top__text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #000000;
+}
+
+.footer__content .email {
+  margin-top: 52px;
+  font-weight: bold;
+  font-size: 21.18px;
+  color: #333333;
+}
+
+.footer__content__top img {
+  align-self: flex-start;
+}
+
+.footer-container .icons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.icons .circle {
+  margin-top: 13px;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.icons .circle svg{
+    font-size: x-large;
+}
+
+.footer__content__top__text p span{
+    font-family: sans-serif;
+}
