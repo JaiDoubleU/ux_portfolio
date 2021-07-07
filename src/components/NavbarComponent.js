@@ -6,9 +6,9 @@ import {
 	NavbarBrand,
 	Nav,
 	NavItem,
-	NavLink,
 } from 'reactstrap';
 
+import { NavLink } from 'react-router-dom';
 import '../css/navbarComponent.css'
 
 
@@ -28,16 +28,16 @@ function NavbarComp() {
 					<Collapse isOpen={isNavOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavLink href="/components/">Portfolio</NavLink>
+								<NavLink className="nav-link" to="/portfolio" activeClassName="selected">Portfolio</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink href="/components/">About</NavLink>
+								<NavLink className="nav-link" to="/about" activeClassName="selected">About</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink href="/components/">Resume</NavLink>
+								<NavLink className="nav-link" to="/resume" activeClassName="selected">Resume</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink href="/components/">Contact</NavLink>
+								<NavLink className="nav-link" to="/contact" activeClassName="selected">Contact</NavLink>
 							</NavItem>
 						</Nav>
 					</Collapse>
