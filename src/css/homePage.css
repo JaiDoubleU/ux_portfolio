@@ -1,0 +1,40 @@
+/* HERO */
+.hero-container {
+  margin-top: 197px;
+}
+.hero-container h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 99.07px;
+  line-height: 132px;
+  color: #333333;
+}
+
+.hero-container p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23.04px;
+  line-height: 40px;
+  color: #000000;
+}
+.hero__portfolio {
+  margin-top: 232px;
+}
+
+.hero__portfolio p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.dash{
+    border-bottom: 2px solid #FF0027 ;  
+    align-self: center;
+    width: 68px;
+    margin-left: 16px;
+}

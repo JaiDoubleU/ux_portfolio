@@ -10,8 +10,6 @@ function Main() {
     return (
         <div>
             <NavbarComp />
-            <img src="" alt="" />
-
             <Switch>
                 <Route path="/home" component={HomePage}></Route>
                 <Route path="/about" component={AboutPage}></Route>
