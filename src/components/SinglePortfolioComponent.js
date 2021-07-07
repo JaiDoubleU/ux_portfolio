@@ -11,7 +11,7 @@ function SinglePortfolio(props) {
                 <div className="container portfolio-container">
                     <div className="row offset-1">
                         <div className="col-lg-6">
-                            <img className="portfolio__img" src={process.env.PUBLIC_URL + props.portfolio.image} alt="portfolio-img" />
+                            <img style={{boxShadow:`${props.portfolio.shadow}`}}  className="portfolio__img"  src={process.env.PUBLIC_URL + props.portfolio.image} alt="portfolio-img" />
                         </div>
                         <div className="col-lg-5 mt-5">
                             <h2 className="project__name" style={{ color: `${props.portfolio.color}` }}>{props.portfolio.name} </h2>
@@ -29,13 +29,15 @@ function SinglePortfolio(props) {
                     <div className={`row offset-1 ${props.work.id%2!==0? 'reverse' :''}`}>
                         <div className="col-lg-6">
                             <Link to={`/work/${props.work.id}`}>
-                                <img className="work__img" src={process.env.PUBLIC_URL + props.work.image} alt="work-img" />
+                                <img style={{boxShadow:`${props.work.shadow}`}} className="work__img" src={process.env.PUBLIC_URL + props.work.image} alt="work-img" />
                             </Link>
                         </div>
                         <div className="col-lg-6 mt-5">
                             <h2 className="project__name">{props.work.name}</h2>
                             <p className="project__desc" style={{ marginBottom: '22px' }}>{props.work.desc}</p>
-                            <h3 className="project__link">{props.work.link ? 'View Work' : 'Coming Soon'}</h3>
+                            <Link to={`/work/${props.work.id}`}>
+                            <h3  className="project__link">{props.work.link ? 'View Work' : 'Coming Soon'}</h3>
+                            </Link>
                         </div>
                     </div>
                 </div>

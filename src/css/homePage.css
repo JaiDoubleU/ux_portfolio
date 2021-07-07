@@ -45,8 +45,14 @@
 }
 
 .portfolio__img {
-  box-shadow: 0px 0px 50px 5px #ce99a1;
   border-radius: 8px;
+  transition: all 0.65s;
+  animation-delay: 0.25s !important;
+}
+
+.portfolio__img:hover,
+.work__img:hover {
+  transform: scale(1.05);
 }
 
 .project_name {
@@ -72,6 +78,11 @@
   font-size: 19.2px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.68);
+  transition: all 0.2s;
+  /* animation-delay: 0.s !important; */
+}
+.project__link:hover {
+  transform: scale(1.05);
 }
 
 /* Other Work */
@@ -82,9 +93,9 @@
 }
 
 .work__img {
-  box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
-  /* filter: drop-shadow(0px 0px 50px rgba(129, 211, 195, 0.35)); */
+  transition: all 0.65s;
+  animation-delay: 0.25s !important;
 }
 
 .work-container .row.reverse {
