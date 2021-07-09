@@ -10,8 +10,8 @@ function SinglePortfolio(props) {
             <div style={{ backgroundColor: `${props.portfolio.background}` }}>
                 <div className="container portfolio-container">
                     <div className="row offset-1">
-                        <div className="col-lg-6">
-                            <img style={{boxShadow:`${props.portfolio.shadow}`}}  className="portfolio__img"  src={process.env.PUBLIC_URL + props.portfolio.image} alt="portfolio-img" />
+                        <div className="col-lg-6">  
+                            <img style={{boxShadow:`${props.portfolio.shadow}`}}  className="project__img"  src={process.env.PUBLIC_URL + props.portfolio.image}  alt="portfolio-img" />
                         </div>
                         <div className="col-lg-5 mt-5">
                             <h2 className="project__name" style={{ color: `${props.portfolio.color}` }}>{props.portfolio.name} </h2>
@@ -29,7 +29,7 @@ function SinglePortfolio(props) {
                     <div className={`row offset-1 ${props.work.id%2!==0? 'reverse' :''}`}>
                         <div className="col-lg-6">
                             <Link to={`/work/${props.work.id}`}>
-                                <img style={{boxShadow:`${props.work.shadow}`}} className="work__img" src={process.env.PUBLIC_URL + props.work.image} alt="work-img" />
+                                <img style={{boxShadow:`${props.work.shadow}`}} className="project__img" src={process.env.PUBLIC_URL + props.work.image}  alt="work-img" />
                             </Link>
                         </div>
                         <div className="col-lg-6 mt-5">

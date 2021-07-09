@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
 	Collapse,
 	Navbar,
@@ -12,10 +12,26 @@ import { NavLink, Link } from 'react-router-dom';
 import '../css/navbarComponent.css'
 
 
+
+
 function NavbarComp() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 	const toggle = () => setIsNavOpen(!isNavOpen);
 
+	useEffect(() => {
+		var nav = document.querySelector(".navbar");
+		if (nav) {
+			var top = 700;
+			window.addEventListener("scroll", () => {
+				if (window.scrollY >= top) {
+					nav.classList.add("navbar-fixed");
+				}
+				if (window.scrollY <= (top)) {
+					nav.classList.remove("navbar-fixed");
+				}
+			})
+		}
+	}, []);
 
 	return (
 		<div className="navbar-container">

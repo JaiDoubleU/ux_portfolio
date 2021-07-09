@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useRef,useEffect} from 'react'
 import '../css/homePage.css'
 
 function Hero() {
+
+	const myRef = useRef(null);
     return (
         <div className="hero-container container">
             <div className="row offset-1">
@@ -14,7 +16,7 @@ function Hero() {
                     </p>
                 </div>
             </div>
-            <div id='portfolio' className="row heading offset-1 pt-3">
+            <div id='portfolio' ref={myRef} className="row heading offset-1 pt-3">
                 <div className="col">
                     <div className="d-flex mb-5">
                         <p>Portfolio</p>

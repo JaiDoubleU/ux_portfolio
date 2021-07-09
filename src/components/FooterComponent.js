@@ -30,7 +30,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <img src={process.env.PUBLIC_URL + '/images/victory.png'} alt="victory" />
+                    <img className="d-none d-sm-block" src={process.env.PUBLIC_URL + '/images/victory.png'} alt="victory" />
                 </div>
 
                 {/* <p>Copyright © 2021 Akhilesh Saurabh. All rights reserved.</p> */}

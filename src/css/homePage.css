@@ -44,7 +44,7 @@
   padding-bottom: 218px;
 }
 
-.portfolio__img {
+.project__img {
   border-radius: 8px;
   transition: all 0.65s;
   animation-delay: 0.25s !important;
@@ -79,7 +79,6 @@
   line-height: 24px;
   color: rgba(0, 0, 0, 0.68);
   transition: all 0.2s;
-  /* animation-delay: 0.s !important; */
 }
 .project__link:hover {
   transform: scale(1.05);
@@ -90,12 +89,6 @@
 .work-container {
   padding-top: 150px;
   padding-bottom: 150px;
-}
-
-.work__img {
-  border-radius: 8px;
-  transition: all 0.65s;
-  animation-delay: 0.25s !important;
 }
 
 .work-container .row.reverse {
@@ -111,5 +104,10 @@
   }
   .hero-container {
     margin-top: 197px;
+  }
+
+/* resize image for phone */
+  .project__img {
+    width: 280px;
   }
 }
