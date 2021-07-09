@@ -10,7 +10,6 @@ function WorkPage({ footerRef }) {
     const [work, setwork] = useState(works.filter(item => item.id === id)[0])
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         changeFooter(footerRef);
         return () => {
             changeFooter(footerRef)

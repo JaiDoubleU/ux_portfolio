@@ -1,14 +1,30 @@
 .navbar-container .navbar {
-  background-color: transparent;
   transition: all 0.5s;
+  background-color: transparent;
 }
+/* .container{
+  
+} */
 
-.navbar-container.navbar-fixed{
+.navbar-container.navbar-fixed {
   position: fixed;
   top: 0;
   background-color: #ffffff;
   width: 100%;
   z-index: 1;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/menu-lines-list-512.png");
+}
+.navbar-collapse.show,
+.navbar-collapse.collapsing {
+  background: linear-gradient(180.64deg, #ffffff 0.55%, #fdf0f0 36.94%);
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.navbar-collapse{
+  height: 100vh;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -18,25 +34,36 @@
   line-height: 24px;
   color: #000000;
 }
-.nav-item{
+.nav-item {
   margin-left: auto;
-  margin-right: 3%;
 }
 
-.navbar-light .navbar-toggler{
-  border-color: #ffffff ;
+.navbar-light .navbar-toggler {
+  border-color: #ffffff;
 }
 /* phones */
 
 @media screen and (max-width: 576px) {
-.navbar-container{
-  position: sticky;
-  top: 0;
-  background-color: #ffffff;
-  width: 100%;
-  z-index: 1;
-}
-
+  .navbar-container {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 1;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27.2px;
+    line-height: 33px;
+    color: #333333;
+  }
+  .nav-item {
+    border-bottom: 0.7px solid rgba(0, 0, 0, 0.5);
+    padding: 26px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* small */

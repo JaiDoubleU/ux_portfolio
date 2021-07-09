@@ -34,7 +34,7 @@ export const works = [
         shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
         details: <p>This project was created with collaboration with my friend {<a className="detail__link" href="https://www.rappershaz.com" target="_blank" rel="noreferrer">Shaz</a>}. Since we were a team of two I had to take many roles but majorly I worked as developer, brand and content marketing manager.</p>,
         completed: true,
-        asset: <img className="img-fluid hover_img" src={process.env.PUBLIC_URL + '/' + 'images/arrePage.png'} alt="work_img" />,
+        asset: <img className="img-fluid hover_img" src={process.env.PUBLIC_URL + '/images/arrePage.png'} alt="work_img" />,
         redirect: 'https://www.arrebro.com'
     },
     {
@@ -46,7 +46,7 @@ export const works = [
         details: 'They needed an explanatory video to give a better understanding of their product to their clients.',
         shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
         completed: true,
-        asset: <iframe width="100%" height="100%" style={{borderRadius:'8px'}} src="https://www.youtube.com/embed/_8MDZ58pxMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+        asset: <iframe width="100%" height="100%" style={{borderRadius:'8px'}} src="https://www.youtube.com/embed/_8MDZ58pxMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
         redirect: 'https://www.youtube.com/watch?v=_8MDZ58pxMc'
     },
     {

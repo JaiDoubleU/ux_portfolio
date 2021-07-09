@@ -41,7 +41,7 @@ function NavbarComp() {
 			<Navbar light expand="sm">
 				<div className="container">
 					<NavbarBrand >
-						<Link to="/home" >
+						<Link to="/" >
 							<img className="hover_img" src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
 						</Link>
 					</NavbarBrand>
@@ -49,16 +49,16 @@ function NavbarComp() {
 					<Collapse isOpen={isNavOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavHashLink className="nav-link" smooth to="/home#portfolio" activeClassName="selected">Portfolio</NavHashLink>
+								<NavHashLink onClick={toggle} className="nav-link" smooth to="/home#portfolio" activeClassName="selected">Portfolio</NavHashLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className="nav-link" to="/about" activeClassName="selected">About</NavLink>
+								<NavLink onClick={toggle} className="nav-link" to="/about" activeClassName="selected">About</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink className="nav-link" to="/resume" activeClassName="selected">Resume</NavLink>
+								<NavLink onClick={toggle} className="nav-link" to="/resume" activeClassName="selected">Resume</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavHashLink className="nav-link" smooth to="#contact" activeClassName="selected">Contact</NavHashLink>
+								<NavHashLink onClick={toggle} className="nav-link" smooth to="#contact" activeClassName="selected">Contact</NavHashLink>
 							</NavItem>
 						</Nav>
 					</Collapse>

@@ -1,9 +1,11 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import { FaBehance, FaLinkedinIn, FaTwitter, FaMediumM, FaDribbble } from 'react-icons/fa';
 
 import '../css/footerComponent.css'
 
 function Footer({ forwardRef }) {
+    var a='FaLinkedinIn';
     return (
         <div  id='contact' >
             <div ref={forwardRef} className="footer-container" >
@@ -14,21 +16,21 @@ function Footer({ forwardRef }) {
                             <p>Feel free to reach out anywhere anytime </p>
                                 <p className="email">saurabh.akhilesh<span>1</span>@gmail.com</p>
                                 <div className="icons">
-                                    <div className="circle">
+                                    <a href='https://www.behance.net/orignalakhilesh' target='_blank' className="circle" rel="noreferrer">
                                         <FaBehance />
-                                    </div>
-                                    <div className="circle">
+                                    </a>
+                                    <a href='https://www.linkedin.com/in/akhilesh-saurabh-91a7b81b3/' target='_blank' className="circle">
                                         <FaLinkedinIn />
-                                    </div>
-                                    <div className="circle">
+                                    </a>
+                                    <a href='https://dribbble.com/akhileshsaurabh' className="circle" target='_blank'>
                                         <FaDribbble />
-                                    </div>
-                                    <div className="circle">
+                                    </a>
+                                    <a href='https://twitter.com/akhilesh1_0' className="circle" target='_blank'>
                                         <FaTwitter />
-                                    </div>
-                                    <div className="circle">
+                                    </a>
+                                    <a href='https://medium.com/@saurabhakhilesh1' className="circle" target='_blank'>
                                         <FaMediumM />
-                                    </div>
+                                    </a>
                                 </div>
                         </div>
                         <img className="d-none d-sm-block" src={process.env.PUBLIC_URL + '/images/victory.png'} alt="victory" />

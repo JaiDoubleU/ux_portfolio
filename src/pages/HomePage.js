@@ -5,6 +5,7 @@ import { portfolios, works } from '../shared';
 import { Link } from 'react-router-dom';
 import '../css/homePage.css'
 function HomePage() {
+
     return (
         <div>
             <Hero />
