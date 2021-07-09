@@ -26,15 +26,13 @@ function SinglePortfolio(props) {
         return (
             <div>
                 <div className="container work-container">
-                    <div className={`row  ${props.index % 2 !== 0 ? 'reverse' : ''}`}>
-                        <div className="col-1">
-                        </div>
-                        <div className=" col-lg-5">
+                    <div className='row'>
+                        <div className={`col-10 col-lg-5 ${props.index % 2 !== 0 ? 'order-lg-1 offset-1' : 'order-lg-2 offset-1 offset-lg-0'}`}>
                             <Link to={`/work/${props.work.id}`}>
                                 <img style={{ boxShadow: `${props.work.shadow}` }} className="project__img" src={process.env.PUBLIC_URL + props.work.image} alt="work-img" />
                             </Link>
                         </div>
-                        <div className="col-lg-5 mt-5">
+                        <div className={`col-lg-5 mt-5 ${props.index % 2 !== 0 ? 'order-lg-2 offset-1 offset-lg-0' : '.order-lg-1 offset-1' }`}>
                             <h2 className="project__name">{props.work.name}</h2>
                             <p className="project__desc" style={{ marginBottom: '22px' }}>{props.work.desc}</p>
                             <Link to={`/work/${props.work.id}`}>
