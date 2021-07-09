@@ -32,10 +32,10 @@ export const works = [
         tagline: 'A Top Destination For Trending And Asthetic Apparels.',
         desc: "An E-commerce store for asthetic and trendy apparels.",
         shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
-        details: 'This project was created with collaboration with my friend Shaz.  Since we were a team of two I had to take many roles but majorly I worked as developer, brand and content marketing manager.',
+        details: <p>This project was created with collaboration with my friend {<a className="detail__link" href="https://rappershaz.com" target="_blank" rel="noreferrer">Shaz</a>}. Since we were a team of two I had to take many roles but majorly I worked as developer, brand and content marketing manager.</p>,
         completed: true,
-        asset:'images/arrePage.png',
-        redirect:'https://www.arrebro.com'
+        asset: <img className="img-fluid" src={process.env.PUBLIC_URL + '/' + 'images/arrePage.png'} alt="work_img" />,
+        redirect: 'https://www.arrebro.com'
     },
     {
         id: 'revo-ex',
@@ -46,8 +46,8 @@ export const works = [
         details: 'They needed an explanatory video to give a better understanding of their product to their clients.',
         shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
         completed: true,
-        asset:'https://www.youtube.com/watch?v=_8MDZ58pxMc',
-        redirect:'https://www.youtube.com/watch?v=_8MDZ58pxMc'
+        asset: <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_8MDZ58pxMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+        redirect: 'https://www.youtube.com/watch?v=_8MDZ58pxMc'
     },
     {
         id: 'covid-point',
