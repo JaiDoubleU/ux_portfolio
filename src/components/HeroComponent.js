@@ -11,7 +11,7 @@ function Hero() {
                     <h1>Hi, I’m Akhilesh</h1>
                 </div>
                 <div className="col-sm-5" >
-                    <p>UX  Designer, Video Editor,
+                    <p className='hero__description'>UX  Designer, Video Editor,
                         and  fascinated about outer space.
                     </p>
                 </div>

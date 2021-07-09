@@ -1,25 +1,24 @@
-:root{
+:root {
   /* footer bg */
-  --fbg:#F7FFF7;
-   /* footer h3 (lets connect)  */
-  --fh3:rgba(0, 0, 0, 0.68);
+  --fbg: #f7fff7;
+  /* footer h3 (lets connect)  */
+  --fh3: rgba(0, 0, 0, 0.68);
   /* footer para */
-  --fp:#000000;
+  --fp: #000000;
   /* footer email */
-  --femail:#333333;
+  --femail: #333333;
   /* footer logo circle bg */
-  --fcbg:black;
+  --fcbg: black;
   /*  footer logo circle text */
-  --fctext:white;
-/* footer copyright text */
-  --fct:#000000;
-
+  --fctext: white;
+  /* footer copyright text */
+  --fct: #000000;
 }
 
 .footer-container {
   max-width: 100%;
-  height: 361px; 
-  margin-top: 100px;  
+  height: 361px;
+  margin-top: 100px;
   background: var(--fbg);
 }
 
@@ -59,7 +58,7 @@
   text-align: center;
   line-height: 24px;
   margin-bottom: 0;
-  color: var(--fp) ;
+  color: var(--fp);
 }
 
 .footer__content .email {
@@ -74,13 +73,13 @@
   align-self: flex-start;
 }
 
-.footer__content>p{
+.footer__content > p {
   font-style: normal;
-font-weight: normal;
-font-size: 11.11px;
-line-height: 24px;
-margin-top: 75px;
-color: var(--fct);
+  font-weight: normal;
+  font-size: 11.11px;
+  line-height: 24px;
+  margin-top: 75px;
+  color: var(--fct);
 }
 
 .footer-container .icons {
@@ -97,17 +96,21 @@ color: var(--fct);
   background-color: var(--fcbg);
   border-radius: 50%;
   color: var(--fctext);
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.icons .circle svg{
-    font-size: x-large;
+.icons .circle svg {
+  font-size: x-large;
 }
 
-.footer__content__top__text p span{
-    font-family: sans-serif;
+.footer__content__top__text p span {
+  font-family: sans-serif;
 }
 
-
+@media screen and (max-width: 576px) {
+  .footer-container {
+    margin-top: 50px;
+  }
+}

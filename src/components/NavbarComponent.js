@@ -42,7 +42,7 @@ function NavbarComp() {
 				<div className="container">
 					<NavbarBrand >
 						<Link to="/home" >
-							<img src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
+							<img className="hover_img" src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
 						</Link>
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />

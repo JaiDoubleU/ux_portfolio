@@ -18,10 +18,25 @@
   line-height: 24px;
   color: #000000;
 }
+.nav-item{
+  margin-left: auto;
+  margin-right: 3%;
+}
 
+.navbar-light .navbar-toggler{
+  border-color: #ffffff ;
+}
 /* phones */
 
 @media screen and (max-width: 576px) {
+.navbar-container{
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 1;
+}
+
 }
 
 /* small */

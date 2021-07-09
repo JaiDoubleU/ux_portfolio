@@ -10,7 +10,7 @@ function WorkPage({ footerRef }) {
     const [work, setwork] = useState(works.filter(item => item.id === id)[0])
 
     useEffect(() => {
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         changeFooter(footerRef);
         return () => {
             changeFooter(footerRef)
@@ -22,7 +22,9 @@ function WorkPage({ footerRef }) {
             <div className="container">
                 <div className="row singleWork">
                     <div className=" singleWork__text order-lg-first order-last offset-1 col-lg-5 col-10">
-                        <h1 className="singleWork__name">{work.name}</h1>
+                        <a href={work.redirect} target="_blank" rel="noreferrer">
+                            <h1 className="singleWork__name">{work.name}</h1>
+                        </a>
                         <p className="singleWork__tagline mt-3">{work.tagline}</p>
                         <p className="singleWork__details mt-5 pt-2">{work.details}</p>
                     </div>

@@ -17,6 +17,8 @@
   font-size: 23.04px;
   line-height: 40px;
   color: #000000;
+}
+.hero__description{
   margin-bottom: 232px;
 }
 
@@ -44,16 +46,12 @@
   padding-bottom: 218px;
 }
 
-.project__img {
-  width: 100%; 
-  border-radius: 8px;
-  transition: all 0.65s;
-  animation-delay: 0.25s !important;
+.portfolio__row{
+  align-items: flex-end;
 }
 
-.portfolio__img:hover,
-.work__img:hover {
-  transform: scale(1.05);
+.project__img {
+  width: 100%; 
 }
 
 .project_name {
@@ -107,6 +105,21 @@
     margin-top: 197px;
   }
 
+  .hero__description{
+    margin-bottom: 100px;
+  }
+  .portfolio-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .hero-container {
+    margin-top: 100px;
+  }
+
+  .work-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 /* resize image for phone */
   /* .project__img {
     width: 280px;

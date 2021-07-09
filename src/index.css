@@ -9,3 +9,13 @@ a,a:hover{
   text-decoration: none;
   color:unset;
 }
+
+.hover_img{
+  border-radius: 8px;
+  transition: all 0.65s;
+  animation-delay: 0.25s !important;
+}
+
+.hover_img:hover{
+  transform: scale(1.05);
+}
