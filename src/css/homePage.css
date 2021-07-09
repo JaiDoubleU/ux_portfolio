@@ -45,6 +45,7 @@
 }
 
 .project__img {
+  width: 100%; 
   border-radius: 8px;
   transition: all 0.65s;
   animation-delay: 0.25s !important;
@@ -107,7 +108,7 @@
   }
 
 /* resize image for phone */
-  .project__img {
+  /* .project__img {
     width: 280px;
-  }
+  } */
 }

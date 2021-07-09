@@ -17,8 +17,8 @@ function HomePage() {
             })}
 
             <div className="container">
-                <div className="row hero__portfolio heading mt-5 offset-1">
-                    <div className="col">
+                <div className="row hero__portfolio heading mt-5 ">
+                    <div className="col offset-1">
                         <div className="d-flex">
                             <p>other work</p>
                             <span className="dash"></span>
