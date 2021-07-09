@@ -26,7 +26,7 @@ function SinglePortfolio(props) {
         return (
             <div>
                 <div className="container work-container">
-                    <div className={`row offset-1 ${props.work.id%2!==0? 'reverse' :''}`}>
+                    <div className={`row offset-1 ${props.index%2!==0? 'reverse' :''}`}>
                         <div className="col-lg-6">
                             <Link to={`/work/${props.work.id}`}>
                                 <img style={{boxShadow:`${props.work.shadow}`}} className="project__img" src={process.env.PUBLIC_URL + props.work.image}  alt="work-img" />
@@ -36,7 +36,7 @@ function SinglePortfolio(props) {
                             <h2 className="project__name">{props.work.name}</h2>
                             <p className="project__desc" style={{ marginBottom: '22px' }}>{props.work.desc}</p>
                             <Link to={`/work/${props.work.id}`}>
-                            <h3  className="project__link">{props.work.link ? 'View Work' : 'Coming Soon'}</h3>
+                            <h3  className="project__link">{props.work.completed? 'View Work' : 'Coming Soon'}</h3>
                             </Link>
                         </div>
                     </div>

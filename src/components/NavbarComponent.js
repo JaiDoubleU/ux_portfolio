@@ -17,17 +17,23 @@ function NavbarComp() {
 	const toggle = () => setIsNavOpen(!isNavOpen);
 	const navRef = useRef();
 
-	useEffect(() => {
-		console.dir(navRef.current);
+	const addNavbarFixed = () => {
 		var top = 700;
-		window.addEventListener("scroll", () => {
-			if (window.scrollY >= top) {
-				navRef.current.classList.add("navbar-fixed");
-			}
-			if (window.scrollY <= (top)) {
-				navRef.current.classList.remove("navbar-fixed");
-			}
-		})
+		if (window.scrollY >= top) {
+			navRef.current.classList.add("navbar-fixed");
+		}
+		if (window.scrollY <= (top)) {
+			navRef.current.classList.remove("navbar-fixed");
+		}
+	}
+
+	useEffect(() => {
+		if (navRef) {
+			window.addEventListener("scroll", addNavbarFixed)
+		}
+		return () => {
+			window.removeEventListener("scroll", addNavbarFixed)
+		}
 	}, []);
 
 	return (

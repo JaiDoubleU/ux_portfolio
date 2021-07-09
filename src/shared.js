@@ -26,29 +26,27 @@ export const portfolios = [
 export const works = [
 
     {
-        id: '1',
+        id: 'arre-bro',
         image: "images/arrebro.gif",
         name: 'Arre! Bro',
         desc: "An E-commerce store for asthetic and trendy apparels.",
-        link: "/work/arre-bro",
         shadow:'0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
-
+        completed:true
     },
     {
-        id: '2',
+        id: 'revo-ex',
         image: "images/Snap.png",
         name: 'Revo-Ex',
-        image_mobile:"images/Snap-mobile.png",
         desc: "A explaionatry video for clients.",
         shadow:'0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
-        link: "/work/revo-ex"
+        completed:true
     },
     {
-        id: '3',
+        id: 'covid-point',
         image: "images/Snap.png",
-        image_mobile:"images/Snap-mobile.png",
         name: 'Covid Point',
         desc: "From vaccine appointment to latest updates all at one place.",
         shadow:'0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
+        completed:false
     }
 ]

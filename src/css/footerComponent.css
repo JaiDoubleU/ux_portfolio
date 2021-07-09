@@ -1,8 +1,26 @@
+:root{
+  /* footer bg */
+  --fbg:#F7FFF7;
+   /* footer h3 (lets connect)  */
+  --fh3:rgba(0, 0, 0, 0.68);
+  /* footer para */
+  --fp:#000000;
+  /* footer email */
+  --femail:#333333;
+  /* footer logo circle bg */
+  --fcbg:black;
+  /*  footer logo circle text */
+  --fctext:white;
+/* footer copyright text */
+  --fct:#000000;
+
+}
+
 .footer-container {
   max-width: 100%;
   height: 361px; 
   margin-top: 100px;  
-  background: #F7FFF7;
+  background: var(--fbg);
 }
 
 .footer-container .footer__content {
@@ -20,7 +38,7 @@
   font-weight: 600;
   font-size: 19.2px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.68);
+  color: var(--fh3);
 }
 
 .footer__content__top {
@@ -41,7 +59,7 @@
   text-align: center;
   line-height: 24px;
   margin-bottom: 0;
-  color: #000000;
+  color: var(--fp) ;
 }
 
 .footer__content .email {
@@ -49,11 +67,20 @@
   margin-top: 52px;
   font-weight: bold;
   font-size: 21.18px;
-  color: #333333;
+  color: var(--femail);
 }
 
 .footer__content__top img {
   align-self: flex-start;
+}
+
+.footer__content>p{
+  font-style: normal;
+font-weight: normal;
+font-size: 11.11px;
+line-height: 24px;
+margin-top: 75px;
+color: var(--fct);
 }
 
 .footer-container .icons {
@@ -67,9 +94,9 @@
   margin-top: 13px;
   height: 40px;
   width: 40px;
-  background-color: black;
+  background-color: var(--fcbg);
   border-radius: 50%;
-  color: white;
+  color: var(--fctext);
   display: flex; 
   align-items: center; 
   justify-content: center;

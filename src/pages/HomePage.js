@@ -28,9 +28,9 @@ function HomePage() {
             </div>
 
             {
-                works.map((work) => {
+                works.map((work,index) => {
                     return(
-                        <SinglePortfolio work={work} key={work.id} />
+                        <SinglePortfolio index={index} work={work} key={work.id} />
                     )
                 })
             }
