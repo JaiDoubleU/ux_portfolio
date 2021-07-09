@@ -17,15 +17,6 @@
 .navbar-light .navbar-toggler-icon {
   background-image: url("https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/menu-lines-list-512.png");
 }
-.navbar-collapse.show,
-.navbar-collapse.collapsing {
-  background: linear-gradient(180.64deg, #ffffff 0.55%, #fdf0f0 36.94%);
-  margin-left: -16px;
-  margin-right: -16px;
-}
-.navbar-collapse{
-  height: 100vh;
-}
 
 .navbar-light .navbar-nav .nav-link {
   font-style: normal;
@@ -63,6 +54,15 @@
     padding: 26px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .navbar-collapse {
+    height: 100vh;
+  }
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing {
+    background: linear-gradient(180.64deg, #ffffff 0.55%, #fdf0f0 36.94%);
+    margin-left: -16px;
+    margin-right: -16px;
   }
 }
 
