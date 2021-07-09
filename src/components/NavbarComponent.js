@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import {
 	Collapse,
 	Navbar,
@@ -11,30 +11,27 @@ import { NavHashLink } from 'react-router-hash-link';
 import { NavLink, Link } from 'react-router-dom';
 import '../css/navbarComponent.css'
 
-
-
-
 function NavbarComp() {
+
 	const [isNavOpen, setIsNavOpen] = useState(false);
 	const toggle = () => setIsNavOpen(!isNavOpen);
+	const navRef = useRef();
 
 	useEffect(() => {
-		var nav = document.querySelector(".navbar");
-		if (nav) {
-			var top = 700;
-			window.addEventListener("scroll", () => {
-				if (window.scrollY >= top) {
-					nav.classList.add("navbar-fixed");
-				}
-				if (window.scrollY <= (top)) {
-					nav.classList.remove("navbar-fixed");
-				}
-			})
-		}
+		console.dir(navRef.current);
+		var top = 700;
+		window.addEventListener("scroll", () => {
+			if (window.scrollY >= top) {
+				navRef.current.classList.add("navbar-fixed");
+			}
+			if (window.scrollY <= (top)) {
+				navRef.current.classList.remove("navbar-fixed");
+			}
+		})
 	}, []);
 
 	return (
-		<div className="navbar-container">
+		<div ref={navRef} className="navbar-container">
 			<Navbar light expand="sm">
 				<div className="container">
 					<NavbarBrand >
