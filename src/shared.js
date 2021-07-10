@@ -31,7 +31,7 @@ export const works = [
         name: 'Arre! Bro',
         tagline: 'A Top Destination For Trending And Asthetic Apparels.',
         desc: "An E-commerce store for asthetic and trendy apparels.",
-        shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
+        shadow: '0px 0px 50px 5px rgba(255, 22, 80, 0.35)',
         details: <p>This project was created with collaboration with my friend {<a className="detail__link" href="https://www.rappershaz.com" target="_blank" rel="noreferrer">Shaz</a>}. Since we were a team of two I had to take many roles but majorly I worked as developer, brand and content marketing manager.</p>,
         completed: true,
         asset: <img className="img-fluid hover_img" src={process.env.PUBLIC_URL + '/images/arrePage.png'} alt="work_img" />,
