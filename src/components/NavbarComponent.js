@@ -18,7 +18,7 @@ function NavbarComp() {
 	const navRef = useRef();
 
 	const addNavbarFixed = () => {
-		var top = 700;
+		var top = 600;
 		if (window.scrollY >= top) {
 			navRef.current.classList.add("navbar-fixed");
 		}
@@ -36,6 +36,12 @@ function NavbarComp() {
 		}
 	}, []);
 
+	const hideCollapse = () => {
+		if(window.innerWidth<=576){
+			setIsNavOpen(false);
+		}
+	}
+
 	return (
 		<div ref={navRef} className="navbar-container">
 			<Navbar light expand="sm">
@@ -49,16 +55,16 @@ function NavbarComp() {
 					<Collapse isOpen={isNavOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavHashLink onClick={toggle} className="nav-link" smooth to="/home#portfolio" activeClassName="selected">Portfolio</NavHashLink>
+								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home#portfolio" activeClassName="selected">Portfolio</NavHashLink>
 							</NavItem>
 							<NavItem>
-								<NavLink onClick={toggle} className="nav-link" to="/about" activeClassName="selected">About</NavLink>
+								<NavLink onClick={hideCollapse} className="nav-link" to="/about" activeClassName="selected">About</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink onClick={toggle} className="nav-link" to="/resume" activeClassName="selected">Resume</NavLink>
+								<NavLink onClick={hideCollapse} className="nav-link" to="./portfolio.pdf" target='_blank' activeClassName="selected">Resume</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavHashLink onClick={toggle} className="nav-link" smooth to="#contact" activeClassName="selected">Contact</NavHashLink>
+								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="#contact" activeClassName="selected">Contact</NavHashLink>
 							</NavItem>
 						</Nav>
 					</Collapse>

@@ -1,18 +1,18 @@
 :root {
   /* footer bg */
-  --fbg: #f7fff7;
+  --fbg: #333333;
   /* footer h3 (lets connect)  */
-  --fh3: rgba(0, 0, 0, 0.68);
+  --fh3: #FFFFFF;
   /* footer para */
-  --fp: #000000;
+  --fp: #FFFFFF;
   /* footer email */
-  --femail: #333333;
+  --femail: #FFFFFF;
   /* footer logo circle bg */
-  --fcbg: black;
+  --fcbg: #FFFFFF;
   /*  footer logo circle text */
-  --fctext: white;
+  --fctext: black;
   /* footer copyright text */
-  --fct: #000000;
+  --fct: #FFFFFF;
 }
 
 .footer-container {

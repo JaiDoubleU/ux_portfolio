@@ -14,9 +14,9 @@ function Main() {
             <NavbarComp />
             <ScrollToTop/>
                 <Switch>
-                    <Route exact path="/home" component={HomePage}></Route>
+                    <Route exact path="/home" component={() => (<HomePage footerRef={footerRef} />)}></Route>
                     <Route exact path="/about" component={AboutPage}></Route>
-                    <Route exact path="/work/:id" component={() => (<WorkPage footerRef={footerRef} />)} ></Route>
+                    <Route exact path="/work/:id" component={WorkPage} ></Route>
                     <Redirect to="/home"></Redirect>
                 </Switch>
             <Footer forwardRef={footerRef} />
