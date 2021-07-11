@@ -91,11 +91,27 @@
   font-weight: 500;
 }
 
-.alignfull{
+.alignfull {
   margin-left: calc(50% - 49.4vw);
   margin-right: calc(50% - 49.4vw);
   max-width: 800%;
   width: auto;
   padding-top: 90px;
   padding-bottom: 90px;
+}
+.prototype__text {
+  margin-top: 30px;
+  margin-bottom: 101px;
+  font-weight: 600;
+  font-size: 19.2px;
+  margin-left: 100px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.test::before{
+  content: url('./fingerPoint.png');
+  position: absolute;
+  /* left: 150px; */
+  bottom: 50px;
 }

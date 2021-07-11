@@ -12,7 +12,7 @@ function CasePage() {
 
     return (
         <React.Fragment>
-            
+
             <div className="case__hero-container">
                 <div className="container">
                     <div className="row">
@@ -20,14 +20,6 @@ function CasePage() {
                             <h1 className='mb-5'>{caseStudy.name}</h1>
                             <p>{caseStudy.tagline}</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className="container">
-                <div className="row">
-                    <div className="col">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur itaque ratione magnam explicabo debitis dolor, quas quaerat pariatur voluptates reprehenderit laboriosam odit perspiciatis optio sit sed deleniti rerum possimus fugit?
-
                     </div>
                 </div>
             </div>
@@ -79,8 +71,19 @@ function CasePage() {
                 isColor={true} />
             <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Features')}
                 isFeature={true} />
-            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Results and takeaways')}
-                isColor={true} />
+
+            <div className='container'>
+                <div className="row">
+                    <div className="offset-1 col-10 test text-center">
+                        <a href="">
+                            <img className='img-fluid  hover_img ' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
+                        </a>
+                        <p className='prototype__text '>Click To see the full Prototype</p>
+                    </div>
+                </div>
+            </div>
+
+            <CaseSubPoint bg='#FDF0F2' caseSub={caseStudy.contents.filter((content) => content.topic === 'Results and takeaways')} />
         </React.Fragment >
     )
 }

@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import CaseTopic from '../components/CaseTopicHeading';
 
-function CaseSubPoint({ caseSub, isColor, isFeature }) {
+function CaseSubPoint({ caseSub, isColor, isFeature,bg }) {
 
     return (
         <React.Fragment>
-            <div className={`pb-1 ${isColor ? 'topic__color' : ''} `}>
+            <div style={{background:bg}} className={`pb-1 ${isColor ? 'topic__color' : ''} `}>
                 <div className="container case__topic ">
                     <CaseTopic heading={caseSub[0].topic} />
                     {caseSub.map((subpoint, index) => {
