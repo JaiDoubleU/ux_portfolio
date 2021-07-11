@@ -101,37 +101,37 @@ export const caseContent = [
                     {
                         texts: '7.5 percent of the country’s population of 1.3 billion, suffer from some form of mental disorder',
                         source: 'World health Organization (WHO)',
-                        link:'https://www.google.com',
-                        img:'/images/Snap.png'
+                        link: 'https://www.google.com',
+                        img: '/images/Snap.png'
                     },
                     {
                         texts: '21%  perceived the role of faith healers (Tantrik, Ojha) in the treatment of mental illness.',
                         source: 'Data on additude regarding mental health',
-                        link:'https://www.google.com',
+                        link: 'https://www.google.com',
 
-                        img:'/images/Snap.png'
+                        img: '/images/Snap.png'
 
                     },
                     {
                         texts: 'India  accounts for 36.6 per cent of suicides globally',
                         source: 'World health Organization (WHO)',
-                        link:'https://www.google.com',
+                        link: 'https://www.google.com',
 
-                        img:'/images/Snap.png'
+                        img: '/images/Snap.png'
                     },
                     {
                         texts: 'Teenagers in the age group 13-17 years suffer depression and other mental health disorders and are “in need of active intervention”.',
                         source: 'NIMHANS',
-                        link:'https://www.google.com',
+                        link: 'https://www.google.com',
 
-                        img:'/images/Snap.png'
+                        img: '/images/Snap.png'
                     },
                     {
                         texts: '7.5 percent of the country’s population of 1.3 billion, suffer from some form of mental disorder.',
                         source: 'World health Organization (WHO)',
-                        link:'https://www.google.com',
+                        link: 'https://www.google.com',
 
-                        img:'/images/Snap.png'
+                        img: '/images/Snap.png'
                     }
                 ],
                 img: [
@@ -155,88 +155,95 @@ export const caseContent = [
                 heading: 'Interview Analysis',
                 texts: [
                     'I interviewed over 15 people who had a history of mental illness.',
-                    'The most common argument on why it took time for them to start getting treatment and care :  1. Cautious of opening up about their mental health due to social stigma and trust issues. 2. No trusted information source where to contact good psychologist. 3.Too lazy or busy to learn about mental health. 4. No care was given to their mental wellness in day to day life. 5. Didn’t know that mental health requires attention just like physical health '
-                ],
-                img: [
 
+                    <span>The most common argument on why it took time for them to start getting treatment and care:<br />
+                    <span className='list'>1. Cautious of opening up about their mental health due to social stigma and trust issues.<br />
+                        2. No trusted information source where to contact good psychologist.<br />
+                        3. Too lazy or busy to learn about mental health.<br />
+                        4. No care was given to their mental wellness in day to day life.<br />
+                        5. Didn’t know that mental health requires attention just like physical health<br />
+                    </span></span>
                 ],
-            },
-            {
-                topic: 'Ideation',
-                heading: ' Bridging the treatment gap',
-                texts: [
-                    'Treatment gap is defined as the number of people with active disease who are not on treatment or on inadequate treatment and is expressed as a percentage of the total number of people with active disease. Treatment gap is a useful indicator for accessibility, utilisation and quality of health care',
-                ],
-                img: [
+        img: [
 
-                ],
-            },
-            {
-                topic: 'Solution',
-                heading: 'Heading Missing',
-                texts: [
-                    'We aim to close the treatment gap by surpassing social stigmas and promoting mental care in your day to day life.',
-                ],
-                img: [
+        ],
+    },
+    {
+        topic: 'Ideation',
+        heading: ' Bridging the treatment gap',
+        texts: [
+            'Treatment gap is defined as the number of people with active disease who are not on treatment or on inadequate treatment and is expressed as a percentage of the total number of people with active disease. Treatment gap is a useful indicator for accessibility, utilisation and quality of health care',
+        ],
+        img: [
 
-                ],
-            },
-            {
-                topic: 'Features',
-                heading: 'Self Care',
-                texts: [
-                    'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On user’s Choices. User will  also be able To Track Their  Journey Through Our App',
-                ],
-                img: [
+        ],
+    },
+    {
+        topic: 'Solution',
+        heading: 'Heading Missing',
+        texts: [
+            'We aim to close the treatment gap by surpassing social stigmas and promoting mental care in your day to day life.',
+        ],
+        img: [
 
-                ],
+        ],
+    },
+    {
+        topic: 'Features',
+        heading: 'Self Care',
+        texts: [
+            'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On user’s Choices. User will  also be able To Track Their  Journey Through Our App',
+        ],
+        img: [
 
-            },
-            {
-                topic: 'Features',
-                heading: 'Healers',
-                texts: [
-                    'User Can easily Get In  Touch  with Professionals And Talk  To Them Anonymously  About Their State Without Any Fear Or Worries. User will  also be able To Track Their  Appointments  Through Our App',
-                ],
-                img: [
+        ],
 
-                ],
+    },
+    {
+        topic: 'Features',
+        heading: 'Healers',
+        texts: [
+            'User Can easily Get In  Touch  with Professionals And Talk  To Them Anonymously  About Their State Without Any Fear Or Worries. User will  also be able To Track Their  Appointments  Through Our App',
+        ],
+        img: [
 
-            },
-            {
-                topic: 'Features',
-                heading: 'Burst The Myths',
-                texts: [
-                    'To tackle misinformation we provide users with facts and educate them about mental health.',
-                ],
-                img: [
+        ],
 
-                ],
+    },
+    {
+        topic: 'Features',
+        heading: 'Burst The Myths',
+        texts: [
+            'To tackle misinformation we provide users with facts and educate them about mental health.',
+        ],
+        img: [
 
-            },
-            {
-                topic: 'Features',
-                heading: 'Connect',
-                texts: [
-                    'Based on their choices we will pair them with other user and they can schedule a meet or chat digitally.',
-                ],
-                img: [
+        ],
 
-                ],
+    },
+    {
+        topic: 'Features',
+        heading: 'Connect',
+        texts: [
+            'Based on their choices we will pair them with other user and they can schedule a meet or chat digitally.',
+        ],
+        img: [
 
-            },
-            {
-                topic: 'Results and takeaways',
-                heading: 'UI is as important as UX',
-                texts: [
-                    'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On Your Choices',
-                ],
-                img: [
+        ],
 
-                ],
+    },
+    {
+        topic: 'Results and takeaways',
+        heading: 'UI is as important as UX',
+        texts: [
+            'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On Your Choices',
+        ],
+        img: [
 
-            },
-        ]
+        ],
+
+    },
+]
     },
 
 

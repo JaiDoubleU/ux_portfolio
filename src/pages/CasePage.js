@@ -39,20 +39,20 @@ function CasePage() {
                                             )
                                         })}
                                     </div>
-                                    <div className="col-lg-3 offset-1 d-none d-sm-block">
-                                        <img className='img-fluid' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
+                                    <div className="col-lg-3 offset-1 d-none d-sm-block text-center mt-lg-0 mt-5" >
+                                        <img className=' img-fluid' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
                                     </div>
                                 </div>
 
                                 {problem.researches.map((research, index) => {
                                     return (
                                         <div key={index} className="row research">
-                                            <div className={`col-lg-3 d-none d-sm-block offset-1 col-10 ${index % 2 !== 0 ? 'order-last' : 'order-first'} `}>
-                                                <img className='img-fluid' src={process.env.PUBLIC_URL + research.img} alt="img" />
-                                            </div>
                                             <div className="offset-1 col-lg-6 col-10">
                                                 <p className='research__text'>{research.texts}</p>
-                                                <a href={research.link} target='_blank' className='research__source'>{research.source}</a>
+                                                <a href={research.link} target='_blank' className='research__source' rel="noreferrer">{research.source}</a>
+                                            </div>
+                                            <div className={`col-lg-3 d-none d-sm-block offset-1 col-10 mt-lg-0 text-center mt-5 subpoint__img ${index % 2 !== 0 ? 'order-lg-last' : 'order-lg-first'} `}>
+                                                <img className='  img-fluid' src={process.env.PUBLIC_URL + research.img} alt="img" />
                                             </div>
                                         </div>
                                     )
@@ -68,7 +68,8 @@ function CasePage() {
             <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Ideation')} />
             <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Solution')}
                 isColor={true} />
-            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Features')} />
+            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Features')}
+                isFeature={true} />
             <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Results and takeaways')}
                 isColor={true} />
         </React.Fragment >

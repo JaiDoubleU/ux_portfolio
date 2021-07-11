@@ -25,8 +25,8 @@
   margin-top: 80px;
 }
 
-.case__problem .row{
-align-items: center;
+.case__problem .row {
+  align-items: center;
 }
 
 /* SUBPOINT */
@@ -71,18 +71,22 @@ align-items: center;
   opacity: 0.75;
 }
 
+.case__topic {
+  margin-bottom: 102px;
+  padding-top: 107px;
+}
+.topic__color {
+  background: #b9b9b9;
+}
 
-.case__topic{
-    margin-bottom: 102px;
-    padding-top: 107px;
+.subpoint__img {
+  margin-top: 79px;
+  text-align: center;
 }
-.topic__color{
-    background: #B9B9B9;
+.subpoint-container {
+  margin-top: 101px;
 }
 
-.subpoint__img{
-    margin-top: 79px;
-}
-.subpoint-container{
-    margin-top: 101px;
+.list {
+  font-weight: 500;
 }

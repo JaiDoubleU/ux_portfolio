@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import CaseTopic from '../components/CaseTopicHeading';
 
-function CaseSubPoint({ caseSub, isColor }) {
+function CaseSubPoint({ caseSub, isColor,isFeature }) {
 
     return (
         <React.Fragment>
@@ -11,7 +11,7 @@ function CaseSubPoint({ caseSub, isColor }) {
                     {caseSub.map((subpoint, index) => {
                         return (
                             <React.Fragment key={index}>
-                                <div className='row subpoint-container'>
+                                <div className={`row subpoint-container ${isFeature?'text-center':''}`}>
                                     <div className="offset-1 col-10">
                                         <h2 className='subpoint__heading'>{subpoint.heading}</h2>
                                     </div>
@@ -22,8 +22,8 @@ function CaseSubPoint({ caseSub, isColor }) {
                                             )
                                         })}
                                     </div>
-                                    <div className="col-10 offset-1">
-                                        <img className='img-fluid subpoint__img' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
+                                    <div className="col-10 offset-1 subpoint__img  ">
+                                        <img className='img-fluid ' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
                                     </div>
                                 </div>
 
