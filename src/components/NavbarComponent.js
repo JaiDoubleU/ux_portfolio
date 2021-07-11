@@ -18,17 +18,17 @@ function NavbarComp() {
 	const navRef = useRef();
 
 	const addNavbarFixed = () => {
-		var top = 600;
-		if (window.scrollY >= top) {
+		var top = 650;
+		if (window.scrollY >= top && window.innerWidth>576) {
 			navRef.current.classList.add("navbar-fixed");
 		}
-		if (window.scrollY <= (top)) {
+		if (window.scrollY < top && window.innerWidth>576) {
 			navRef.current.classList.remove("navbar-fixed");
 		}
 	}
 
 	useEffect(() => {
-		if (navRef) {
+		if (navRef   ) {
 			window.addEventListener("scroll", addNavbarFixed)
 		}
 		return () => {
@@ -37,7 +37,7 @@ function NavbarComp() {
 	}, []);
 
 	const hideCollapse = () => {
-		if(window.innerWidth<=576){
+		if(window.innerWidth<576){
 			setIsNavOpen(false);
 		}
 	}

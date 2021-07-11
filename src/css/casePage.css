@@ -1,0 +1,76 @@
+.case__hero-container {
+  /* height: 430px; */
+  background: #fdf0f2;
+}
+
+.case__hero {
+  margin-top: 80px;
+  margin-bottom: 195px;
+}
+
+.case__hero h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 57.33px;
+  line-height: 76px;
+  color: #333333;
+}
+.case__hero > p {
+  font-weight: normal;
+  font-size: 23.04px;
+  line-height: 32px;
+  color: #333333;
+}
+.case__problem {
+  margin-top: 188px;
+}
+
+.case__problem .row{
+align-items: center;
+}
+
+/* SUBPOINT */
+
+.subpoint__heading {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 39.81px;
+  line-height: 53px;
+  color: #333333;
+  margin-bottom: 70px;
+}
+
+.topic {
+  margin-bottom: 101px;
+}
+
+.subpoint__text {
+  font-weight: normal;
+  font-size: 19.2px;
+  line-height: 32px;
+  color: #333333;
+  margin-bottom: 23px;
+}
+
+.research {
+  margin-top: 130px;
+}
+
+.research__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+  text-align: center;
+  color: #333333;
+}
+.research__source {
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.011em;
+  color: #333333;
+  opacity: 0.75;
+}

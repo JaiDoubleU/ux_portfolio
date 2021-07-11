@@ -34,7 +34,7 @@
 }
 /* phones */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .navbar-container {
     position: sticky;
     top: 0;

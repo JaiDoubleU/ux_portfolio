@@ -8,8 +8,8 @@ function Footer({ forwardRef }) {
     var a = 'FaLinkedinIn';
     return (
         <div id='contact' >
-            <div ref={forwardRef} className="footer-container" >
-                <div className="footer__content pb-3">
+            <div ref={forwardRef} className="footer-container pb-3" >
+                <div className="footer__content ">
                     <div className="footer__content__top">
                         <div className="footer__content__top__text">
                             <h3>Let’s Connect</h3>
@@ -35,7 +35,7 @@ function Footer({ forwardRef }) {
                             <FaMediumM />
                         </a>
                     </div>
-                    <p>Illustration courtesy of Icons 8 from Ouch! and unDraw</p>
+                    <p>Illustration courtesy of <span className='footer__content__link'><a href="https://icons8.com/illustrations" target='_blank' >Icons 8 from Ouch! </a> and <a href="https://undraw.co/" target='_blank' className='footer__content__link'>unDraw</a></span> </p>
                     <p>Copyright © 2021 Akhilesh Saurabh </p>
                     <p>All rights reserved.</p>
                 </div>

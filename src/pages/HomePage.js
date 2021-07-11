@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 import Hero from '../components/HeroComponent';
 import SinglePortfolio from '../components/SinglePortfolioComponent';
 import { portfolios, works } from '../shared';
-import { changeFooter } from '../helpers/changeFooter';
+import { changeFooter } from '../utils/changeFooter';
 import { Link } from 'react-router-dom';
 import '../css/homePage.css'
 function HomePage({ footerRef }) {
