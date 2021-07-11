@@ -140,7 +140,7 @@ export const caseContent = [
             },
 
             {
-                topic: 'Reaserch',
+                topic: 'Research',
                 heading: 'Competetior analysis',
                 texts: [
                     'There are few apps availblable in the market regarding mental wellnes with good UX/UI but none of them solves the problem of Social stigma. People are really shy talking about mental health to professionals also let alone freinds and family.   ',
@@ -151,7 +151,7 @@ export const caseContent = [
                 ],
             },
             {
-                topic: 'Reaserch',
+                topic: 'Research',
                 heading: 'Interview Analysis',
                 texts: [
                     'I interviewed over 15 people who had a history of mental illness.',
@@ -193,7 +193,7 @@ export const caseContent = [
 
             },
             {
-                topic: 'Feature',
+                topic: 'Features',
                 heading: 'Healers',
                 texts: [
                     'User Can easily Get In  Touch  with Professionals And Talk  To Them Anonymously  About Their State Without Any Fear Or Worries. User will  also be able To Track Their  Appointments  Through Our App',
@@ -204,7 +204,7 @@ export const caseContent = [
 
             },
             {
-                topic: 'Feature',
+                topic: 'Features',
                 heading: 'Burst The Myths',
                 texts: [
                     'To tackle misinformation we provide users with facts and educate them about mental health.',
@@ -215,7 +215,7 @@ export const caseContent = [
 
             },
             {
-                topic: 'Feature',
+                topic: 'Features',
                 heading: 'Connect',
                 texts: [
                     'Based on their choices we will pair them with other user and they can schedule a meet or chat digitally.',

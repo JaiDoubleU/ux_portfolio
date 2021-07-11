@@ -13,7 +13,7 @@ function HomePage({ footerRef }) {
         }
     }, [footerRef])
     return (
-        <div>
+        <div className='home-container'>
             <Hero />
             {portfolios.map((portfolio) => {
                 return (

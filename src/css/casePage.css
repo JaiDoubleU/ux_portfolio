@@ -22,7 +22,7 @@
   color: #333333;
 }
 .case__problem {
-  margin-top: 188px;
+  margin-top: 80px;
 }
 
 .case__problem .row{
@@ -37,11 +37,7 @@ align-items: center;
   font-size: 39.81px;
   line-height: 53px;
   color: #333333;
-  margin-bottom: 70px;
-}
-
-.topic {
-  margin-bottom: 101px;
+  margin-bottom: 41px;
 }
 
 .subpoint__text {
@@ -73,4 +69,20 @@ align-items: center;
   letter-spacing: -0.011em;
   color: #333333;
   opacity: 0.75;
+}
+
+
+.case__topic{
+    margin-bottom: 102px;
+    padding-top: 107px;
+}
+.topic__color{
+    background: #B9B9B9;
+}
+
+.subpoint__img{
+    margin-top: 79px;
+}
+.subpoint-container{
+    margin-top: 101px;
 }

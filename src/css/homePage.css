@@ -1,3 +1,6 @@
+.home-container{
+margin-bottom: 100px;
+}
 /* HERO */
 .hero-container {
   margin-top: 197px;
@@ -37,6 +40,10 @@
   align-self: center;
   width: 68px;
   margin-left: 16px;
+}
+
+.dash.black{
+  border-bottom: 2px solid #000000;
 }
 
 /* PORTFOLIO */

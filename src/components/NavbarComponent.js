@@ -20,15 +20,15 @@ function NavbarComp() {
 	const addNavbarFixed = () => {
 		var top = 650;
 		if (window.scrollY >= top && window.innerWidth>576) {
-			navRef.current.classList.add("navbar-fixed");
+			navRef.current?.classList.add("navbar-fixed");
 		}
 		if (window.scrollY < top && window.innerWidth>576) {
-			navRef.current.classList.remove("navbar-fixed");
+			navRef?.current?.classList.remove("navbar-fixed");
 		}
 	}
 
 	useEffect(() => {
-		if (navRef   ) {
+		if (navRef ) {
 			window.addEventListener("scroll", addNavbarFixed)
 		}
 		return () => {

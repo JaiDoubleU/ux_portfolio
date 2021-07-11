@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CaseSubPoint from '../components/CaseSubPointComponent';
 import { caseContent } from '../shared';
 import { useParams } from 'react-router-dom';
+import CaseTopic from '../components/CaseTopicHeading';
 import '../css/casePage.css'
 
 function CasePage() {
@@ -21,20 +22,13 @@ function CasePage() {
                     </div>
                 </div>
             </div>
-            <div className="container case__problem">
-                <div className="row">
-                    <div className="col-10 offset-1 topic">
-                        <div className="d-flex heading">
-                            <p>Problem</p>
-                            <span className="dash"></span>
-                        </div>
-                    </div>
-                </div>
+            <div className="container case__problem case__topic pb-1">
+                <CaseTopic heading='problem' />
                 {caseStudy.contents.filter((content) => content.topic === 'Problem')
                     .map((problem, index) => {
                         return (
                             <React.Fragment key={index}>
-                                <div className='row'>
+                                <div className='row subpoint-container'>
                                     <div className="offset-1 col-10">
                                         <h2 className='subpoint__heading'>{problem.heading}</h2>
                                     </div>
@@ -45,15 +39,15 @@ function CasePage() {
                                             )
                                         })}
                                     </div>
-                                    <div className="col-lg-3 offset-1 d-none d-lg-block">
+                                    <div className="col-lg-3 offset-1 d-none d-sm-block">
                                         <img className='img-fluid' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
                                     </div>
                                 </div>
 
-                                {problem.researches.map((research,index) => {
+                                {problem.researches.map((research, index) => {
                                     return (
                                         <div key={index} className="row research">
-                                            <div className={`col-lg-3 d-none d-lg-block offset-1  ${index%2!==0 ? 'order-last':'order-first'} `}>
+                                            <div className={`col-lg-3 d-none d-sm-block offset-1 col-10 ${index % 2 !== 0 ? 'order-last' : 'order-first'} `}>
                                                 <img className='img-fluid' src={process.env.PUBLIC_URL + research.img} alt="img" />
                                             </div>
                                             <div className="offset-1 col-lg-6 col-10">
@@ -69,6 +63,14 @@ function CasePage() {
                     })
                 }
             </div>
+            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Research')}
+                isColor={true} />
+            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Ideation')} />
+            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Solution')}
+                isColor={true} />
+            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Features')} />
+            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Results and takeaways')}
+                isColor={true} />
         </React.Fragment >
     )
 }
