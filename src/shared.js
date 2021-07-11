@@ -197,6 +197,7 @@ export const caseContent = [
         img: [
 
         ],
+        bg:'linear-gradient(89.03deg, rgba(201, 216, 255, 0.56) -7.98%, rgba(255, 209, 167, 0.35) 133.27%)'
 
     },
     {
@@ -208,7 +209,8 @@ export const caseContent = [
         img: [
 
         ],
-
+        bg:'linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
+        
     },
     {
         topic: 'Features',
@@ -217,9 +219,10 @@ export const caseContent = [
             'To tackle misinformation we provide users with facts and educate them about mental health.',
         ],
         img: [
-
+            
         ],
-
+        bg:'linear-gradient(89.03deg, rgba(201, 206, 255, 0.56) -7.98%, rgba(179, 255, 167, 0.35) 133.27%)'
+        
     },
     {
         topic: 'Features',
@@ -228,9 +231,10 @@ export const caseContent = [
             'Based on their choices we will pair them with other user and they can schedule a meet or chat digitally.',
         ],
         img: [
-
+            
         ],
-
+        bg:'linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
+        
     },
     {
         topic: 'Results and takeaways',

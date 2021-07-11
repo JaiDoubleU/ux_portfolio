@@ -12,6 +12,7 @@ function CasePage() {
 
     return (
         <React.Fragment>
+            
             <div className="case__hero-container">
                 <div className="container">
                     <div className="row">
@@ -19,6 +20,14 @@ function CasePage() {
                             <h1 className='mb-5'>{caseStudy.name}</h1>
                             <p>{caseStudy.tagline}</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur itaque ratione magnam explicabo debitis dolor, quas quaerat pariatur voluptates reprehenderit laboriosam odit perspiciatis optio sit sed deleniti rerum possimus fugit?
+
                     </div>
                 </div>
             </div>

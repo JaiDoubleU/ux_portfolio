@@ -90,3 +90,12 @@
 .list {
   font-weight: 500;
 }
+
+.alignfull{
+  margin-left: calc(50% - 49.4vw);
+  margin-right: calc(50% - 49.4vw);
+  max-width: 800%;
+  width: auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
