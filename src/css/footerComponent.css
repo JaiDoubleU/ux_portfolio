@@ -116,8 +116,3 @@
   font-family: sans-serif;
 }
 
-@media screen and (max-width: 576px) {
-  .footer-container {
-    margin-top: 50px;
-  }
-}

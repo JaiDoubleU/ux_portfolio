@@ -32,46 +32,17 @@ function CasePage() {
 
                 {caseStudy.topics.map((topic, index) => {
                     return (
-                        <React.Fragment >
+                        <React.Fragment key={index} >
                             {
                                 ((caseStudy.topics.length - 1) === index &&
                                     <Prototype />)
                             }
-
                             <div style={{ background: topic.bg }}>
                                 <div className='container case__problem case__topic pb-1'>
                                     <CaseTopic heading={topic.name} />
                                 </div>
                                 {topic.isHalf ?
-                                    caseStudy.contents.filter((content) => content.topic === topic.name)
-                                        .map((problem, index) => {
-                                            return (
-                                                <React.Fragment key={index}>
-                                                    <div className="container">
-                                                        <div className='row subpoint-container'>
-                                                            <div className="offset-1 col-10">
-                                                                <h2 className='subpoint__heading'>{problem.heading}</h2>
-                                                            </div>
-                                                        </div>
-
-                                                        <div className="row">
-                                                            <div key={index} className="col-lg-6 offset-1 col-10">
-                                                                {problem.texts.map((text, index) => {
-                                                                    return (
-                                                                        <p key={index} className='subpoint__text'>{text}</p>
-                                                                    )
-                                                                })}
-                                                            </div>
-                                                            <div className="col-lg-3 offset-1 d-none d-sm-block text-center mt-lg-0 mt-5" >
-                                                                <img className=' img-fluid' src={process.env.PUBLIC_URL + problem.img} alt="" />
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                </React.Fragment>
-                                            )
-                                        })
+                                    <CaseSubPoint isHalf={true} caseSub={caseStudy.contents.filter((content) => content.topic === topic.name)} />
                                     :
                                     <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === topic.name)} />
                                 }
@@ -79,47 +50,6 @@ function CasePage() {
                         </React.Fragment>
                     )
                 })}
-
-
-                {/* {caseStudy.contents.filter((content) => content.topic === 'Problem')
-                    .map((problem, index) => {
-                        return (
-                            <React.Fragment key={index}>
-                                <div className='row subpoint-container'>
-                                    <div className="offset-1 col-10">
-                                        <h2 className='subpoint__heading'>{problem.heading}</h2>
-                                    </div>
-                                    <div key={index} className="col-lg-6 offset-1 col-10">
-                                        {problem.texts.map((text, index) => {
-                                            return (
-                                                <p key={index} className='subpoint__text'>{text}</p>
-                                            )
-                                        })}
-                                    </div>
-                                    <div className="col-lg-3 offset-1 d-none d-sm-block text-center mt-lg-0 mt-5" >
-                                        <img className=' img-fluid' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
-                                    </div>
-                                </div>
-
-                                {problem.researches.map((research, index) => {
-                                    return (
-                                        <div key={index} className="row research">
-                                            <div className="offset-1 col-lg-6 col-10">
-                                                <p className='research__text'>{research.texts}</p>
-                                                <a href={research.link} target='_blank' className='research__source' rel="noreferrer">{research.source}</a>
-                                            </div>
-                                            <div className={`col-lg-3 d-none d-sm-block offset-1 col-10 mt-lg-0 text-center mt-5 subpoint__img ${index % 2 !== 0 ? 'order-lg-last' : 'order-lg-first'} `}>
-                                                <img className='  img-fluid' src={process.env.PUBLIC_URL + research.img} alt="img" />
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-
-                            </React.Fragment>
-                        )
-                    })
-                } */}
-
             </div>
 
         </React.Fragment >
