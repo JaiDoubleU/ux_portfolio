@@ -23,9 +23,9 @@ function CaseSubPoint({ caseSub }) {
                                     </div>
                                     <div className="col-10 offset-1 subpoint__img">
                                         {subpoint.bg ? <div className="alignfull" style={{ background: `${subpoint.bg}` }}>
-                                            <img className='img-fluid' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
+                                            <img className='img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
                                         </div> :
-                                            <img className='img-fluid ' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
+                                            <img className='img-fluid ' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
 
                                         }
                                     </div>

@@ -22,7 +22,7 @@ function CasePage() {
                             <p>{caseStudy.tagline}</p>
                         </div>
                         <div className="col-lg-5 offset-1 col-10 mt-lg-0 mt-5 text-center ">
-                            <img className=' img-fluid' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
+                            <img className=' img-fluid' src={process.env.PUBLIC_URL + caseStudy.img} alt="" />
                         </div>
 
                     </div>
@@ -63,7 +63,7 @@ function CasePage() {
                                                                 })}
                                                             </div>
                                                             <div className="col-lg-3 offset-1 d-none d-sm-block text-center mt-lg-0 mt-5" >
-                                                                <img className=' img-fluid' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
+                                                                <img className=' img-fluid' src={process.env.PUBLIC_URL + problem.img} alt="" />
                                                             </div>
                                                         </div>
 
@@ -119,16 +119,7 @@ function CasePage() {
                         )
                     })
                 } */}
-                {/* <div className='container'>
-                    <div className="row">
-                        <div className="offset-1 col-10 test text-center">
-                            <a href="">
-                                <img className='img-fluid  hover_img ' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
-                            </a>
-                            <p className='prototype__text '>Click To see the full Prototype</p>
-                        </div>
-                    </div>
-                </div> */}
+
             </div>
 
         </React.Fragment >

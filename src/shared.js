@@ -116,8 +116,9 @@ export const caseContent = [
             },
 
         ],
-
+        
         bg: '#FDF0F2',
+        img: '/images/Snap.png',
         id: 'mindguard',
         name: 'Mind Guard',
         tagline: 'A solution to bridge the treatment gap in mental health by surpassing social stigma',
@@ -165,9 +166,7 @@ export const caseContent = [
                         img: '/images/Snap.png'
                     }
                 ],
-                img: [
-
-                ],
+                img: '/images/Snap.png',
             },
             
 
@@ -178,9 +177,8 @@ export const caseContent = [
                     'There are few apps availblable in the market regarding mental wellnes with good UX/UI but none of them solves the problem of Social stigma. People are really shy talking about mental health to professionals also let alone freinds and family.   ',
                     'All features are distributed in different apps and there is no digital platform that address all the problem on a single platform'
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
             },
             {
                 topic: 'Research',
@@ -196,9 +194,8 @@ export const caseContent = [
                             5. Didn’t know that mental health requires attention just like physical health<br />
                         </span></span>
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
             },
             {
                 topic: 'Ideation',
@@ -206,9 +203,8 @@ export const caseContent = [
                 texts: [
                     'Treatment gap is defined as the number of people with active disease who are not on treatment or on inadequate treatment and is expressed as a percentage of the total number of people with active disease. Treatment gap is a useful indicator for accessibility, utilisation and quality of health care',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
             },
             {
                 topic: 'Solution',
@@ -216,9 +212,8 @@ export const caseContent = [
                 texts: [
                     'We aim to close the treatment gap by surpassing social stigmas and promoting mental care in your day to day life.',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
             },
             {
                 topic: 'Features',
@@ -226,9 +221,8 @@ export const caseContent = [
                 texts: [
                     'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On user’s Choices. User will  also be able To Track Their  Journey Through Our App',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
                 bg: 'linear-gradient(89.03deg, rgba(201, 216, 255, 0.56) -7.98%, rgba(255, 209, 167, 0.35) 133.27%)'
                 
             },
@@ -238,9 +232,8 @@ export const caseContent = [
                 texts: [
                     'User Can easily Get In  Touch  with Professionals And Talk  To Them Anonymously  About Their State Without Any Fear Or Worries. User will  also be able To Track Their  Appointments  Through Our App',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
                 bg: 'linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
 
             },
@@ -250,9 +243,8 @@ export const caseContent = [
                 texts: [
                     'To tackle misinformation we provide users with facts and educate them about mental health.',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
                 bg: 'linear-gradient(89.03deg, rgba(201, 206, 255, 0.56) -7.98%, rgba(179, 255, 167, 0.35) 133.27%)'
 
             },
@@ -262,9 +254,8 @@ export const caseContent = [
                 texts: [
                     'Based on their choices we will pair them with other user and they can schedule a meet or chat digitally.',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
                 bg: 'linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
 
             },
@@ -274,9 +265,8 @@ export const caseContent = [
                 texts: [
                     'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On Your Choices',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
 
             },
         ]
@@ -315,6 +305,8 @@ export const caseContent = [
         ],
 
         bg: '#BDD8FF',
+        img: '/images/Snap.png',
+
         id: 'disney-hotstar',
         name: 'Hotstar+Disney Redesign',
         tagline: 'Disney+ Hotstar is an Ott platform with over 34 million subscribers and provides the user with a variety of content ranging from live Cricket matches to exclusive movies and tv series.',
@@ -326,9 +318,8 @@ export const caseContent = [
                     'Disclaimer: I am not associated with Disney+ Hotstar. I  took on this project because I experienced trouble using the platform. This project only deals with the redesign of the website of the Ott platform.',
                 ],
                
-                img: [
+                img: '/images/Snap.png',
 
-                ],
             },
             
 
@@ -338,9 +329,8 @@ export const caseContent = [
                 texts: [
                     'Based on secondary research, my assumption, and experiences of using the platform, I created a survey.'
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
             },
             {
                 topic: 'Research',
@@ -350,9 +340,8 @@ export const caseContent = [
 
                     
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
             },
             {
                 topic: 'Problem',
@@ -360,9 +349,8 @@ export const caseContent = [
                 texts: [
                     'The platform has multiple intricate issues of navigation, recommendation system, and layout of content. Users were also experiencing a lot of confusion while choosing the content to watch.',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
             },
            
             {
@@ -371,9 +359,8 @@ export const caseContent = [
                 texts: [
                     'The majority of users were able to separate the content on basis of channel, language, or genre. The sandwich menu seemed too hidden for the user to interact with. The new design made it much simpler and clear as all the options were right in front of them.',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
                 bg: ' linear-gradient(89.03deg, rgba(208, 255, 201, 0.56) -7.98%, rgba(255, 167, 246, 0.35) 133.27%)'
                 
             },
@@ -383,9 +370,8 @@ export const caseContent = [
                 texts: [
                     'I found that most of the users were viewing the content based on their mood. I appended a mood section where people can find the content according to their mood. This will help them solve their problem.',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
                 bg: 'linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
 
             },
@@ -395,9 +381,8 @@ export const caseContent = [
                 texts: [
                     'Some Indian tv series have over 250+ episodes and to go through them by sliding the episodes is not practical. A dropdown menu increases the efficiency of navigating to a particular episode.',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
                 bg: 'linear-gradient(89.03deg, rgba(201, 206, 255, 0.56) -7.98%, rgba(179, 255, 167, 0.35) 133.27%)'
 
             },
@@ -408,9 +393,8 @@ export const caseContent = [
                     'According to research, users were intimidated by the quantity of the content shown on a single screen.It results in user anxiety which would ultimately harm their experience.', 
                     'Decreased the number of content shown at once.',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
                 bg: 'linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
 
             },
@@ -421,9 +405,8 @@ export const caseContent = [
                 texts: [
                     'Recommendation works on two sets of data: implicit and explicit.  To improve the recommendation a direct feedback button was added. This will enhance the recommendation system.',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
                 bg: 'linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
 
             },
@@ -433,9 +416,8 @@ export const caseContent = [
                 texts: [
                     'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On Your Choices',
                 ],
-                img: [
+                img: '/images/Snap.png',
 
-                ],
 
             },
         ]
