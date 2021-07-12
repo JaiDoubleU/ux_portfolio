@@ -315,7 +315,7 @@ export const caseContent = [
         img: '/images/c2 p1.png',
 
         id: 'disney-hotstar',
-        name: 'Hotstar+Disney Redesign',
+        name: 'Disney+ Hotstar Redesign',
         tagline: 'Disney+ Hotstar is an Ott platform with over 34 million subscribers and provides the user with a variety of content ranging from live Cricket matches to exclusive movies and tv series.',
         contents: [
             {
