@@ -136,14 +136,14 @@ export const caseContent = [
                         texts: '7.5 percent of the country’s population of 1.3 billion, suffer from some form of mental disorder',
                         source: 'World health Organization (WHO)',
                         link: 'https://www.google.com',
-                        img: '/images/Snap.png'
+                        img: '/images/c1 p10.png'
                     },
                     {
                         texts: '21%  perceived the role of faith healers (Tantrik, Ojha) in the treatment of mental illness.',
                         source: 'Data on additude regarding mental health',
                         link: 'https://www.google.com',
 
-                        img: '/images/Snap.png'
+                        img: '/images/c1 p11.png'
 
                     },
                     {
@@ -151,22 +151,16 @@ export const caseContent = [
                         source: 'World health Organization (WHO)',
                         link: 'https://www.google.com',
 
-                        img: '/images/Snap.png'
+                        img: '/images/c1 p12.png'
                     },
                     {
                         texts: 'Teenagers in the age group 13-17 years suffer depression and other mental health disorders and are “in need of active intervention”.',
                         source: 'NIMHANS',
                         link: 'https://www.google.com',
 
-                        img: '/images/Snap.png'
-                    },
-                    {
-                        texts: '7.5 percent of the country’s population of 1.3 billion, suffer from some form of mental disorder.',
-                        source: 'World health Organization (WHO)',
-                        link: 'https://www.google.com',
-
-                        img: '/images/Snap.png'
+                        img: '/images/c1 p13.png'
                     }
+                    
                 ],
                 img: '/images/c1 p1.png',
             },
@@ -274,8 +268,8 @@ export const caseContent = [
         ],
 
         prototype: {
-            img: '/images/c1 p7.png',
-            link: 'https://www.google.com'
+            img: '/images/c1 p8.png',
+            link: 'https://www.figma.com/proto/zCpzOBk7fc8bQOCZlDLW6B/Mind-Care?node-id=0%3A1'
         }
 
     },
@@ -348,7 +342,7 @@ export const caseContent = [
                 texts: [
                     "After the survey and multiple ones on one interviews, I was able to create user groups and empathy maps which gave me a much better insight into the problem and helped me understand the user's perspective of the platform."
                 ],
-                img: '/images/Snap.png',
+                img: '/images/c2 p11.png',
 
             },
 
@@ -360,7 +354,7 @@ export const caseContent = [
 
 
                 ],
-                img: '/images/Snap.png',
+               
 
             },
             {
@@ -443,8 +437,8 @@ export const caseContent = [
         ],
 
         prototype: {
-            img: '/images/c1 p7.png',
-            bg: 'red'
+            img: '/images/c2 p10.png',
+            bg: 'linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(206, 167, 255, 0.35) 133.27%)'
         }
     },
 
