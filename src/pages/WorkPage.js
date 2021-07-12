@@ -11,7 +11,7 @@ function WorkPage() {
     return (
         <React.Fragment>
             <div className="container-fluid">
-                <div className="row singleWork">
+                <div className="row singleWork align-center">
                     <div className=" singleWork__text order-lg-first order-last offset-1 col-lg-5 col-10">
                         <a href={work.redirect} target="_blank" rel="noreferrer">
                             <h1 className="singleWork__name">{work.name}</h1>
@@ -26,8 +26,8 @@ function WorkPage() {
                     </div>
                 </div>
                 {work.completed ? "" : <div className="row">
-                    <div className="col offset-1 col-4">
-                        <h2 className="text-center" >coming soon</h2>
+                    <div className="offset-1 col-4">
+                        
                     </div>
                 </div>}
 

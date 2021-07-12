@@ -52,10 +52,11 @@ export const works = [
     },
     {
         id: 'covid-point',
-        image: "images/Snap.png",
+        image: "images/covidPoint.png",
         name: 'Covid Point',
         desc: "From vaccine appointment to latest updates all at one place.",
         shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
+        asset:<img className='img-fluid' src={process.env.PUBLIC_URL + '/images/comingSoon.png'} alt="" />,
         completed: false
     }
 ]
