@@ -7,7 +7,7 @@ export const portfolios = [
         desc: 'A solution to bridge the treatment gap in mental illness.',
         background: '#FDF0F2',
         color: '#811324',
-        shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
+        shadow: '0px 0px 50px 5px rgba(206, 153, 161, 1)',
 
     }
     ,
@@ -19,7 +19,7 @@ export const portfolios = [
         desc: 'Redesign of an OTT platform.',
         background: '#F8F7FF',
         color: '#271C64',
-        shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
+        shadow: '0px 0px 50px 5px rgba(160, 153, 206, 1)',
 
     }
 ]
@@ -44,7 +44,7 @@ export const works = [
         tagline: 'Revolusinising Hotel Stay Experiences.',
         desc: "A explaionatry video for clients.",
         details: 'They needed an explanatory video to give a better understanding of their product to their clients.',
-        shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
+        shadow: '0px 0px 50px 5px rgba(129, 211, 195, 0.35)',
         completed: true,
         asset: <iframe width="100%" height="100%" style={{ borderRadius: '8px' }} src="https://www.youtube.com/embed/_8MDZ58pxMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
         redirect: 'https://www.youtube.com/watch?v=_8MDZ58pxMc'
@@ -283,5 +283,162 @@ export const caseContent = [
     },
 
 
+
+    {
+        topics: [
+            {
+                name: 'Overview',
+                isHalf:true,
+
+            },
+
+            {
+                name: 'Research',
+                bg: '#F3F0FD'
+            },
+            {
+                name: 'Problem',
+                isHalf:true,
+            },
+            {
+                name: 'Solution',
+                
+
+            },
+           
+            {
+                name: 'Results and takeaways',
+                bg: '#FDF0F2'
+
+            },
+
+        ],
+
+        bg: '#BDD8FF',
+        id: 'disney-hotstar',
+        name: 'Hotstar+Disney Redesign',
+        tagline: 'Disney+ Hotstar is an Ott platform with over 34 million subscribers and provides the user with a variety of content ranging from live Cricket matches to exclusive movies and tv series.',
+        contents: [
+            {
+                topic: 'Overview',
+                heading: 'haeding missing',
+                texts: [
+                    'Disclaimer: I am not associated with Disney+ Hotstar. I  took on this project because I experienced trouble using the platform. This project only deals with the redesign of the website of the Ott platform.',
+                ],
+               
+                img: [
+
+                ],
+            },
+            
+
+            {
+                topic: 'Research',
+                heading: 'Survey and Interviews',
+                texts: [
+                    'Based on secondary research, my assumption, and experiences of using the platform, I created a survey.'
+                ],
+                img: [
+
+                ],
+            },
+            {
+                topic: 'Research',
+                heading: 'User testing',
+                texts: [
+                    'I did a user testing session with five participants using the current version of the platform. One of the tasks for the users was to reach the page which contains the list of all the tv channels available. 90% of the users failed to navigate to the channel list.',
+
+                    
+                ],
+                img: [
+
+                ],
+            },
+            {
+                topic: 'Problem',
+                heading: 'Navigation, The Paradox of Choice, Layout are the core issues',
+                texts: [
+                    'The platform has multiple intricate issues of navigation, recommendation system, and layout of content. Users were also experiencing a lot of confusion while choosing the content to watch.',
+                ],
+                img: [
+
+                ],
+            },
+           
+            {
+                topic: 'Solution',
+                heading: 'Navigation Bar',
+                texts: [
+                    'The majority of users were able to separate the content on basis of channel, language, or genre. The sandwich menu seemed too hidden for the user to interact with. The new design made it much simpler and clear as all the options were right in front of them.',
+                ],
+                img: [
+
+                ],
+                bg: ' linear-gradient(89.03deg, rgba(208, 255, 201, 0.56) -7.98%, rgba(255, 167, 246, 0.35) 133.27%)'
+                
+            },
+            {
+                topic: 'Solution',
+                heading: 'The Paradox Of Choice',
+                texts: [
+                    'I found that most of the users were viewing the content based on their mood. I appended a mood section where people can find the content according to their mood. This will help them solve their problem.',
+                ],
+                img: [
+
+                ],
+                bg: 'linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
+
+            },
+            {
+                topic: 'Solution',
+                heading: 'Navigate through 100+ episodes',
+                texts: [
+                    'Some Indian tv series have over 250+ episodes and to go through them by sliding the episodes is not practical. A dropdown menu increases the efficiency of navigating to a particular episode.',
+                ],
+                img: [
+
+                ],
+                bg: 'linear-gradient(89.03deg, rgba(201, 206, 255, 0.56) -7.98%, rgba(179, 255, 167, 0.35) 133.27%)'
+
+            },
+            {
+                topic: 'Solution',
+                heading: 'Intimated by the Quantity',
+                texts: [
+                    'According to research, users were intimidated by the quantity of the content shown on a single screen.It results in user anxiety which would ultimately harm their experience.', 
+                    'Decreased the number of content shown at once.',
+                ],
+                img: [
+
+                ],
+                bg: 'linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
+
+            },
+
+            {
+                topic: 'Solution',
+                heading: 'Reccomendation',
+                texts: [
+                    'Recommendation works on two sets of data: implicit and explicit.  To improve the recommendation a direct feedback button was added. This will enhance the recommendation system.',
+                ],
+                img: [
+
+                ],
+                bg: 'linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)'
+
+            },
+            {
+                topic: 'Results and takeaways',
+                heading: 'UI is as important as UX',
+                texts: [
+                    'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On Your Choices',
+                ],
+                img: [
+
+                ],
+
+            },
+        ]
+    },
 
 ]
