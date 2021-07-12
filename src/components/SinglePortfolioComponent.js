@@ -8,7 +8,7 @@ function SinglePortfolio(props) {
     if (props.portfolio) {
         return (
             <div style={{ backgroundColor: `${props.portfolio.background}` }}>
-                <div className="container portfolio-container">
+                <div className="container-fluid portfolio-container">
                     <div className="row ">
                         <div className=" offset-1 col-10 col-lg-5 ">
                             <img style={{ boxShadow: `${props.portfolio.shadow}` }} className="hover_img project__img" src={process.env.PUBLIC_URL + props.portfolio.image} alt="portfolio-img" />
@@ -25,7 +25,7 @@ function SinglePortfolio(props) {
     } else {
         return (
             <div>
-                <div className="container work-container">
+                <div className="container-fluid work-container">
                     <div className='row'>
                         <div className={`col-10 col-lg-4 offset-1 ${props.index % 2 !== 0 ? '  order-lg-1' : 'order-lg-2 '}`}>
                             <Link to={`/work/${props.work.id}`}>

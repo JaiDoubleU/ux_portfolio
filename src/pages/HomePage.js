@@ -23,7 +23,7 @@ function HomePage({ footerRef }) {
                 )
             })}
 
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row hero__portfolio heading mt-5 ">
                     <div className="col offset-1">
                         <div className="d-flex">

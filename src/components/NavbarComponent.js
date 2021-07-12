@@ -45,7 +45,7 @@ function NavbarComp() {
 	return (
 		<div ref={navRef} className="navbar-container">
 			<Navbar light expand="sm">
-				<div className="container">
+				<div className="container ">
 					<NavbarBrand >
 						<Link to="/" >
 							<img className="hover_img" src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />

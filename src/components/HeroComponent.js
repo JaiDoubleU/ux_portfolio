@@ -5,7 +5,7 @@ function Hero() {
 
 	const myRef = useRef(null);
     return (
-        <div className="hero-container container">
+        <div className="hero-container container-fluid">
             <div className="row offset-1">
                 <div className="col-sm-12">
                     <h1>Hi, I’m Akhilesh</h1>

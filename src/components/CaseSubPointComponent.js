@@ -5,7 +5,7 @@ function CaseSubPoint({ caseSub, isHalf }) {
     return (
         <React.Fragment>
             <div className={`pb-5`} >
-                <div className="container">
+                <div className="container-fluid">
                     {caseSub.map((subpoint, index) => {
                         return (
                             <React.Fragment key={index}>

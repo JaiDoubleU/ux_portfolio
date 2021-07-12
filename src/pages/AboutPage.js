@@ -6,7 +6,7 @@ import '../css/aboutPage.css'
 function AboutPage() {
     return (
         <div>
-            <div className="container about-container">
+            <div className="container-fluid about-container">
                 <div className="row">
                     <div className="about__img offset-1 offset-lg-0 col-lg-5 col-10 order-lg-last">
                         <img className="img-fluid mb-5" src={process.env.PUBLIC_URL + '/images/about-img.png'} alt="about-img" />
