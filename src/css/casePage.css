@@ -1,11 +1,8 @@
-.case__hero-container {
-  /* height: 430px; */
-  background: #fdf0f2;
-}
 
 .case__hero {
-  margin-top: 80px;
-  margin-bottom: 195px;
+  padding-top: 89px;
+  padding-bottom: 80px;
+  min-height: 472px;
 }
 
 .case__hero h1 {
