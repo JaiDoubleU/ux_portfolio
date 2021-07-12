@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import CaseSubPoint from '../components/CaseSubPointComponent';
+import Prototype from '../components/PrototypeComponent';
 import { caseContent } from '../shared';
 import { useParams } from 'react-router-dom';
 import CaseTopic from '../components/CaseTopicHeading';
@@ -28,9 +29,15 @@ function CasePage() {
                 </div>
             </div>
             <div >
-                {caseStudy.topics.map((topic) => {
+
+                {caseStudy.topics.map((topic, index) => {
                     return (
-                        <React.Fragment>
+                        <React.Fragment >
+                            {
+                                ((caseStudy.topics.length - 1) === index &&
+                                    <Prototype />)
+                            }
+
                             <div style={{ background: topic.bg }}>
                                 <div className='container case__problem case__topic pb-1'>
                                     <CaseTopic heading={topic.name} />
@@ -68,8 +75,6 @@ function CasePage() {
                                     :
                                     <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === topic.name)} />
                                 }
-
-
                             </div>
                         </React.Fragment>
                     )
@@ -114,27 +119,18 @@ function CasePage() {
                         )
                     })
                 } */}
-            </div>
-            {/* <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Research')}
-                isColor={true} />
-            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Ideation')} />
-            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Solution')}
-                isColor={true} />
-            <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === 'Features')}
-                isFeature={true} />
-
-            <div className='container'>
-                <div className="row">
-                    <div className="offset-1 col-10 test text-center">
-                        <a href="">
-                            <img className='img-fluid  hover_img ' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
-                        </a>
-                        <p className='prototype__text '>Click To see the full Prototype</p>
+                {/* <div className='container'>
+                    <div className="row">
+                        <div className="offset-1 col-10 test text-center">
+                            <a href="">
+                                <img className='img-fluid  hover_img ' src={process.env.PUBLIC_URL + '/images/Snap.png'} alt="" />
+                            </a>
+                            <p className='prototype__text '>Click To see the full Prototype</p>
+                        </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
-            <CaseSubPoint bg='#FDF0F2' caseSub={caseStudy.contents.filter((content) => content.topic === 'Results and takeaways')} /> */}
         </React.Fragment >
     )
 }
