@@ -28,6 +28,15 @@ function CasePage() {
                     </div>
                 </div>
             </div>
+
+            <div className="container">
+                <div className="row">
+                    <div className="col-10 offset-1">
+                        <img className=' img-fluid' src={process.env.PUBLIC_URL + caseStudy.table} alt="table" />
+                    </div>
+                </div>
+            </div>
+
             <div >
 
                 {caseStudy.topics.map((topic, index) => {

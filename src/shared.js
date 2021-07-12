@@ -117,7 +117,7 @@ export const caseContent = [
             },
 
         ],
-
+        table: '/images/table1.png',
         bg: '#FDF0F2',
         img: '/images/cover case 1.png',
         id: 'mindguard',
@@ -313,7 +313,7 @@ export const caseContent = [
 
         bg: '#BDD8FF',
         img: '/images/c2 p1.png',
-
+        table: '/images/table2.png',
         id: 'disney-hotstar',
         name: 'Disney+ Hotstar Redesign',
         tagline: 'Disney+ Hotstar is an Ott platform with over 34 million subscribers and provides the user with a variety of content ranging from live Cricket matches to exclusive movies and tv series.',
