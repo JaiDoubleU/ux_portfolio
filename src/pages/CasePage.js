@@ -14,9 +14,9 @@ function CasePage() {
     return (
         <React.Fragment>
 
-            <div className="case__hero-container" style={{ background: caseStudy.bg }}>
+            <div className="case__hero-container " style={{ background: caseStudy.bg }}>
                 <div className="container">
-                    <div className="row case__hero">
+                    <div className="row case__hero align-center">
                         <div className="col-lg-5 offset-1 col-10 ">
                             <h1 className='mb-5'>{caseStudy.name}</h1>
                             <p>{caseStudy.tagline}</p>
@@ -35,10 +35,10 @@ function CasePage() {
                         <React.Fragment key={index} >
                             {
                                 ((caseStudy.topics.length - 1) === index &&
-                                    <Prototype />)
+                                    <Prototype prototype={caseStudy.prototype} />)
                             }
                             <div style={{ background: topic.bg }}>
-                                <div className='container case__problem case__topic pb-1'>
+                                <div className='container case__topic pb-1'>
                                     <CaseTopic heading={topic.name} />
                                 </div>
                                 {topic.isHalf ?

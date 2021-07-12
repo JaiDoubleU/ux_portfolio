@@ -2,6 +2,7 @@
   padding-top: 89px;
   padding-bottom: 80px;
   min-height: 472px;
+  margin-bottom: 80px;
 }
 
 .case__hero h1 {
@@ -107,9 +108,3 @@
   color: #333333;
 }
 
-/* .test::before {
-  content: url("./fingerPoint.png");
-  position: absolute;
-  left: 150px;
-  bottom: 50px;
-} */

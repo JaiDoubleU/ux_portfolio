@@ -1,8 +1,9 @@
+
 export const portfolios = [
     {
         id: 'mindguard',
         image: 'images/case 1.png',
-        
+
         name: 'Mindguard',
         desc: 'A solution to bridge the treatment gap in mental illness.',
         background: '#FDF0F2',
@@ -14,7 +15,7 @@ export const portfolios = [
     {
         id: 'disney-hotstar',
         image: 'images/case 2.png',
-        
+
         name: 'Disney+ Hotstar Redesign',
         desc: 'Redesign of an OTT platform.',
         background: '#F8F7FF',
@@ -90,7 +91,7 @@ export const caseContent = [
         topics: [
             {
                 name: 'Problem',
-                isHalf:true,
+                isHalf: true,
 
             },
 
@@ -116,7 +117,7 @@ export const caseContent = [
             },
 
         ],
-        
+
         bg: '#FDF0F2',
         img: '/images/cover case 1.png',
         id: 'mindguard',
@@ -168,7 +169,7 @@ export const caseContent = [
                 ],
                 img: '/images/c1 p1.png',
             },
-            
+
 
             {
                 topic: 'Research',
@@ -194,7 +195,7 @@ export const caseContent = [
                             5. Didn’t know that mental health requires attention just like physical health<br />
                         </span></span>
                 ],
-                
+
 
             },
             {
@@ -224,7 +225,7 @@ export const caseContent = [
                 img: '/images/c1 p4.png',
 
                 bg: 'linear-gradient(89.03deg, rgba(201, 216, 255, 0.56) -7.98%, rgba(255, 209, 167, 0.35) 133.27%)'
-                
+
             },
             {
                 topic: 'Features',
@@ -265,11 +266,17 @@ export const caseContent = [
                 texts: [
                     'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On Your Choices',
                 ],
-              
+
 
 
             },
-        ]
+        ],
+
+        prototype: {
+            img: '/images/c1 p7.png',
+            link: 'https://www.google.com'
+        }
+
     },
 
 
@@ -278,7 +285,7 @@ export const caseContent = [
         topics: [
             {
                 name: 'Overview',
-                isHalf:true,
+                isHalf: true,
 
             },
 
@@ -288,14 +295,14 @@ export const caseContent = [
             },
             {
                 name: 'Problem',
-                isHalf:true,
+                isHalf: true,
             },
             {
                 name: 'Solution',
-                
+
 
             },
-           
+
             {
                 name: 'Results and takeaways',
                 bg: '#FDF0F2'
@@ -318,11 +325,11 @@ export const caseContent = [
                     'Disclaimer: I am not associated with Disney+ Hotstar. I  took on this project because I experienced trouble using the platform. This project only deals with the redesign of the website of the Ott platform.',
                     'I took this project because I always used to get frusted using the platform and many of my friends felt same.',
                 ],
-               
+
                 img: '/images/c2 p2.png',
 
             },
-            
+
 
             {
                 topic: 'Research',
@@ -336,7 +343,7 @@ export const caseContent = [
 
             {
                 topic: 'Research',
-               
+
                 texts: [
                     "After the survey and multiple ones on one interviews, I was able to create user groups and empathy maps which gave me a much better insight into the problem and helped me understand the user's perspective of the platform."
                 ],
@@ -350,7 +357,7 @@ export const caseContent = [
                 texts: [
                     <span>I did a user testing session with five participants using the current version of the platform. One of the tasks for the users was to reach the page which contains the list of all the tv channels available. <span id='bold'> 90% </span>of the users failed to navigate to the channel list.</span>,
 
-                    
+
                 ],
                 img: '/images/Snap.png',
 
@@ -364,7 +371,7 @@ export const caseContent = [
                 img: '/images/c2 p4.png',
 
             },
-           
+
             {
                 topic: 'Solution',
                 heading: 'Navigation Bar',
@@ -374,7 +381,7 @@ export const caseContent = [
                 img: '/images/c2 p5.png',
 
                 bg: ' linear-gradient(89.03deg, rgba(208, 255, 201, 0.56) -7.98%, rgba(255, 167, 246, 0.35) 133.27%)'
-                
+
             },
             {
                 topic: 'Solution',
@@ -402,7 +409,7 @@ export const caseContent = [
                 topic: 'Solution',
                 heading: 'Intimated by the Quantity',
                 texts: [
-                    'According to research, users were intimidated by the quantity of the content shown on a single screen.It results in user anxiety which would ultimately harm their experience.', 
+                    'According to research, users were intimidated by the quantity of the content shown on a single screen.It results in user anxiety which would ultimately harm their experience.',
                     'Decreased the number of content shown at once.',
                 ],
                 img: '/images/c2 p8.png',
@@ -428,11 +435,16 @@ export const caseContent = [
                 texts: [
                     'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On Your Choices',
                 ],
-                
+
 
 
             },
-        ]
+        ],
+
+        prototype: {
+            img: '/images/c1 p7.png',
+            bg: 'red'
+        }
     },
 
 ]
