@@ -204,9 +204,11 @@ export const caseContent = [
             },
             {
                 topic: 'Solution',
-                heading: 'Heading Missing',
+                heading: 'Surpassing Social Stigma & Day to Day Care',
                 texts: [
                     'We aim to close the treatment gap by surpassing social stigmas and promoting mental care in your day to day life.',
+                    'We wanted to keep the UI as simple as possible to cater to a wide range of demography.',
+
                 ],
                 img: '/images/c1 p3.png',
 
