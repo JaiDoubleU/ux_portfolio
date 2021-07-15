@@ -261,7 +261,8 @@ export const caseContent = [
                 topic: 'Results and takeaways',
                 heading: 'UI is as important as UX',
                 texts: [
-                    'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On Your Choices',
+                    'When I started this project I didn’t use to focus a lot on UI as I thought Ux is the real deal while Ui is just some colorful visuals but I was WRONG.',
+                    'Users were not interested in using this app as it was too simple and boring, which ultimately led to a low retention rate on our prototype. I  improved the UI and the results were quite prominent. ',
                 ],
 
 
