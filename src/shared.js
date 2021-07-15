@@ -429,7 +429,7 @@ export const caseContent = [
             },
             {
                 topic: 'Results and takeaways',
-                heading: 'UI is as important as UX',
+                heading: 'Don’t fear trying out new tools',
                 texts: [
                     'Implementing new tools during a live project can overwhelm, but you don’t always have the timme to try them out beforehand.',
                     'I used Figma for this project and quite liked using it.'
