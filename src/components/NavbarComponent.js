@@ -61,7 +61,7 @@ function NavbarComp() {
 								<NavLink onClick={hideCollapse} className="nav-link" to="/about" activeClassName="selected">About</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink onClick={hideCollapse} className="nav-link" to="./portfolio.pdf" target='_blank' activeClassName="selected">Resume</NavLink>
+								<NavLink onClick={hideCollapse} className="nav-link" to="./resume.pdf" target='_blank' activeClassName="selected">Resume</NavLink>
 							</NavItem>
 							<NavItem>
 								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="#contact" activeClassName="selected">Contact</NavHashLink>
