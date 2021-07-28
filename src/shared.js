@@ -4,11 +4,11 @@ export const portfolios = [
         id: 'mindguard',
         image: 'images/case 1.png',
 
-        name: 'Mindguard',
+        name: 'Mindguard', 
         desc: 'A solution to bridge the treatment gap in mental illness.',
         background: '#FDF0F2',
         color: '#811324',
-        shadow: '0px 0px 50px 5px rgba(206, 153, 161, 1)',
+        shadow: '0px 0px 50px 5px rgba(206, 153, 161, 0.35)',
 
     }
     ,
@@ -20,7 +20,7 @@ export const portfolios = [
         desc: 'Redesign of an OTT platform.',
         background: '#F8F7FF',
         color: '#271C64',
-        shadow: '0px 0px 50px 5px rgba(160, 153, 206, 1)',
+        shadow: '0px 0px 50px 5px rgba(160, 153, 206, 0.35)',
 
     }
 ]
@@ -432,7 +432,7 @@ export const caseContent = [
                 heading: 'Don’t fear trying out new tools',
                 texts: [
                     'Implementing new tools during a live project can overwhelm, but you don’t always have the timme to try them out beforehand.',
-                    'I used Figma for this project and quite liked using it.'
+                    'Before this, I used to design on Adobe XD but I used Figma for this project and quite liked using it.'
                 ],
 
 

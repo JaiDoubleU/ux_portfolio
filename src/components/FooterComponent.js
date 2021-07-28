@@ -28,7 +28,7 @@ function Footer({ forwardRef }) {
                         <a href='https://dribbble.com/akhileshsaurabh' className="circle" target='_blank'>
                             <FaDribbble />
                         </a>
-                        <a href='https://twitter.com/akhilesh1_0' className="circle" target='_blank'>
+                        <a href='https://twitter.com/akhileshsaurabh' className="circle" target='_blank'>
                             <FaTwitter />
                         </a>
                         <a href='https://medium.com/@saurabhakhilesh1' className="circle" target='_blank'>
