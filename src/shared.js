@@ -259,9 +259,11 @@ export const caseContent = [
             },
             {
                 topic: 'Results and takeaways',
-                heading: 'UI is as important as UX',
+                heading: 'Paying attention to deatail',
                 texts: [
-                    'When I started this project I didn’t use to focus a lot on UI as I thought Ux is the real deal while Ui is just some colorful visuals but I was WRONG.',
+                    'Forming a personality for a product is not only fun but it engages the users more.',
+                    'Initially, I didn’t put a lot of effort into illustrations which resulted in a low retention rate.',
+                    'After a few iterations, I added a few more illustrations and the retention rate increased significantly.',
                     'Users were not interested in using this app as it was too simple and boring, which ultimately led to a low retention rate on our prototype. I  improved the UI and the results were quite prominent. ',
                 ],
 
