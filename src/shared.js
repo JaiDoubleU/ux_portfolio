@@ -168,7 +168,7 @@ export const caseContent = [
 
             {
                 topic: 'Research',
-                heading: 'Competetior analysis',
+                heading: 'Discovering available olutions',
                 texts: [
                     'There are few apps availblable in the market regarding mental wellnes with good UX/UI but none of them solves the problem of Social stigma. People are really shy talking about mental health to professionals also let alone freinds and family.   ',
                     'All features are distributed in different apps and there is no digital platform that address all the problem on a single platform'
@@ -178,7 +178,7 @@ export const caseContent = [
             },
             {
                 topic: 'Research',
-                heading: 'Interview Analysis',
+                heading: 'Finding the pain points',
                 texts: [
                     'I interviewed over 15 people who had a history of mental illness.',
 
@@ -187,7 +187,7 @@ export const caseContent = [
                             2. No trusted information source where to contact good psychologist.<br />
                             3. Too lazy or busy to learn about mental health.<br />
                             4. No care was given to their mental wellness in day to day life.<br />
-                            5. Didn’t know that mental health requires attention just like physical health<br />
+                            5. Didn’t know that mental health requires attention just like physical health.<br />
                         </span></span>
                 ],
 
@@ -355,7 +355,7 @@ export const caseContent = [
                 topic: 'Research',
                 heading: 'User testing',
                 texts: [
-                    <span>I did a user testing session with five participants using the current version of the platform. One of the tasks for the users was to reach the page which contains the list of all the tv channels available. <span id='bold'> 90% </span>of the users failed to navigate to the channel list.</span>,
+                    <span>I did a user testing session with five participants using the current version of the platform. One of the tasks for the users was to reach the page which contains the list of all the tv channels available. <span id='bold' id=''> 90% </span>of the users failed to navigate to the channel list.</span>,
 
 
                 ],
