@@ -38,7 +38,7 @@ export const works = [
         asset: <img className="img-fluid hover_img" src={process.env.PUBLIC_URL + '/images/arrePage.png'} alt="work_img" />,
         redirect: 'https://www.arrebro.com'
     },
-    {
+    /*{
         id: 'revo-ex',
         image: "images/Snap.png",
         name: 'Revo-Ex',
@@ -49,13 +49,13 @@ export const works = [
         completed: true,
         asset: <iframe width="100%" height="100%" style={{ borderRadius: '8px' }} src="https://www.youtube.com/embed/_8MDZ58pxMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
         redirect: 'https://www.youtube.com/watch?v=_8MDZ58pxMc'
-    },
+    },*/
     {
         id: 'covid-point',
-        image: "images/covidPoint.png",
+        image: "images/covidcover.png",
         name: 'Covid Point',
         desc: "From vaccine appointment to latest updates all at one place.",
-        shadow: '0px 0px 50px 5px rgba(0, 0, 0, 0.35)',
+        shadow: '0px 0px 50px 5px rgba(16, 85, 207, 0.35)',
         asset:<img className='img-fluid' src={process.env.PUBLIC_URL + '/images/comingSoon.png'} alt="" />,
         completed: false
     }
@@ -90,6 +90,12 @@ export const caseContent = [
 
     {
         topics: [
+            {
+                name: 'Overview',
+                isHalf: true,
+                bg: '#F0FDF0'
+
+            },
             {
                 name: 'Problem',
                 isHalf: true,
@@ -126,37 +132,50 @@ export const caseContent = [
         tagline: 'A solution to bridge the treatment gap in mental health by surpassing social stigma',
         contents: [
             {
+                topic: 'Overview',
+                heading: 'A Mental Wellness App',
+                texts: [
+                    'A solution to bridge the treatment gap in mental health by surpassing social stigma.',
+                    'This project was inspired by another mental wellnes solution for college students in USA. Me and my friends were also intrested in solving simillar problems in our own country.',
+                    <span>We are in contact with multiple <span className="highlight_text">NGO </span> to make this  into a reality. </span>
+                ],
+
+                img: '/images/c1 p18.png',
+
+            },
+           
+            {
                 topic: 'Problem',
                 heading: 'Misinformation and Social stigma increases Treatment Gap.',
                 texts: [
-                    'Mental health is surrounded by social stigmas and misinformation. The number of people with active mental disease who are not on treatment  peaks over 120 million.',
+                    <p>Mental health is surrounded by social stigmas and misinformation. The number of people with active mental disease who are not on treatment peaks at over <span className="highlight_no">120 </span>million.</p>,
                 ],
                 researches: [
                     {
-                        texts: '7.5 percent of the country’s population of 1.3 billion, suffer from some form of mental disorder',
-                        source: 'World health Organization (WHO)',
-                        link: 'https://www.google.com',
+                        texts: <p><span className="highlight_no">7.5 </span> percent of the country’s population of  <span className="highlight_no">1.3 </span> billion, suffer from some form of mental disorder</p>,
+                        /*source: 'World health Organization (WHO)',
+                        link: 'https://www.google.com',*/
                         img: '/images/c1 p10.png'
                     },
                     {
-                        texts: '21%  perceived the role of faith healers (Tantrik, Ojha) in the treatment of mental illness.',
-                        source: 'Data on additude regarding mental health',
-                        link: 'https://www.google.com',
+                        texts: <p><span className="highlight_no">21%</span>  perceived the role of faith healers  in the treatment of mental illness.</p>,
+                       /* source: 'Data on additude regarding mental health',
+                        link: 'https://www.google.com',*/
 
                         img: '/images/c1 p11.png'
 
                     },
                     {
-                        texts: 'India  accounts for 36.6 per cent of suicides globally',
-                        source: 'World health Organization (WHO)',
-                        link: 'https://www.google.com',
+                        texts: <p>India  accounts for <span className="highlight_no">36.6</span> of suicides globally</p>,
+                       /* source: 'World health Organization (WHO)',
+                        link: 'https://www.google.com',*/
 
                         img: '/images/c1 p12.png'
                     },
                     {
-                        texts: 'Teenagers in the age group 13-17 years suffer depression and other mental health disorders and are “in need of active intervention”.',
-                        source: 'NIMHANS',
-                        link: 'https://www.google.com',
+                        texts: <p>Teenagers in the age group <span className="highlight_no">13-17</span> years suffer depression and other mental health disorders and are “in need of active intervention”.</p>,
+                        /*source: 'NIMHANS',
+                        link: 'https://www.google.com',*/
 
                         img: '/images/c1 p13.png'
                     }
@@ -168,49 +187,84 @@ export const caseContent = [
 
             {
                 topic: 'Research',
-                heading: 'Discovering available olutions',
+                heading: 'Discovering Available Solutions',
                 texts: [
-                    'There are few apps availblable in the market regarding mental wellnes with good UX/UI but none of them solves the problem of Social stigma. People are really shy talking about mental health to professionals also let alone freinds and family.   ',
-                    'All features are distributed in different apps and there is no digital platform that address all the problem on a single platform'
+                    <p>There are few apps available in the market regarding mental wellness with good UX/UI but<span className="highlight_text">none of them solves the problem of Social stigma.</span>People are really shy about talking about mental health to professionals also let alone friends and family.</p>,
+                    'All the sets of features are not present in a single app or a platform.'
                 ],
                 img: '/images/c1 p2.png',
 
             },
             {
                 topic: 'Research',
-                heading: 'Finding the pain points',
+                heading: 'Empathizing With Users',
                 texts: [
-                    'I interviewed over 15 people who had a history of mental illness.',
+                    <span>I interviewed <span className="highlight_text">15</span>users who had a<span className="highlight_text">history of mental illness. </span></span>,
 
-                    <span>The most common argument on why it took time for them to start getting treatment and care:<br />
-                        <span className='list'>1. Cautious of opening up about their mental health due to social stigma and trust issues.<br />
-                            2. No trusted information source where to contact good psychologist.<br />
-                            3. Too lazy or busy to learn about mental health.<br />
-                            4. No care was given to their mental wellness in day to day life.<br />
-                            5. Didn’t know that mental health requires attention just like physical health.<br />
-                        </span></span>
+                    <span>How <span className="highlight_text">user behaviour</span> impacting the treatment gap:<br />
+                         • Cautious of opening up about their mental health due to social stigma and trust issues.<br />
+                         • Too lazy or busy to learn about mental health<br />
+                         • No care was given to their mental wellness in day to day life<br />
+                         • Didn’t know that mental health requires attention just like physical health <br />
+                         <br />                       
+                         Main <span className="highlight_text">pain points</span> user are facing for getting the treatment:<br />
+                           • No trusted information source where to contact good psychologist<br />
+                           • No structured or well written facts about mental health.<br />
+
+                        </span>
                 ],
+                img: '/images/c1 p14.png',
 
 
             },
             {
                 topic: 'Ideation',
-                heading: ' Bridging the treatment gap',
+                heading: 'Bridging the treatment gap',
                 texts: [
-                    'Treatment gap is defined as the number of people with active disease who are not on treatment or on inadequate treatment and is expressed as a percentage of the total number of people with active disease. Treatment gap is a useful indicator for accessibility, utilisation and quality of health care',
+                    'The treatment gap is defined as the number of people with active disease who are not on treatment or inadequate treatment and is expressed as a percentage of the total number of people with active disease. The treatment gap is a useful indicator for accessibility, utilization, and quality of health care.',
                 ],
                 img: '/images/c1 p9.png',
 
             },
             {
+                topic: 'Ideation',
+                heading: 'How we got here?',
+                texts: [
+                    <p>We prioritize these four features based on <span className="highlight_text">Effort vs. Matrix</span> . We made sure to not to rate our own ideas to remove the bias. </p>,
+                ],
+                img: '/images/c1 p15.png',
+
+            },
+            {
+                topic: 'Ideation',
+                heading: 'Why this method?',
+                texts: [
+                    <p>Since it is importamt for us to minimsise the effort as we have <span className="highlight_text">limited resources</span>  this method helped us in the evaluation <span className="highlight_text">complexity vs value.</span></p>,
+                ],
+                
+
+            },
+            {
                 topic: 'Solution',
-                heading: 'Surpassing Social Stigma & Day to Day Care',
+                heading: 'Exploration and wireframes',
                 texts: [
                     'We aim to close the treatment gap by surpassing social stigmas and promoting mental care in your day to day life.',
-                    'We wanted to keep the UI as simple as possible to cater to a wide range of demography.',
+                    
 
                 ],
-                img: '/images/c1 p3.png',
+                img: '/images/c1 p16.png',
+                
+
+            },
+            {
+                topic: 'Solution',
+                                texts: [
+                    
+                    
+
+                ],
+                img: '/images/c1 p17.png',
+                
 
             },
             {
@@ -264,8 +318,7 @@ export const caseContent = [
                     'Forming a personality for a product is not only fun but it engages the users more.',
                     'Initially, I didn’t put a lot of effort into illustrations which resulted in a low retention rate.',
                     'After a few iterations, I added a few more illustrations and the retention rate increased significantly.',
-                    'Users were not interested in using this app as it was too simple and boring, which ultimately led to a low retention rate on our prototype. I  improved the UI and the results were quite prominent. ',
-                ],
+                    ],
 
 
 
@@ -283,6 +336,7 @@ export const caseContent = [
 
     {
         topics: [
+            
             {
                 name: 'Overview',
                 isHalf: true,

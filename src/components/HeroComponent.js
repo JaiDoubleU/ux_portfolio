@@ -11,8 +11,7 @@ function Hero() {
                     <h1>Hi, I’m Akhilesh</h1>
                 </div>
                 <div className="col-sm-5" >
-                    <p className='hero__description'>UX  Designer, Video Editor,
-                        and  fascinated about outer space.
+                    <p className='hero__description'>I am a <span className='hero__highlight'>Ux designer</span> , passionate about solving real life problems through design and am constantly looking to learn new things everyday.
                     </p>
                 </div>
             </div>
