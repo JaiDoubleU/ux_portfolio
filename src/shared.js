@@ -135,9 +135,9 @@ export const caseContent = [
                 topic: 'Overview',
                 heading: 'A Mental Wellness App',
                 texts: [
-                    'A solution to bridge the treatment gap in mental health by surpassing social stigma.',
-                    'This project was inspired by another mental wellnes solution for college students in USA. Me and my friends were also intrested in solving simillar problems in our own country.',
-                    <span>We are in contact with multiple <span className="highlight_text">NGO </span> to make this  into a reality. </span>
+                    'A solution to bridge the treatment gap in mental health is by surpassing social stigma.',
+                    'This project was inspired by another mental wellness solution for college students in the USA. I and my friends were also interested in solving similar problems in our own country.',
+                    <span>We are in contact with multiple <span className="highlight_text">NGOs </span> to make this a reality.. </span>
                 ],
 
                 img: '/images/c1 p18.png',
@@ -146,7 +146,7 @@ export const caseContent = [
            
             {
                 topic: 'Problem',
-                heading: 'Misinformation and Social stigma increases Treatment Gap.',
+                heading: 'Misinformation and Social stigma increase the Treatment Gap.',
                 texts: [
                     <p>Mental health is surrounded by social stigmas and misinformation. The number of people with active mental disease who are not on treatment peaks at over <span className="highlight_no">120 </span>million.</p>,
                 ],
@@ -189,7 +189,7 @@ export const caseContent = [
                 topic: 'Research',
                 heading: 'Discovering Available Solutions',
                 texts: [
-                    <p>There are few apps available in the market regarding mental wellness with good UX/UI but<span className="highlight_text">none of them solves the problem of Social stigma.</span>People are really shy about talking about mental health to professionals also let alone friends and family.</p>,
+                    <p>There are few apps available in the market regarding mental wellness with good UX/UI but <span className="highlight_text">none of them solves the problem of Social stigma.</span> People are really shy about talking about mental health to professionals also let alone friends and family.</p>,
                     'All the sets of features are not present in a single app or a platform.'
                 ],
                 img: '/images/c1 p2.png',
@@ -199,16 +199,16 @@ export const caseContent = [
                 topic: 'Research',
                 heading: 'Empathizing With Users',
                 texts: [
-                    <span>I interviewed <span className="highlight_text">15</span>users who had a<span className="highlight_text">history of mental illness. </span></span>,
+                    <span>I interviewed <span className="highlight_text">15</span>users who had a <span className="highlight_text">history of mental illness. </span></span>,
 
-                    <span>How <span className="highlight_text">user behaviour</span> impacting the treatment gap:<br />
+                    <span>How <span className="highlight_text">user behavior</span> impacting the treatment gap:<br />
                          • Cautious of opening up about their mental health due to social stigma and trust issues.<br />
                          • Too lazy or busy to learn about mental health<br />
                          • No care was given to their mental wellness in day to day life<br />
                          • Didn’t know that mental health requires attention just like physical health <br />
                          <br />                       
-                         Main <span className="highlight_text">pain points</span> user are facing for getting the treatment:<br />
-                           • No trusted information source where to contact good psychologist<br />
+                         Main <span className="highlight_text">pain points</span> users are facing for getting the treatment:<br />
+                           • No trusted information source where to contact a good psychologist<br />
                            • No structured or well written facts about mental health.<br />
 
                         </span>
@@ -230,7 +230,7 @@ export const caseContent = [
                 topic: 'Ideation',
                 heading: 'How we got here?',
                 texts: [
-                    <p>We prioritize these four features based on <span className="highlight_text">Effort vs. Matrix</span> . We made sure to not to rate our own ideas to remove the bias. </p>,
+                    <p>We prioritize these four features based on <span className="highlight_text">Effort vs. Matrix</span>. We made sure not to rate our ideas to remove the bias. </p>,
                 ],
                 img: '/images/c1 p15.png',
 
@@ -239,7 +239,8 @@ export const caseContent = [
                 topic: 'Ideation',
                 heading: 'Why this method?',
                 texts: [
-                    <p>Since it is importamt for us to minimsise the effort as we have <span className="highlight_text">limited resources</span>  this method helped us in the evaluation <span className="highlight_text">complexity vs value.</span></p>,
+                    <p>Since we need to minimize the effort as we have <span className="highlight_text">limited resources</span>  this method helped us in the evaluation <span className="highlight_text"> complexity vs value.
+                    .</span></p>,
                 ],
                 
 
@@ -271,7 +272,7 @@ export const caseContent = [
                 topic: 'Features',
                 heading: 'Self Care',
                 texts: [
-                    'The App Will Present With Various Methods To Maintain  Or Improve Your Mental Health Based On user’s Choices. User will  also be able To Track Their  Journey Through Our App',
+                    'The App Will Present With Various Methods To Maintain Or Improve Your Mental Health Based On the user’s Choices. Users will also be able To Track Their Journey Through Our App',
                 ],
                 img: '/images/c1 p4.png',
 
@@ -282,7 +283,7 @@ export const caseContent = [
                 topic: 'Features',
                 heading: 'Healers',
                 texts: [
-                    'User Can easily Get In  Touch  with Professionals And Talk  To Them Anonymously  About Their State Without Any Fear Or Worries. User will  also be able To Track Their  Appointments  Through Our App',
+                    'User Can easily Get In Touch with Professionals And Talk To Them Anonymously About Their State Without Any Fear Or Worries. Users will also be able To Track Their Appointments Through Our App',
                 ],
                 img: '/images/c1 p5.png',
 
@@ -304,7 +305,7 @@ export const caseContent = [
                 topic: 'Features',
                 heading: 'Connect',
                 texts: [
-                    'Based on their choices we will pair them with other user and they can schedule a meet or chat digitally.',
+                    'Based on their choices we will pair them with other users and they can schedule a meet or chat digitally.',
                 ],
                 img: '/images/c1 p7.png',
 
@@ -313,7 +314,7 @@ export const caseContent = [
             },
             {
                 topic: 'Results and takeaways',
-                heading: 'Paying attention to deatail',
+                heading: 'Paying attention to detail',
                 texts: [
                     'Forming a personality for a product is not only fun but it engages the users more.',
                     'Initially, I didn’t put a lot of effort into illustrations which resulted in a low retention rate.',
