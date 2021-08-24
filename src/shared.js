@@ -137,13 +137,12 @@ export const caseContent = [
                 texts: [
                     'A solution to bridge the treatment gap in mental health is by surpassing social stigma.',
                     'This project was inspired by another mental wellness solution for college students in the USA. I and my friends were also interested in solving similar problems in our own country.',
-                    <span>We are in contact with multiple <span className="highlight_text">NGOs </span> to make this a reality.. </span>
+                    <span>We are in contact with multiple <span className="highlight_text">NGOs </span> to make this a reality. </span>
                 ],
 
                 img: '/images/c1 p18.png',
 
             },
-           
             {
                 topic: 'Problem',
                 heading: 'Misinformation and Social stigma increase the Treatment Gap.',

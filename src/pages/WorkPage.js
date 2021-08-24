@@ -10,7 +10,7 @@ function WorkPage() {
 
     return (
         <React.Fragment>
-            <div className="container-fluid">
+            <div className="container ">
                 <div className="row singleWork align-center">
                     <div className=" singleWork__text order-lg-first order-last offset-1 col-lg-5 col-10">
                         <a href={work.redirect} target="_blank" rel="noreferrer">

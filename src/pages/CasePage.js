@@ -15,7 +15,7 @@ function CasePage() {
         <React.Fragment>
 
             <div className="case__hero-container " style={{ background: caseStudy.bg }}>
-                <div className="container-fluid">
+                <div className="container ">
                     <div className="row case__hero align-center">
                         <div className="col-lg-5 offset-1 col-10 ">
                             <h1 className='mb-5'>{caseStudy.name}</h1>
@@ -29,10 +29,10 @@ function CasePage() {
                 </div>
             </div>
 
-            <div className="container-fluid">
-                <div className="row align-center">
-                    <div className="col-10 offset-1 subpoint__img">
-                        <img className=' img-fluid' src={process.env.PUBLIC_URL + caseStudy.table} alt="table" />
+            <div className="container table-container">
+                <div className="row align-center ">
+                    <div className="col-10 offset-1 ">
+                        <img className='img-fluid' src={process.env.PUBLIC_URL + caseStudy.table} alt="table" />
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@ function CasePage() {
                                     <Prototype prototype={caseStudy.prototype} />)
                             }
                             <div style={{ background: topic.bg }}>
-                                <div className='container-fluid case__topic pb-1'>
+                                <div className='container  case__topic pb-1'>
                                     <CaseTopic heading={topic.name} />
                                 </div>
                                 {topic.isHalf ?

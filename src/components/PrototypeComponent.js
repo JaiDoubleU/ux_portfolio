@@ -3,7 +3,7 @@ import React from 'react'
 function Prototype({ prototype }) {
     return (
         <React.Fragment>
-            <div className='container-fluid'>
+            <div className='container '>
                 <div className="row">
                     <div className="offset-1 col-10 text-center">
                         <div className="alignfull" style={{ background: prototype.bg, marginTop: '-48px' }}>
