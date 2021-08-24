@@ -313,7 +313,7 @@ export const caseContent = [
 
             },
             {
-                topic: 'Results and takeaways',
+                topic: 'Results and takeaways', 
                 heading: 'Paying attention to detail',
                 texts: [
                     'Forming a personality for a product is not only fun but it engages the users more.',
