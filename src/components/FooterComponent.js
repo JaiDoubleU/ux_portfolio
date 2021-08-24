@@ -28,13 +28,14 @@ function Footer({ forwardRef }) {
                         <a href='https://dribbble.com/akhileshsaurabh' className="circle" target='_blank'>
                             <FaDribbble />
                         </a>
-                        <a href='https://twitter.com/akhilesh1_0' className="circle" target='_blank'>
+                        <a href='https://twitter.com/akhileshsaurabh' className="circle" target='_blank'>
                             <FaTwitter />
                         </a>
                         <a href='https://medium.com/@saurabhakhilesh1' className="circle" target='_blank'>
                             <FaMediumM />
                         </a>
                     </div>
+                    <p>Developed by <span className='footer__content__link'><a href="https://www.linkedin.com/in/sarthak-ahuja-986626190/" target='_blank' >Sarthak </a></span></p>
                     <p>Illustration courtesy of <span className='footer__content__link'><a href="https://icons8.com/illustrations" target='_blank' >Icons 8 from Ouch! </a> and <a href="https://undraw.co/" target='_blank' className='footer__content__link'>unDraw</a></span> </p>
                     <p>Copyright © 2021 Akhilesh Saurabh </p>
                     <p>All rights reserved.</p>

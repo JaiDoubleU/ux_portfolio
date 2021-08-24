@@ -13,7 +13,7 @@ function AboutPage() {
                     </div>
                     <div className="about__text offset-1 col-lg-5 col-10 ">
                         <h2 className='about__heading mb-5'>More About Me</h2>
-                        <p className='mb-5'>My name is Akhilesh Saurabh and I love creating new things. I'm constantly learning new things and trying to improve my skills and grow as a better human being.</p>
+                        <p className='mb-5'>My name is Akhilesh Saurabh, I love creating new things. I'm constantly learning and trying to improve my skills and grow as a better human being.</p>
                         <p>I am a self-taught UX designer and have learned a lot about UX/UI through books, blogs, critically studying other case studies, and applying these learnings to my projects.</p>
                     </div>
                 </div>

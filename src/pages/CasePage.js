@@ -30,8 +30,8 @@ function CasePage() {
             </div>
 
             <div className="container-fluid">
-                <div className="row">
-                    <div className="col-10 offset-1">
+                <div className="row align-center">
+                    <div className="col-10 offset-1 subpoint__img">
                         <img className=' img-fluid' src={process.env.PUBLIC_URL + caseStudy.table} alt="table" />
                     </div>
                 </div>

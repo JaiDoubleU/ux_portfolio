@@ -108,3 +108,23 @@
   color: #333333;
 }
 
+.highlight_no{
+  font-family: "Playfair Display", serif;
+  color: #6C63FF;
+  font-size: 33px;
+  font-weight: 700;
+
+}
+.highlight_text{
+  font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 23.04px;
+line-height: 32px;
+/* or 139% */
+
+
+align-items: center;
+
+color: #6C63FF;
+}
