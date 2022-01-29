@@ -14,7 +14,7 @@ function Hero() {
                     </div>
                 </div>
                 <div className="col-10 offset-1 text-center" >
-                    <p className='hero__description'>I am a <span className='hero__highlight'>Ux designer</span> , passionate about solving real life problems through design and am constantly looking to learn new things everyday.
+                    <p className='hero__description'>I am a <span className='hero__highlight'>Product Designer</span> and have helped build <span className='hero__link'> <a href="https://integrarealtech.com/" target="_blank"> IntegraRealtech</a> </span>, <span className='hero__link'> <a href="https://www.revo-ex.com/" target="_blank"> RevoEx</a>  </span>, <span className='hero__link'> <a href="https://www.arrebro.com/" target="_blank"> ArreBro</a>  </span>, <span className='hero__link'> <a href="https://www.coinsey.com/" target="_blank"> Coinsey</a>  </span>, and many other projects. I am always open to opportunities that could create a positive impact on human lives.
                     </p>
                 </div>
             </div>

@@ -22,6 +22,14 @@
   line-height: 40px;
   color: #fc004d;
 }
+.hero__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.04px;
+  line-height: 40px;
+  color: #000000;
+}
 .hero-container p {
   font-style: normal;
   font-weight: normal;

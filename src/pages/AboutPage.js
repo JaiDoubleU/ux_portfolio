@@ -19,7 +19,7 @@ function AboutPage() {
                 </div>
                 <div className="row ">
                     <div className="offset-1 col-lg-10 col-10 mb-5">
-                        <p className="about__text__p">I am a self-taught UX designer and have learned a lot about UX/UI through books, blogs, critically studying other case studies, and applying these learnings to my projects.</p>
+                        <p className="about__text__p">By the way I haven't finshied The design of everyday things yet .</p>
                     </div>
                     <div className="offset-1 col-lg-10 col-10 about__section">
                         <Skills />
