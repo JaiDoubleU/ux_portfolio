@@ -3,6 +3,7 @@ import Main from './components/MainComponent';
 import { BrowserRouter } from 'react-router-dom'
 import RouteChangeTracker from './RouteChangeTracker';
 import ReactGA from 'react-ga'
+import React,{useEffect} from 'react' ;
 
 
 function App() {
