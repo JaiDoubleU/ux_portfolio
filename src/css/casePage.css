@@ -129,6 +129,18 @@ align-items: center;
 color: #6C63FF;
 }
 
+.highlight_textint{
+  font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 23.04px;
+line-height: 32px;
+/* or 139% */
+
+align-items: center;
+color: #315EFF;
+}
+
 .table-container{
   margin-bottom: 119px;
 }

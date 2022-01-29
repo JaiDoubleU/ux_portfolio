@@ -35,10 +35,9 @@ function Footer({ forwardRef }) {
                             <FaMediumM />
                         </a>
                     </div>
-                    <p>Developed by <span className='footer__content__link'><a href="https://www.linkedin.com/in/sarthak-ahuja-986626190/" target='_blank' >Sarthak </a></span></p>
+                    <p>Designed by <span className='footer__content__link'>Me</span> Developed by <span className='footer__content__link'><a href="https://www.linkedin.com/in/sarthak-ahuja-986626190/" target='_blank' >Sarthak </a></span></p>
                     <p>Illustration courtesy of <span className='footer__content__link'><a href="https://icons8.com/illustrations" target='_blank' >Icons 8 from Ouch! </a> and <a href="https://undraw.co/" target='_blank' className='footer__content__link'>unDraw</a></span> </p>
-                    <p>Copyright © 2021 Akhilesh Saurabh </p>
-                    <p>All rights reserved.</p>
+                    
                 </div>
             </div>
         </div>

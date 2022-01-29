@@ -43,7 +43,7 @@ function CasePage() {
                     return (
                         <React.Fragment key={index} >
                             {
-                                ((caseStudy.topics.length - 1) === index &&
+                                ((caseStudy.topics.length - 1) === index && caseStudy.prototype &&
                                     <Prototype prototype={caseStudy.prototype} />)
                             }
                             <div style={{ background: topic.bg }}>
