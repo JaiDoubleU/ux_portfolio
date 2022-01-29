@@ -8,9 +8,10 @@ import React,{useEffect} from 'react' ;
 
 function App() {
     useEffect(() => {
-        const TRACKING_ID = process.env.GA_ID;
+        const TRACKING_ID = process.env.REACT_APP_GA_ID;
         ReactGA.initialize(TRACKING_ID);
         ReactGA.pageview(window.location.pathname + window.location.search);
+        
     }, [])
     return (
         <BrowserRouter>
