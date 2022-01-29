@@ -7,7 +7,7 @@ import RouteChangeTracker from './RouteChangeTracker';
 
 import ReactGA from 'react-ga'
 
-const TRACKING_ID = "G-P328854YYE";
+const TRACKING_ID = process.env.GA_ID;
 ReactGA.initialize(TRACKING_ID);
 
 
