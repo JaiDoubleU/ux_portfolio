@@ -52,7 +52,7 @@ export const works = [
         asset: <img className="img-fluid hover_img" src={process.env.PUBLIC_URL + '/images/arrePage.png'} alt="work_img" />,
         redirect: 'https://www.arrebro.com'
     },
-    /*{
+    {
         id: 'revo-ex',
         image: "images/Snap.png",
         name: 'Revo-Ex',
@@ -63,7 +63,7 @@ export const works = [
         completed: true,
         asset: <iframe width="100%" height="100%" style={{ borderRadius: '8px' }} src="https://www.youtube.com/embed/_8MDZ58pxMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>,
         redirect: 'https://www.youtube.com/watch?v=_8MDZ58pxMc'
-    },*/
+    },
     {
         id: 'covid-point',
         image: "images/covidcover.png",
@@ -80,7 +80,7 @@ export const skills = [
     {
         category: 'General',
         arr: [
-            'UX/UI', 'Branding', 'Frontend Dev', 'Video Editing', 'Film Making', 'Motion Graphics', 'Animation', 'Graphic Design', 'Socila Media Marketing', 'SEO'
+            'Enterprise UX', 'Design Systems', 'Frontend Dev', 'User Testing', 'Motion Graphics', 'Animation', 'Graphic Design', 'Socila Media Marketing', 'SEO'
         ]
 
     },
@@ -277,7 +277,7 @@ export const caseContent = [
 
             },
 
-            /*{
+            {
                 topic: 'Design',
                 heading: 'Client Side Interface',
                 texts: [
@@ -287,7 +287,7 @@ export const caseContent = [
 
                 bg: '#5C9281'
 
-            },*/
+            },
             {
                 topic: 'Design',
                 heading: 'Recommended Properties',
@@ -588,12 +588,12 @@ export const caseContent = [
 
 
             },
-        ]
+        ],
 
-       /* prototype: {
+        prototype: {
             img: '/images/c1 p8.png',
             link: 'https://www.figma.com/proto/zCpzOBk7fc8bQOCZlDLW6B/Mind-Care?node-id=0%3A1'
-        }*/
+        }
 
     },
 
@@ -761,10 +761,10 @@ export const caseContent = [
             },
         ],
 
-        /*prototype: {
+        prototype: {
             img: '/images/c2 p10.png',
             bg: 'linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(206, 167, 255, 0.35) 133.27%)'
-        }*/
+        }
     } 
 
 ]
