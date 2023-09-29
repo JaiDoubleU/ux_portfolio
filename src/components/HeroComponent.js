@@ -10,7 +10,7 @@ function Hero() {
                 <div className=" col-10 d-flex align-items-center justify-content-center offset-1 text-center">
                     <img width="81px" height="95px" src={process.env.PUBLIC_URL + '/images/hello.png'} className="d-lg-block d-none" alt="" />
                     <div className="ml-lg-5">
-                        <h1>Hi, I’m Akhilesh</h1>
+                        <h1>Hi, I’m Jason </h1>
                     </div>
                 </div>
                 <div className="col-10 offset-1 text-center" >

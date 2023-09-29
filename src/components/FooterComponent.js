@@ -17,7 +17,7 @@ function Footer({ forwardRef }) {
                         </div>
                         <img className="d-none d-sm-block ml-2" src={process.env.PUBLIC_URL + '/images/victory.png'} alt="victory" />
                     </div>
-                    <a href='mailto:biz.akhilesh@gmail.com' className="email">biz.akhilesh@gmail.com</a>
+                    <a href='mailto:jwshannon@gmail.com' className="email">jwshannon@gmail.com</a>
                     <div className="icons">
                         <a href='https://www.behance.net/orignalakhilesh' target='_blank' className="circle" rel="noreferrer">
                             <FaBehance />
