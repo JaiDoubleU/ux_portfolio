@@ -10,7 +10,7 @@ function Skills() {
             {skills.map(skill => (
                 <div key={skill.category} className="skill-category-container">
                     <p className='skills__category'>{skill.category}</p>
-                    <div className="skill__group mb-5">
+                    <div className="skill__group mb-3">
                         {skill.arr.map((s,index) => (
                             <SingleSkill key={index} skill={s} />
                         ))}

@@ -4,7 +4,7 @@ function Prototype({ prototype }) {
     return (
         <React.Fragment>
             <div className='container '>
-                <div className="row">
+                <div className="row py-3">
                     <div className="offset-1 col-10 text-center">
                         <div className="alignfull" style={{ background: prototype.bg, marginTop: '-48px' }}>
                             {prototype.link ?
@@ -19,6 +19,7 @@ function Prototype({ prototype }) {
                                 </React.Fragment> :
                                 <img className='img-fluid ' src={process.env.PUBLIC_URL + prototype.img} alt="" />
                             }
+                            
 
 
 

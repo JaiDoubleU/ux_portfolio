@@ -8,7 +8,7 @@
   /* footer email */
   --femail: #ffffff;
   /* footer logo circle bg */
-  --fcbg: #ffffff;
+  --fcbg: #eeeeee;
   /*  footer logo circle text */
   --fctext: black;
   /* footer copyright text */
@@ -32,8 +32,8 @@
 
 .footer__content__top__text h3 {
   font-style: normal;
-  font-weight: 600;
-  font-size: 19.2px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 24px;
   color: var(--fh3);
 }
@@ -51,8 +51,8 @@
 }
 .footer__content__top__text p {
   font-style: normal;
-  font-weight: normal;
-  font-size: 19.2px;
+  font-weight: 400;
+  font-size: 18px;
   text-align: center;
   line-height: 24px;
   margin-bottom: 0;
@@ -63,10 +63,15 @@
   text-align: center;
   margin-top: 29px;
   font-style: normal;
-  font-weight: 600;
-  font-size: 19.2px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 24px;
   color: var(--femail);
+  text-decoration: underline;
+}
+
+.footer__content .email:hover {
+  text-decoration: none;
 }
 
 .footer__content__top img {
@@ -76,8 +81,8 @@
 .footer__content > p {
   font-style: normal;
   margin-bottom: 0;
-  font-weight: normal;
-  font-size: 11.11px;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 24px;
   color: var(--fct);
 }
@@ -91,8 +96,8 @@
 }
 
 .footer__content__link a{
-  font-weight: 700;
-  font-size: 11.11px;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 24px;
 }
 

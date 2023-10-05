@@ -14,10 +14,8 @@ function App() {
     }, [])
     return (
         <BrowserRouter>
-            <div >
-                <Main />
-                <RouteChangeTracker />
-            </div>
+            <Main />
+            <RouteChangeTracker />
         </BrowserRouter>
     );
 }

@@ -1,16 +1,22 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { works } from '../shared';
+import { Link } from 'react-router-dom';
 
 import '../css/workPage.css';
 function WorkPage() {
 
     let { id } = useParams();
-    const [work, setwork] = useState(works.filter(item => item.id === id)[0])
+    const [work] = useState(works.filter(item => item.id === id)[0])
 
     return (
         <React.Fragment>
-            <div className="container ">
+            <div className="container">
+                <Link to="/home" class="arrow-link">
+                    <div class="separator"></div>  
+                    <span class="text">Back Home</span>
+                    <div class="separator"></div>
+                </Link>
                 <div className="row singleWork align-center">
                     <div className=" singleWork__text order-lg-first order-last offset-1 col-lg-5 col-10">
                         <a href={work.redirect} target="_blank" rel="noreferrer">

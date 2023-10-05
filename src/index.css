@@ -1,8 +1,7 @@
-*{
+* {
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-
 }
 
 body{
@@ -24,11 +23,9 @@ a,a:hover{
   transform: scale(1.05);
 }
 
-
 .align-center{
   align-items: center;
 }
-
 
 ::-webkit-scrollbar-track
 {

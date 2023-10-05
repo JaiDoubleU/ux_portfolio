@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 function CaseSubPoint({ caseSub, isHalf }) {
 
     return (
         <React.Fragment>
-            <div className={`pb-5`} >
+            <div >
                 <div className="container ">
                     {caseSub.map((subpoint, index) => {
                         return (
@@ -12,31 +12,28 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                 {
                                     isHalf ?
                                         <React.Fragment>
-                                            <div className='row subpoint-container'>
-                                                <div className="offset-1 col-10">
-                                                    <h2 className='subpoint__heading'>{subpoint.heading}</h2>
-                                                </div>
-                                            </div>
-                                            <div className="row align-center">
+                                            <div className="row py-4">
                                                 <div key={index} className="col-lg-6 offset-1 col-10">
+                                                    <h2 className='subpoint__heading'>{subpoint.heading}</h2>
+
                                                     {subpoint.texts.map((text, index) => {
                                                         return (
                                                             <p key={index} className='subpoint__text'>{text}</p>
                                                         )
                                                     })}
                                                 </div>
-                                                <div className="col-lg-3 offset-1 d-none d-sm-block text-center mt-lg-0 mt-5" >
-                                                    <img className=' img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
+                                                <div className="col-lg-3 offset-1 d-none d-sm-block mt-lg-0 mt-0 subpoint__img" >
+                                                    <img className='img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
                                                 </div>
                                             </div>
                                         </React.Fragment>
                                         :
 
-                                        <div className={`row subpoint-container ${subpoint.bg ? 'text-center' : ''}`}>
-                                            <div className="offset-1 col-10">
-                                                <h2 className='subpoint__heading'>{subpoint.heading}</h2>
-                                            </div>
+                                        <div className={`row py-3 ${subpoint.bg ? 'text-left' : ''}`}> 
+                                      
                                             <div key={index} className="offset-1 col-10">
+                                                <h2 className='subpoint__heading'>{subpoint.heading}</h2>
+
                                                 {subpoint.texts.map((text, index) => {
                                                     return (
                                                         <p key={index} className='subpoint__text'>{text}</p>
@@ -44,11 +41,10 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                                 })}
                                             </div>
                                             <div className="col-10 offset-1 subpoint__img">
-                                                {subpoint.bg ? <div className="alignfull" style={{ background: `${subpoint.bg}` }}>
-                                                    <img className='img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
-                                                </div> :
-                                                    <img className='img-fluid ' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
-
+                                                {subpoint.img ? <div className="align-center" >
+                                                    <img id="1" className='img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
+                                                </div>:
+                                                    ""
                                                 }
                                             </div>
                                         </div>

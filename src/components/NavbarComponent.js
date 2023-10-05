@@ -18,7 +18,7 @@ function NavbarComp() {
 	const navRef = useRef();
 
 	const addNavbarFixed = () => {
-		var top = 650;
+		var top = 50;
 		if (window.scrollY >= top && window.innerWidth>576) {
 			navRef.current?.classList.add("navbar-fixed");
 		}
@@ -43,17 +43,21 @@ function NavbarComp() {
 	}
 
 	return (
-		<div ref={navRef} className="navbar-container">
+		<div ref={navRef} className="navbar-container navbar-fixed">
 			<Navbar light expand="sm">
 				<div className="container ">
 					<NavbarBrand >
 						<Link to="/" >
-							<img className="hover_img" src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
+							<img className="hover_img" height="40" src={process.env.PUBLIC_URL + '/jw-logo-red.svg'} alt="my logo" />
+							{/* <span class="small">https://jasonshannon.design</span> */}
 						</Link>
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
 					<Collapse isOpen={isNavOpen} navbar>
 						<Nav className="ml-auto" navbar>
+							<NavItem>
+								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home" activeClassName="selected">Home</NavHashLink>
+							</NavItem>
 							<NavItem>
 								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home#portfolio" activeClassName="selected">Portfolio</NavHashLink>
 							</NavItem>
@@ -61,11 +65,11 @@ function NavbarComp() {
 								<NavLink onClick={hideCollapse} className="nav-link" to="/about" activeClassName="selected">About</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink onClick={hideCollapse} className="nav-link" to="/resume.pdf" target='_blank' activeClassName="selected">Resume</NavLink>
+								<NavLink onClick={hideCollapse} className="nav-link" to="/JasonShannonResume.pdf" target='_blank' activeClassName="selected">Resume</NavLink>
 							</NavItem>
-							<NavItem>
+							{/* <NavItem>
 								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="#contact" activeClassName="selected">Contact</NavHashLink>
-							</NavItem>
+							</NavItem> */}
 						</Nav>
 					</Collapse>
 				</div>

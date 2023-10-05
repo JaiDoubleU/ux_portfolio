@@ -1,15 +1,14 @@
 .case__hero {
-  padding-top: 89px;
-  padding-bottom: 80px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   min-height: 472px;
-  margin-bottom: 119px;
 }
 
 .case__hero h1 {
   font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 57.33px;
-  line-height: 76px;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
   color: #333333;
 }
 .case__hero > p {
@@ -19,7 +18,7 @@
   color: #333333;
 }
 .case__problem {
-  margin-top: 80px;
+  margin-top: 36px;
 }
 
 .case__problem .row {
@@ -28,31 +27,36 @@
 
 /* SUBPOINT */
 
-.subpoint__heading {
+h1.subpoint__heading, h2.subpoint__heading {
   font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 39.81px;
-  line-height: 53px;
+  font-weight: 400;
+  line-height: 1.2;
   color: #333333;
-  margin-bottom: 41px;
+}
+
+h1.subpoint__heading {
+  font-size: 36px;
+}
+
+h2.subpoint__heading {
+  font-size: 28px;
 }
 
 .subpoint__text {
   font-weight: normal;
-  font-size: 19.2px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 1.5;
   color: #333333;
-  margin-bottom: 23px;
 }
 
 .research {
-  margin-top: 130px;
+  margin-top: 56px;
 }
 
 .research__text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: -0.011em;
   text-align: center;
   color: #333333;
@@ -69,19 +73,18 @@
 }
 
 .case__topic {
-  margin-bottom: 102px;
-  padding-top: 107px;
+   padding: 16px 0;
 }
 .topic__color {
   background: #b9b9b9;
 }
 
-.subpoint__img {
-  margin-top: 79px;
+.subpoint__img .img-fluid {
   text-align: center;
+
 }
 .subpoint-container {
-  margin-top: 101px;
+  margin-top: 16px;
 }
 
 .list {
@@ -89,7 +92,7 @@
 }
 
 #bold {
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Playfair Display", serif;
 }
 .alignfull {
@@ -97,14 +100,14 @@
   margin-right: calc(50% - 50vw);
   max-width: 800%;
   width: auto;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 .prototype__text {
-  margin-top: 30px;
+  margin-top: 18px;
   font-weight: 600;
   font-size: 19.2px;
-  line-height: 32px;
+  line-height: 36px;
   color: #333333;
 }
 
@@ -112,27 +115,24 @@
   font-family: "Playfair Display", serif;
   color: #6C63FF;
   font-size: 33px;
-  font-weight: 700;
+  font-weight: 400;
 
 }
 .highlight_text{
   font-family: Playfair Display;
 font-style: normal;
-font-weight: bold;
+font-weight: 400;
 font-size: 23.04px;
 line-height: 32px;
 /* or 139% */
-
-
 align-items: center;
-
 color: #6C63FF;
 }
 
 .highlight_textint{
   font-family: Playfair Display;
 font-style: normal;
-font-weight: bold;
+font-weight: 400;
 font-size: 23.04px;
 line-height: 32px;
 /* or 139% */
@@ -141,6 +141,12 @@ align-items: center;
 color: #315EFF;
 }
 
-.table-container{
-  margin-bottom: 119px;
+.caseStudyTable {
+  margin-bottom: 36px;
 }
+
+.caseStudyTable tr td, 
+.caseStudyTable tr th {
+  padding: 4px 16px; 
+  text-align: left; 
+} 
