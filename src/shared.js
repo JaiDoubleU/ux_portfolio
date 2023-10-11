@@ -139,8 +139,8 @@ export const caseContent = [
                 topic: "Problem",
                 heading: "Pain Points",
                 texts: [
-                    "The process for creating, distributing and tracking RFPs requires a significant amount of effort.  This is especially true when multiple projects require multiple requests, each having their own deadlines. ",
-                    "After RFx submissions are received, they are often numerous and inconsistent making them difficult to compare.  The process is outlined in the diagram below."                    
+                    "The process for creating, distributing and tracking RFX Documents requires a significant amount of effort.  This is especially true when multiple projects require multiple requests, each having their own deadlines. ",
+                    "Moreover, after RFx submissions are received, they are often numerous and inconsistent making them difficult to compare.  The process is outlined in the diagram below."                    
                 ],
                 img: "/images/rfxCase-process.png",
 

@@ -60,20 +60,29 @@ function CasePage() {
             {caseStudy.topics.map((topic, index) => {
                 return (
                     <React.Fragment key={index} >
-                            {
-                                ((caseStudy.topics.length - 1) === index && caseStudy.prototype &&
-                                    <Prototype prototype={caseStudy.prototype} />)
-                            }
-                            <div style={{ background: topic.bg }}>
-                                <div className='container case__topic'>
-                                    <CaseTopic heading={topic.name} />
-                                </div>
-                                {topic.isHalf ?
-                                    <CaseSubPoint isHalf={true} caseSub={caseStudy.contents.filter((content) => content.topic === topic.name)} />
-                                    :
-                                    <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === topic.name)} />
+                        {caseStudy.contents.filter((content) => content.topic === topic.name).length > 0 ? 
+                            <div>
+                                {
+                                    ((caseStudy.topics.length - 1) === index && caseStudy.prototype &&
+                                    <Prototype prototype={caseStudy.prototype} /> )
                                 }
+                                <div style={{ background: topic.bg }}>
+
+                                    <div className='container case__topic'>
+                                        <CaseTopic heading={topic.name} />
+                                    </div>
+                                    {topic.isHalf ?
+                                        <CaseSubPoint isHalf={true} caseSub={caseStudy.contents.filter((content) => content.topic === topic.name)} />
+                                        :
+                                        <CaseSubPoint caseSub={caseStudy.contents.filter((content) => content.topic === topic.name)} />
+                                    }
+                                </div>
                             </div>
+                            :
+                            <div></div>
+                        }
+
+                       
                     </React.Fragment>
                 )
             })}
