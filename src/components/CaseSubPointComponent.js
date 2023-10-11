@@ -54,13 +54,10 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                         subpoint.researches ?
                                             subpoint.researches.map((research, index) => {
                                                 return (
-                                                    <div key={index} className="row research align-center">
-                                                        <div className="offset-1 col-lg-6 col-10">
-                                                            <p className='research__text'>{research.texts}</p>
-                                                            <a href={research.link} target='_blank' className='research__source' rel="noreferrer">{research.source}</a>
-                                                        </div>
-                                                        <div className={`col-lg-3 d-none d-sm-block offset-1 col-10 mt-lg-0 text-center mt-5 subpoint__img ${index % 2 !== 0 ? 'order-lg-last' : 'order-lg-first'} `}>
-                                                            <img className='  img-fluid' src={process.env.PUBLIC_URL + research.img} alt="img" />
+                                                    <div key={index} className="row research align-center py-3">
+                                                        <div className="offset-1 col-8">
+                                                            <blockquote><span className='research__text'>{research.texts}</span></blockquote>                                                            
+                                                            <a href={research.link} target='_blank' className='research__source' rel="noreferrer"> ~ {research.source}</a>
                                                         </div>
                                                     </div>
                                                 )

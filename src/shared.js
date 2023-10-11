@@ -200,10 +200,10 @@ export const caseContent = [
             },
             {
                 topic: "Results and takeaways",
-                heading: "Communication is the key",
+                heading: "Interactivity was Key",
                 texts: [
-                    "The Company was happy about how this project turned out to be. It is estimated to have 7-10K sign-ups in the first month of the launch. The product is still in the development phase, and I will update it as soon as it is available for use.",
-                    "This was the first time I worked for an organization. Although I was nervous at the beginning, I soon learned to trust my teammates and follow the process. I also learned that active communication and short daily stand-up meetings were key to ensuring the project’s success.",
+                    "The conference was a big success and the response to the RFX Mockups was a big part of that.  Screenshots of the mockup even made it into the slide deck for the conference's closing remarks given by the company's CEO.",
+                    "We had lots of comments from attendees who stated they appreciated having a mockup they could interact with hands-on, stating it felt more real.  Many also expressed a desire to be involved in the project to give feedback as it's being developed.",
                 ],
             },
         ],
@@ -219,8 +219,7 @@ export const caseContent = [
             },
             {
                 name: "Problem",
-                isHalf: true,
-                bg: "#F0FDF0",
+                isHalf:true
             },
 
             {
@@ -252,13 +251,13 @@ export const caseContent = [
         img: "/images/cover case 1.png",
         id: "Solar Sites",
         name: "Solar Sites", 
-        tagline: "Leverage real-time satellite imagery to track construction progress, change detection, and overall management of solar construction sites.",
+        tagline: "A design for an application, that utilizes live satellite imagery to monitor the advancement of construction projects, identify changes, and facilitate comprehensive management of solar construction sites.",
         contents: [
             {
                 topic: "Overview",
-                heading: "A Mental Wellness App",
+                heading: "The Goal",
                 texts: [
-                    "A solution that leverages real-time satellite imagery to track construction progress, detect changes, and manage solar construction sites.",
+                    "An interactive mockup created using AlpineJS and Tailwind CSS used to garner feedback from stakeholders on the application's feasibility.",
                 ],
 
                 img: "/images/c1 p18.png",
@@ -266,28 +265,10 @@ export const caseContent = [
             },
             {
                 topic: "Problem",
-                heading: "Misinformation and Social stigma increase the Treatment Gap.",
+                heading: "Solar Project Management",
                 texts: [
-                    "Mental health is surrounded by social stigmas and misinformation. The number of people with active mental disease who are not on treatment peaks at over 120 million.",
-                ],
-                researches: [
-                    {
-                        texts: "7.5 percent of the country’s population of  1.3 billion, suffer from some form of mental disorder",
-                        img: "/images/c1 p10.png"
-                    },
-                    {
-                        texts: "21% perceived the role of faith healers  in the treatment of mental illness.",
-                        img: "/images/c1 p11.png"
-                    },
-                    {
-                        texts: "India  accounts for 36.6of suicides globally",
-                        img: "/images/c1 p12.png"
-                    },
-                    {
-                        texts: "Teenagers in the age group 13-17years suffer depression and other mental health disorders and are “in need of active intervention”.",
-                        img: "/images/c1 p13.png"
-                    }
-
+                    "The current state of affairs in solar project implementation reveals a critical deficiency in the area of monitoring the diverse construction phases of solar sites.",
+                    "Stakeholders engaged in these initiatives lack a centralized and accessible platform that utilizes live satellite imagery for monitoring and tracking the diverse construction phases of solar sites. This gap hampers efficient decision-making, timely interventions, and comprehensive project management, leading to potential delays, cost overruns, and suboptimal outcomes in the execution of solar initiatives."
                 ],
                 img: "/images/c1 p1.png",
             },
@@ -296,30 +277,33 @@ export const caseContent = [
                 topic: "Research",
                 heading: "Empathizing With Users",
                 texts: [
-                    "I interviewed 5users who had a history of mental illness. ",
-                    "How user behaviorimpacting the treatment gap:",
-                    ""
+                    "We interviewed several professionals currently involved with solar project implementation.  The typically had comments similar to the following:"
                 ],
-                img: "/images/c1 p14.png",
+                researches: [
+                    {
+                        texts: "Coordinating solar projects is sometimes like trying to navigate a maze blindfolded. Without real-time imagery and a unified platform, it's nearly impossible to stay on top of construction progress.",
+                        source: "Alex, Project Manager"
+                    },
+                    {
+                        texts: "Every day counts in solar projects, and the lack of a unified platform for satellite imagery is a significant hurdle. We need a solution to streamline project management and ensure success.",
+                        source: "Sarah, Construction Supervisor"
+                    },
+                    {
+                        texts: "Time is money in solar projects. Without a reliable tool to monitor construction stages, we're left in the dark about potential delays and cost overruns.",
+                        source: "John, Solar Project Developer"
+                    },
+                    {
+                        texts: "It's astounding that in this era of technology, we're still struggling with disjointed systems in solar project management. Real-time imagery is a game-changer we desperately need.",
+                        source: "Lisa, Environmental Consultant"
+                    }
 
-
-            },
-            
-            {
-                topic: "Research",
-                heading: "Discovering Available Solutions",
-                texts: [
-                    "There are few apps available in the market regarding mental wellness with good UX/UI but none of them solves the problem of Social stigma.People are really shy about talking about mental health to professionals also let alone friends and family.",
-                ],
-                img: "/images/c1 p2.png",
-
-            },
-            
+                ]
+            },            
             {
                 topic: "Ideation",
-                heading: "Bridging the treatment gap",
+                heading: "Group Design Sessions",
                 texts: [
-                    "With the help of a Psychologist, we came up with various solutions which could trim down these problems. For MVP I chose these four features.",
+                    "With the help of subject matter experts, we held three design sessions aimed at bringing ideas to light about what the interface needs to do",
                 ],
                 img: "/images/c1 p19.png",
 
