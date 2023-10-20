@@ -28,7 +28,7 @@ function CasePage() {
                         <p>{caseStudy.tagline}</p>
                     </div>
                     <div className="col-lg-6 offset-1 col-10 mt-lg-0 mt-5 text-center ">
-                        <img className='img-fluid' width="100%"  src={process.env.PUBLIC_URL + caseStudy.img} alt={'image of ' + caseStudy.name} />
+                        <img className='img-fluid mt-5' src={process.env.PUBLIC_URL + caseStudy.img} alt={'image of ' + caseStudy.name} />
                     </div>
                 </div>
             </div>

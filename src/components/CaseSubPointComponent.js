@@ -24,7 +24,7 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                                         })}
                                                     </div>
                                                     <div className="col-lg-3 offset-1 d-none d-sm-block mt-lg-0 mt-0 subpoint__img" >
-                                                        <img className='img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
+                                                        <img className="img-fluid" src={process.env.PUBLIC_URL + subpoint.img} alt="" />
                                                     </div>
                                                 </div>
                                             </React.Fragment>

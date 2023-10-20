@@ -248,7 +248,7 @@ export const caseContent = [
         ],
         table: "/images/table1.png",
         bg: "#FDF0F2",
-        img: "/images/cover case 1.png",
+        img: "/images/solarSitesMacbook.png",
         id: "Solar Sites",
         name: "Solar Sites", 
         tagline: "A design for an application, that utilizes live satellite imagery to monitor the advancement of construction projects, identify changes, and facilitate comprehensive management of solar construction sites.",

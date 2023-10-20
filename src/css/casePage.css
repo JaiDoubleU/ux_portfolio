@@ -82,7 +82,8 @@ h2.subpoint__heading {
 
 .subpoint__img .img-fluid {
   text-align: center;
-
+  max-height: 80%;
+  max-width: 80%;
 }
 .subpoint-container {
   margin-top: 16px;
