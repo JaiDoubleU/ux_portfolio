@@ -1,22 +1,22 @@
 .singleWork {
   margin-top: 123px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 100px;
 }
 
 .singleWork__name {
   font-family: 'Playfair Display', serif;
-    font-style: normal;
+  font-style: normal;
   font-weight: 400;
-  font-size: 57.33px;
-  line-height: 76px;
+  font-size: 36px;
+  line-height: 1.5;
   color: #333333;
 }
 .singleWork__tagline {
   font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
   color: #333333;
 }
 
@@ -24,7 +24,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 1.5;
   text-align: start;
   color: #333333;
 }

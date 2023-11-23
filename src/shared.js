@@ -37,26 +37,35 @@ export const works = [
         id: "Curtain Menu Navigation",
         image: "images/works-curtainMenu.png",
         background: "#EBE8FF",
-        name: "Mega Menu Redesign",
+        name: "Application Menu Redesign",
         tagline: "Curtain Menu Prototype",
         desc: "Design a comprehensive mega menu, ensuring compatibility with both desktop and mobile platforms, while accommodating numerous links for improved accessibility and user experience.",
         shadow: "rgba(0, 24, 152, 0.5) 0px 0px 20px 0px",
-        details: "This project was created with collaboration with my friend. Since we were a team of two I had to take many roles but majorly I worked as developer, brand and content marketing manager.",
+        detailsTexts: [
+            "How do you handle a situation where multiple legacy applications have been integrated within a single enterprise application and you're asked to design a mega menu that incorporates all of them?",
+            "You take the menus from each of the existing applications and combine them borrowing a design from a menu seen on Playstation.com."
+        ],
         completed: true,
-        asset: <img className="img-fluid hover_img" src={process.env.PUBLIC_URL + "/images/arrePage.png"} alt="work_img" />,
+        asset: <iframe height="600" width="100%;" scrolling="no" title="Curtain Menu Prototype" src="https://codepen.io/jwshannon/embed/ygeJqE?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"> See the Pen <a href="https://codepen.io/jwshannon/pen/ygeJqE">  Curtain Menu Prototype</a> by Jason Shannon (<a href="https://codepen.io/jwshannon">@jwshannon</a>)on <a href="https://codepen.io">CodePen</a>.</iframe>,
         redirect: "https://codepen.io/jwshannon/pen/ygeJqE"
     },
     {
         id: "Data Element Lengths",
         image: "images/works-DataElementLengths.png",
         background: "#FDF0F2",
-        name: "Data Driven Decision Making Tool",
-        tagline: "A tool for designers to use in data driven decision making",
+        name: "Decision Making Tool",
+        tagline: "A data driven decision making tool for designers ",
         desc: "Streamline the utilization of real data to drive UI decision-making when dealing with unpredictable data element lengths across all screen sizes.",
-        details: "Some applications, by nature of the business area they target, are more data heavy than others.  For applications at the extreme end of this spectrum, every pixel counts when designing responsive forms and tables that optimize use of space. ",
+        details: "Some business domains naturally deal with significantly larger amounts of data compared to others. For those at the extreme end of this spectrum, designing screens with responsive forms and tables becomes a meticulous process to ensure optimal use of space where every pixel holds considerable importance.",
+        detailsTexts: [
+            "Some business domains naturally deal with significantly larger amounts of data compared to others. For those at the extreme end of this spectrum, designing screens with responsive forms and tables becomes a meticulous process to ensure optimal use of space where every pixel holds considerable importance.",
+            "Designers in these domains need to be mindful of the volume of data their forms and tables must handle to ensure the design scales well.  The decision making tool below allows designers to know how much content their elements need to support",      
+            "While it's not an exact science, it does give ballpark values to base design decisions on."
+        ],
         shadow: "rgba(129, 19, 36, 0.5) 0px 0px 20px 0px",
         completed: true,
-        asset: <iframe height="400px" width="600px" title="Bell Curve for Data Element Lengths" src="https://codepen.io/jwshannon/embed/eYQzRBp?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">See the Pen <a href="https://codepen.io/jwshannon/pen/eYQzRBp"> Bell Curve for Data Element Lengths</a> by Jason Shannon (<a href="https://codepen.io/jwshannon">@jwshannon</a>)  on <a href="https://codepen.io">CodePen</a>.</iframe>,
+        asset: <iframe height="600px" width="100%" title="Bell Curve for Data Element Lengths" src="https://codepen.io/jwshannon/embed/eYQzRBp?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">See the Pen <a href="https://codepen.io/jwshannon/pen/eYQzRBp"> Bell Curve for Data Element Lengths</a> by Jason Shannon (<a href="https://codepen.io/jwshannon">@jwshannon</a>)  on <a href="https://codepen.io">CodePen</a>.</iframe>,
+
         redirect: "https://codepen.io/jwshannon/pen/eYQzRBp"
     },
     
@@ -95,7 +104,7 @@ export const caseContent = [
             {
                 name: "Overview",
                 isHalf: true,
-                bg: "#F0F5FD"
+                bg: "#FDF0F2"
             },
             {
                 name: "Problem",
@@ -115,7 +124,7 @@ export const caseContent = [
                 name: "Design",
             },
             {
-                name: "Results and takeaways",
+                name: "Results and Takeaways",
                 bg: "#F0F5FD"
             },
         ],
@@ -128,51 +137,58 @@ export const caseContent = [
         contents: [
             {
                 topic: "Overview",
-                heading: "The Goal",
-                texts: [
-                    "Optimize the process of generating, distributing, and tracking RFX documents to create a more efficient and user-friendly experience, ultimately facilitating an easier selection process.",
-                ],
-                img: "/images/c3 p2.png",
-
-            },
-            {
-                topic: "Problem",
-                heading: "Pain Points",
+                heading: "The Problem",
                 texts: [
                     "The process for creating, distributing and tracking RFX Documents requires a significant amount of effort.  This is especially true when multiple projects require multiple requests, each having their own deadlines. ",
                     "Moreover, after RFx submissions are received, they are often numerous and inconsistent making them difficult to compare.  The process is outlined in the diagram below."                    
                 ],
                 img: "/images/rfxCase-process.png",
-
+                bg: "#FDF0F2",
+            },
+            {
+                topic: "The Goal",
+                heading: "Pain Points",
+                texts: [
+                    "Optimize the process of generating, distributing, and tracking RFX documents to create a more efficient and user-friendly experience, ultimately facilitating an easier selection process.",
+                ],
+                img: "/images/c3 p2.png",
             },
             {
                 topic: "Research",
                 heading: "Understanding Our Users",
                 texts: [
-                    "In the foundational research phase, we relied on subject matter experts to gain insights about the industry and targeted user demography. We then worked with potential users to validate our understanding of the problem domain."
+                    "In the foundational research phase, we relied on subject matter experts to gain insights about the industry and the target user demography. We then met with potential users to validate our understanding of the problem domain.",
+                    "Through these meetings, we were able to jointly identify three primary pain points in the RFX process:",
                 ],
-            },
-            {
-                topic: "Research",
-                heading: "Problem Identification",
-                texts: [
-                    "Users were able to identify three main pain points in the RFX process. The first was their inability to easily monitor the status of outstanding requests.  The second had to do with their inability to easily evaluate competing responses. The third area was their difficulties determining which customers to include in RFX requests",
-                ],
+                 requirements: [
+                    {
+                        texts: "Monitoring the status of outstanding requests. ",
+                    },
+                    {
+                        texts: "Evaluation of competing responses to requests.",
+                    },
+                    {
+                        texts: "Identifying which customers to include in RFX requests",
+                    }
+                ]
             },
             {
                 topic: "Ideation",
-                heading: "Brainstorming",
+                heading: "Wire Frames",
                 texts: [
-                    "Content here.",
+                    "We created some rough wire frames to present to stakeholders and initial test subjects to gauge whether we were on track or not.  Initial feedback suggested that tracking outstanding request documents needed greater visibility/emphasis in the design.",
                 ],
+                 img: "/images/case-rfx-dashboard-wireframe.png",
             },
             {
                 topic: "Design",
-                heading: "RFX Dashboard",
+                heading: "High-Res Designs",
                 texts: [
+                    "Because this was to be presented to users at our annual user conference, I was asked to create a high resolution clickable mockup allowing users to navigate through the different screens to get a feel for the application as a whole.",
                     "Upon login, users are greeted with the dashboard screen where they can get a quick overview of the status of their outstanding RFX documents. They are also provided with a risk and performance overview of their supplier base as well as a central communications center.",
                 ],
                 img: "/images/case-rfx-dashboard.png",
+                bg: "#FDF0F2",
             },
             {
                 topic: "Design",
@@ -199,7 +215,7 @@ export const caseContent = [
                 img: "/images/case-rfx-supplier-discovery.png",
             },
             {
-                topic: "Results and takeaways",
+                topic: "Results and Takeaways",
                 heading: "Interactivity was Key",
                 texts: [
                     "The conference was a big success and the response to the RFX Mockups was a big part of that.  Screenshots of the mockup even made it into the slide deck for the conference's closing remarks given by the company's CEO.",
@@ -214,14 +230,12 @@ export const caseContent = [
             {
                 name: "Overview",
                 isHalf: true,
-                bg: "#F0FDF0"
-
+                bg: "#FDF0F2",
             },
             {
                 name: "Problem",
-                isHalf:true
+                bg: "#F3F0FD",
             },
-
             {
                 name: "Research",
                 bg: "#F3F0FD",
@@ -240,7 +254,7 @@ export const caseContent = [
                 bg: "#F0FDF0"
             },
             {
-                name: "Results and takeaways",
+                name: "Results and Takeaways",
                 bg: "#FDF0F2"
 
             },
@@ -251,24 +265,23 @@ export const caseContent = [
         img: "/images/solarSitesMacbook.png",
         id: "Solar Sites",
         name: "Solar Sites", 
-        tagline: "A design for an application, that utilizes live satellite imagery to monitor the advancement of construction projects, identify changes, and facilitate comprehensive management of solar construction sites.",
+        tagline: "Utilize satellite imagery to monitor the advancement of construction projects, identify changes, and facilitate comprehensive management of solar construction sites.",
         contents: [
             {
                 topic: "Overview",
-                heading: "The Goal",
+                heading: "The Problem",
                 texts: [
-                    "An interactive mockup created using AlpineJS and Tailwind CSS used to garner feedback from stakeholders on the application's feasibility.",
+                      "The current state of affairs in solar project implementation reveals a critical deficiency in the area of monitoring the diverse construction phases of solar sites.",
+                    "Stakeholders engaged in these initiatives lack a centralized and accessible platform that utilizes live satellite imagery for monitoring and tracking the diverse construction phases of solar sites. This gap hampers efficient decision-making, timely interventions, and comprehensive project management, leading to potential delays, cost overruns, and suboptimal outcomes in the execution of solar initiatives."
                 ],
-
                 img: "/images/c1 p18.png",
-
+                bg: "#FDF0F2",
             },
             {
-                topic: "Problem",
-                heading: "Solar Project Management",
+                topic: "The Goal",
+                heading: "Pain Points",
                 texts: [
-                    "The current state of affairs in solar project implementation reveals a critical deficiency in the area of monitoring the diverse construction phases of solar sites.",
-                    "Stakeholders engaged in these initiatives lack a centralized and accessible platform that utilizes live satellite imagery for monitoring and tracking the diverse construction phases of solar sites. This gap hampers efficient decision-making, timely interventions, and comprehensive project management, leading to potential delays, cost overruns, and suboptimal outcomes in the execution of solar initiatives."
+                    "Gain acceptance from stakeholders on the feasibility of an application designed to monitor construction projects' advancement toward completion.",
                 ],
                 img: "/images/c1 p1.png",
             },
@@ -305,30 +318,28 @@ export const caseContent = [
                 texts: [
                     "With the help of subject matter experts, we held three design sessions aimed at bringing ideas to light about what the interface needs to do",
                 ],
-                img: "/images/c1 p19.png",
-
+                requirements: [
+                    {
+                        texts: "Real-Time Tracking of all phases of construction ",
+                    },
+                    {
+                        texts: "Task and Resource Monitoring",
+                    },
+                    {
+                        texts: "User Access Control",
+                    }
+                ]
             },
             {
                 topic: "Ideation",
-                heading: "Why these features?",
-                texts: [
-                    "We prioritize these four features based on Effort vs. Matrix. We made sure not to rate our ideas to remove the bias. ",
-                    "Since we need to minimize the effort as we have limited resources this method helped us in the evaluation  complexity vs value.",
-                    " ",
-                ],
-                img: "/images/c1 p15.png",
-
-            },
-            {
-                topic: "Solution",
-                heading: "Exploration and wireframes",
+                heading: "Exploration and Wire Frames",
                 texts: [
                     "We aim to close the treatment gap by surpassing social stigmas and promoting mental care in your day-to-day life.",
                 ],
                 img: "/images/c1 p16.png",
             },
             {
-                topic: "Solution",
+                topic: "Ideation",
                 texts: [
                     "Solution here",
                 ],
@@ -377,7 +388,7 @@ export const caseContent = [
 
             },
             {
-                topic: "Results and takeaways",
+                topic: "Results and Takeaways",
                 heading: "Paying attention to detail",
                 texts: [
                     "Forming a personality for a product is not only fun but it engages the users more.",
@@ -398,7 +409,7 @@ export const caseContent = [
             {
                 name: "Overview",
                 isHalf: true,
-
+                bg: "#FDF0F2"
             },
             {
                 name: "Research",
@@ -412,7 +423,7 @@ export const caseContent = [
                 name: "Solution",
             },
             {
-                name: "Results and takeaways",
+                name: "Results and Takeaways",
                 bg: "#FDF0F2"
 
             },
@@ -432,6 +443,7 @@ export const caseContent = [
                     "Disclaimer: I am not associated with Disney+ Hotstar. I  took on this project because I experienced trouble using the platform. This project only deals with the redesign of the website of the Ott platform.",
                     "I took this project because I always used to get frustrated using the platform and many of my friends felt the same.",
                 ],
+                bg: "#FDF0F2",
                 img: "/images/c2 p2.png",
             },
             {
@@ -511,7 +523,7 @@ export const caseContent = [
                 bg: "linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
             },
             {
-                topic: "Results and takeaways",
+                topic: "Results and Takeaways",
                 heading: "Don’t fear trying out new tools",
                 texts: [
                     "Implementing new tools during a live project can overwhelm you, but you don’t always have the time to try them out beforehand.",

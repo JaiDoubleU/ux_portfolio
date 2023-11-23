@@ -27,19 +27,12 @@
 
 /* SUBPOINT */
 
-h1.subpoint__heading, h2.subpoint__heading {
+.heading {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  line-height: 1.2;
-  color: #333333;
-}
-
-h1.subpoint__heading {
   font-size: 36px;
-}
-
-h2.subpoint__heading {
-  font-size: 28px;
+  line-height: 1.5;
+  color: #333333;
 }
 
 .subpoint__text {
@@ -161,12 +154,11 @@ blockquote {
 
 blockquote span {
   font-size: 16px;
-  font-style: italic;
 }
 
 blockquote span:before { 
   content: open-quote;
-  font-weight: normal;
+  font-weight: bold;
   font-size:18px;
   color:#889c0b;
 } 

@@ -75,7 +75,7 @@
 }
 
 .footer__content__top img {
-  align-self: flex-start;
+  align-self: flex-end;
 }
 
 .footer__content > p {

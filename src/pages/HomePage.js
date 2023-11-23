@@ -22,7 +22,7 @@ function HomePage({ footerRef }) {
         <div className='home-container'>
             <Hero />
 
-            <div class="hero-container container">
+            <div class="container">
                 <div class="row">
                     <div class="col offset-1">
                         <div class="row heading fixed-header-padding" id="portfolio" ref={myRef} >

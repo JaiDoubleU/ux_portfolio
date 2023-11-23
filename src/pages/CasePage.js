@@ -57,7 +57,7 @@ function CasePage() {
             </div>
 
 
-            {caseStudy.topics.map((topic, index) => {
+             {caseStudy.topics.map((topic, index) => {
                 return (
                     <React.Fragment key={index} >
                         {caseStudy.contents.filter((content) => content.topic === topic.name).length > 0 ? 
