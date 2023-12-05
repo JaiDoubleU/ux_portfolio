@@ -13,8 +13,8 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                     {
                                         isHalf ?
                                             <React.Fragment>
-                                                <div className="row py-2">
-                                                    <div key={index} className="col-lg-10  offset-1 col-10">
+                                                <div className="row">
+                                                    <div key={index} className="col-lg-5  offset-1 col-10">
                                                         <h2 className='heading'>{subpoint.heading}</h2>
 
                                                         {subpoint.texts.map((text, index) => {
@@ -23,14 +23,14 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                                             )
                                                         })}
                                                     </div>
-                                                    <div className="col-lg-10 offset-1 d-none d-sm-block mt-lg-0 mt-0 subpoint__img" >
+                                                    <div className="col-lg-5 offset-1 d-none d-sm-block mt-lg-0 mt-0 subpoint__img" >
                                                         <img className="img-fluid" src={process.env.PUBLIC_URL + subpoint.img} alt="" />
                                                     </div>
                                                 </div>
                                             </React.Fragment>
                                             :
 
-                                            <div className={`row py-2 ${subpoint.bg ? 'text-left' : ''}`}> 
+                                            <div className={`row ${subpoint.bg ? 'text-left' : ''}`}> 
                                         
                                                 <div key={index} className="offset-1 col-10">
                                                     <h2 className='heading'>{subpoint.heading}</h2>
@@ -50,21 +50,19 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                                 </div>
                                             </div>
                                     }
-                                    <div className="offset-1 col-8 pb-2">
-                                        <ul >
+                                    <div className="offset-1 col-8 pb-4">
                                         {
                                             subpoint.requirements ?
                                                 subpoint.requirements.map((requirement, index) => {
                                                     return (
-                                                        <li key='{index}' > 
-                                                            <span className='requirement__text'>{requirement.texts}</span>                                                                   
-                                                        </li>
+                                                        <p className="px-5 pb-1" key='{index}' > 
+                                                            - <span className='requirement__text'>{requirement.texts}</span>                                                                   
+                                                        </p>
                                                     )
                                                 })
                                                 :
                                                 null
                                         }
-                                        </ul>
                                         </div>
                                     {
                                         subpoint.researches ?

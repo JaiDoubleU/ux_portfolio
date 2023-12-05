@@ -254,7 +254,7 @@ export const caseContent = [
                 bg: "#F0FDF0"
             },
             {
-                name: "Results and Takeaways",
+                name: "Results & Takeaways",
                 bg: "#FDF0F2"
 
             },
@@ -274,7 +274,7 @@ export const caseContent = [
                       "The current state of affairs in solar project implementation reveals a critical deficiency in the area of monitoring the diverse construction phases of solar sites.",
                     "Stakeholders engaged in these initiatives lack a centralized and accessible platform that utilizes live satellite imagery for monitoring and tracking the diverse construction phases of solar sites. This gap hampers efficient decision-making, timely interventions, and comprehensive project management, leading to potential delays, cost overruns, and suboptimal outcomes in the execution of solar initiatives."
                 ],
-                img: "/images/c1 p18.png",
+                img: "/images/project-manager.png",
                 bg: "#FDF0F2",
             },
             {
@@ -290,7 +290,7 @@ export const caseContent = [
                 topic: "Research",
                 heading: "Empathizing With Users",
                 texts: [
-                    "We interviewed several professionals currently involved with solar project implementation.  The typically had comments similar to the following:"
+                    "We interviewed several solar project implementation specialists.  Some of their comments are below:"
                 ],
                 researches: [
                     {
@@ -313,10 +313,10 @@ export const caseContent = [
                 ]
             },            
             {
-                topic: "Ideation",
-                heading: "Group Design Sessions",
+                topic: "Research",
+                heading: "Group Sessions",
                 texts: [
-                    "With the help of subject matter experts, we held three design sessions aimed at bringing ideas to light about what the interface needs to do",
+                    "Teaming up with some subject matter experts, I organized three sessions to shed light on what the main issues are. Three main problem areas emerged:",
                 ],
                 requirements: [
                     {
@@ -332,72 +332,51 @@ export const caseContent = [
             },
             {
                 topic: "Ideation",
-                heading: "Exploration and Wire Frames",
+                heading: "Exploration ",
                 texts: [
-                    "We aim to close the treatment gap by surpassing social stigmas and promoting mental care in your day-to-day life.",
+                    "To get our stakeholders actively involved in the design process, I created up some high-level wire-frames. Not only did they help confirm my understanding of the issues we hashed out in our initial meeting, but they also helped facilitate a design session where we brainstormed ideas for potential solutions.",
                 ],
-                img: "/images/c1 p16.png",
+                img: "/images/case-solarSites-mockup1.svg",
             },
             {
                 topic: "Ideation",
+                heading: "Refinement",
                 texts: [
-                    "Solution here",
-                ],
-                img: "/images/c1 p17.png",
+                    "High level wire-frames were successful in bringing to light certain ideas that were not considered or discussed in the first set of meetings.  For example, it was brought to light that the solar imagery needed greater emphasis in the design to allow for easier identification of progress in the project.  As a result, the solar images were made larger to make comparisons easier.",
 
-
-            },
-            {
-                topic: "Features",
-                heading: "Self Care",
-                texts: [
-                    "The App Will Present With Various Methods To Maintain Or Improve Your Mental Health Based On the user’s Choices. Users will also be able To Track Their Journey Through Our App",
                 ],
-                img: "/images/c1 p4.png",
+                 img: "/images/case-solarSites-mockup2.svg",
                 bg: "linear-gradient(89.03deg, rgba(201, 216, 255, 0.56) -7.98%, rgba(255, 209, 167, 0.35) 133.27%)"
             },
-            {
-                topic: "Features",
-                heading: "Healers",
+             {
+                topic: "Solution",
+                heading: "Task and Resource Monitoring",                                       
                 texts: [
-                    "Users can chat with professional doctors and schedule appointments with them, and track their progress through our app. It will allow the users to get that much needed help and get through tough times. Users also have the option to chat anonymously with the doctors.",
+                    "Each project features a common header area where specific details of the project are captured and displayed",
                 ],
-                img: "/images/c1 p5.png",
+                img: "/images/case-solarSites-mockup3.png",
                 bg: "linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
             },
             {
-                topic: "Features",
-                heading: "Anonymous",
+                topic: "Solution",
+                heading: "Real-Time Tracking of all phases of construction",                                       
                 texts: [
-                    "Our Investigation reflected that people have fear sharing their feelings with friends, family, or even doctors. Being anonymous gives the user a way through which they can start being a little more open.",
+                    "By providing larger, highly detailed imagery, users can easily detect changes to the project as they navigate between the satellite images",
                 ],
-                img: "/images/c1 p6.png",
-
-                bg: "linear-gradient(89.03deg, rgba(201, 206, 255, 0.56) -7.98%, rgba(179, 255, 167, 0.35) 133.27%)"
-
+                img: "/images/case-solarSites-mockup3.png",
+                bg: "linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
             },
-            {
-                topic: "Features",
-                heading: "Community & Facts",
+             
+                {
+                topic: "Solution",
+                heading: "User Access Control",                                       
                 texts: [
-                    "Users will learn about mental health and other life problems by sharing their stories. There will be no likes or other social incentives, which could create competition and anxiety among users. Users will be able to tackle misinformation through our Burst the Myth section.",
+                    "By requiring users to sign in to the application, administrators can control which imagery is displayed to which users.  Users are only allowed to access projects they have permission to see",
                 ],
-                img: "/images/c1 p7.png",
-
-                bg: "linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
-
-            },
-            {
-                topic: "Results and Takeaways",
-                heading: "Paying attention to detail",
-                texts: [
-                    "Forming a personality for a product is not only fun but it engages the users more.",
-                    "Initially, I didn’t put a lot of effort into illustrations which resulted in a low retention rate.",
-                    "After a few iterations, I added a few more illustrations and the retention rate increased significantly.",
-                ],
-            },
+                img: "/images/case-solarSites-mockup3.png",
+                bg: "linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
+            }
         ],
-
         prototype: {
             img: "/images/c1 p8.png",
             link: "https://www.figma.com/proto/zCpzOBk7fc8bQOCZlDLW6B/Mind-Care?node-id=0%3A1"
@@ -423,9 +402,8 @@ export const caseContent = [
                 name: "Solution",
             },
             {
-                name: "Results and Takeaways",
+                name: "Results & Takeaways",
                 bg: "#FDF0F2"
-
             },
         ],
 
