@@ -43,7 +43,7 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                                 </div>
                                                 <div className="col-10 offset-1 subpoint__img">
                                                     {subpoint.img ? <div className="align-center" >
-                                                        <img id="1" className='img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
+                                                        <img className='img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
                                                     </div>:
                                                         ""
                                                     }

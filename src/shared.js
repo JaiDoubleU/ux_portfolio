@@ -355,7 +355,7 @@ export const caseContent = [
                 texts: [
                     "Each project features a common header area where specific details of the project are captured and displayed",
                 ],
-                img: "/images/case-solarSites-mockup3.png",
+                img: "/images/solarSitesMac&IPad.png",
                 bg: "linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
             },
             {
