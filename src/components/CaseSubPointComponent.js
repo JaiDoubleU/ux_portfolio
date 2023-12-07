@@ -50,7 +50,7 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                                 </div>
                                             </div>
                                     }
-                                    <div className="offset-1 col-8 pb-4">
+                                    <div className="offset-1 col-8 pb-0">
                                         {
                                             subpoint.requirements ?
                                                 subpoint.requirements.map((requirement, index) => {

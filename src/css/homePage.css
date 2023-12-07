@@ -1,18 +1,18 @@
 .home-container {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 /* HERO */
 
 .hero-container {
-  margin-top: 197px;
-  padding-top: 40px; 
+  margin-top: 75px;
+
 
 }
 .hero-container h1 {
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 60px;
   color: #333333;
 }
 .hero__highlight {
@@ -191,7 +191,7 @@ a.arrow-link:hover .separator:first-child:before {
 
 @media screen and (max-width: 576px) {
   .hero-container h1 {
-    font-size: 57.33px;
+    font-size: 48px;
     line-height: 64px;
   }
   .hero-container {
@@ -227,13 +227,13 @@ a.arrow-link:hover .separator:first-child:before {
 
 @media screen and (max-width: 1200px) {
   .hero-container h1 {
-    font-size: 75px;
+    font-size: 56px;
   }
 }
 
 @media screen and (max-width: 770px) {
   .hero-container h1 {
-    font-size: 57.33px;
+    font-size: 42px;
     line-height: 64px;
   }
 } 

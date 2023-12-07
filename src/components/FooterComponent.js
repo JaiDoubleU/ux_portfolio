@@ -7,16 +7,15 @@ import '../css/footerComponent.css'
 function Footer({ forwardRef }) {
     return (
         <div id='contact' >
-            <div ref={forwardRef} className="footer-container pb-3" >
+            <div ref={forwardRef} className="footer-container" >
                 <div className="footer__content ">
                     <div className="footer__content__top">
                         <div className="footer__content__top__text">
-                            <h3>Let’s Connect</h3>
+                            <p>Let’s Connect</p>
                             <p>Feel free to reach out anywhere, anytime </p>
                         </div>
-                        <img className="d-none d-sm-block mx-2 mt-2" height="30" src={process.env.PUBLIC_URL + '/images/victory.png'} alt="victory" />
                     </div>
-                    <div className="icons mt-3">
+                    <div className="icons mt-1">
                         <a href='mailto:&#106;&#119;&#115;&#104;&#97;&#110;&#110;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;' target='_blank' className="circle">
                             <FaEnvelope />
                         </a>

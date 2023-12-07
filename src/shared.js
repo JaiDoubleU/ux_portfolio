@@ -111,10 +111,11 @@ export const caseContent = [
             },
             {
                 name: "Research",
-                bg: "#F0F5FD"
+                bg: "#FFFFFF"
             },
             {
                 name: "Ideation",
+                bg: "#f0fdf0"
             },
             {
                 name: "Style",
@@ -238,7 +239,7 @@ export const caseContent = [
             },
             {
                 name: "Research",
-                bg: "#F3F0FD",
+                bg: "#ffffff",
             },
             {
                 name: "Ideation",
@@ -392,7 +393,7 @@ export const caseContent = [
             },
             {
                 name: "Research",
-                bg: "#F3F0FD"
+                bg: "#FFFFFF"
             },
             {
                 name: "Problem",
@@ -400,6 +401,7 @@ export const caseContent = [
             },
             {
                 name: "Solution",
+                bg: "#FdFdF0"
             },
             {
                 name: "Results & Takeaways",

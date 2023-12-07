@@ -5,7 +5,7 @@ import '../css/aboutPage.css'
 
 function AboutPage() {
     return (
-        <div className="container about-container py-3">
+        <div className="container about-container ">
             <div className="row">
                 <div className="about__img offset-1 offset-lg-0 col-lg-5 col-10 order-lg-last p-5">
                     <img className="img-fluid p-5" src={process.env.PUBLIC_URL + '/images/about-img.svg'} alt="about-img" />

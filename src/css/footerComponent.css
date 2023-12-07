@@ -16,8 +16,8 @@
 }
 
 .footer-container {
+  margin-top: 2rem;
   max-width: 100%;
-  background: var(--fbg);
 }
 
 .footer-container .footer__content {
@@ -34,13 +34,13 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
   color: var(--fh3);
 }
 
 .footer__content__top {
   display: flex;
-  margin-top: 40px;
+  margin-top: 0px;
   align-items: center;
 }
 
@@ -61,7 +61,7 @@
 
 .footer__content .email {
   text-align: center;
-  margin-top: 29px;
+  margin-top: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -88,7 +88,7 @@
 }
 
 .footer-container .icons {
-  margin-bottom: 75px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   width: 100%;
