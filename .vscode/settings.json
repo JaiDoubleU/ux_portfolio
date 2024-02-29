@@ -1,5 +1,8 @@
 {
     "genieai.personalizedName": "Genie",
     "genieai.enableConversationHistory": true,
-    "genieai.openai.model": "gpt-3.5-turbo-instruct"
+    "genieai.openai.model": "gpt-3.5-turbo-instruct",
+    "cSpell.words": [
+        "noreferrer"
+    ]
 }

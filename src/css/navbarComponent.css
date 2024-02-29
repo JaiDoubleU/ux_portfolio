@@ -13,6 +13,7 @@
   background-color: #ffffff;
   width: 100%;
   z-index: 1;
+  border-bottom: 1px solid #ddd
 }
 .navbar-container.navbar-fixed {
   position: fixed;
@@ -33,6 +34,11 @@
   line-height: 24px;
   color: #000000;
 }
+
+.navbar-light .navbar-nav .nav-link.active {
+  border-bottom: 2px solid #fc004d;
+}
+
 .nav-item {
   margin-left: auto;
 }

@@ -56,19 +56,22 @@ function NavbarComp() {
 					<Collapse isOpen={isNavOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home" activeClassName="selected">Home</NavHashLink>
+								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home" >Home</NavHashLink>
 							</NavItem>
 							{/* <NavItem>
-								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home#portfolio" activeClassName="selected">Portfolio</NavHashLink>
+								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home#portfolio" >Portfolio</NavHashLink>
 							</NavItem> */}
 							<NavItem>
-								<NavLink onClick={hideCollapse} className="nav-link" to="/about" activeClassName="selected">About</NavLink>
+								<NavLink onClick={hideCollapse} className="nav-link" to="/portfolio">Portfolio</NavLink>
 							</NavItem>
 							<NavItem>
-								<NavLink onClick={hideCollapse} className="nav-link" to="/JasonShannonResume.pdf" target='_blank' activeClassName="selected">Resume</NavLink>
+								<NavLink onClick={hideCollapse} className="nav-link" to="/about">About</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink onClick={hideCollapse} className="nav-link" to="/JasonShannonResume.pdf" target='_blank'>Resume</NavLink>
 							</NavItem>
 							{/* <NavItem>
-								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="#contact" activeClassName="selected">Contact</NavHashLink>
+								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="#contact" >Contact</NavHashLink>
 							</NavItem> */}
 						</Nav>
 					</Collapse>

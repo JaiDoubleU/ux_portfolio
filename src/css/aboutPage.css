@@ -1,17 +1,11 @@
 .about-container {
-  margin-top:75px;
+  margin-top: 125px;
 }
 .about-container .row {
-  align-items: center;
+  align-items: start;
 }
 .about__img img {
   border-radius: 8px;
-}
-.about__heading {
-  font-family: "Playfair Display", serif;
-  font-size: 48px;
-  text-align: left;
-  color: #000000;
 }
 
 /* skills */

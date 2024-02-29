@@ -1,24 +1,68 @@
 
+export const myInfo = {
+    name: "Jason Shannon",
+    firstName: "Jason",
+    aboutPageTitle: "About Me",
+    aboutIntroText: "I'm a full stack User Experience Designer with over two decades of hands-on experience helping companies, from Fortune 500 to small start-ups, design amazing products that their customers love.",
+    portfolioPageTitle: "Portfolio",
+    portfolioIntroText: "My UX design journey has featured a diverse range of projects that highlight my expertise in crafting intuitive, user-centered experiences across various platforms. Below are a few examples of projects that I've particularly enjoyed."
+}
+
+export const principles = [
+    {
+        text: "People are Your Biggest Asset",
+        subtext: "Harnessing the talent, dedication, and teamwork of individuals is the cornerstone of an anyone's success. ",
+        icon: "images/collaboration.svg"
+    },
+    {
+        text: "Seek First to Understand",
+        subtext: "Empathize with and comprehending others' perspectives before offering solutions or opinions",
+        icon: "images/understanding.svg"
+    },
+    {
+        text: "Over Deliver",
+        subtext: " Set realistic expectations in everything you do, and then exceed them.",
+        icon: "images/over-deliver.svg"
+    },
+    {
+        text: "Accessibility is a Requirement",
+        subtext: "Ensure accessibility is a key component in every design.",
+        icon: "images/accessibilityFirst.svg"
+    },
+    {
+        text: "Flexibility is Your Superpower",
+        subtext: "Consider different ideas as opportunities for innovation",
+        icon: "images/superpower.svg"
+    }
+]
 export const portfolios = [
     {
+        id: "Enverus Design System",
+        image: "images/EnverusDesignSystemScreens.png",
+        name: "Enverus Design System",
+        tagline: "Some Tagline",
+        duration: "Ongoing",
+        desc: "A cohesive set of guidelines, components, and tools to ensure consistency, efficiency, and scalability across all of Enverus' digital products and services.",
+        color: "#271C64",
+    },
+    {
         id: "RFX Application",
-        image: "images/case-rfx-main.png",
+        image: "images/RFXProjectScreens.png",
         name: "RFX Document Management",
         tagline: "Some Tagline",
+        duration: "4 months",
+        link:"https://design.enverus.com",
         desc: "A design for an application focused on creating, distributing and tracking RFX documents",
-        background: "#EBE8FF",
-        color: "#001898",
-        shadow: "0px 0px 20px 0px rgba(0,24,152,0.5)",
+        color: "#271C64",
     },
     {
         id: "Solar Sites",
-        image: "images/case-solarSites-main.png",
+        image: "images/SolarSitesScreens.png",
         name: "Solar Sites Application",
         desc: "A design for an application that leverages real-time satellite imagery to track progress, provide change detection, and offer geospatial analytics for solar site projects.",
         tagline: "Some Tagline",
-        background: "#FDF0F2",
-        color: "#811324",
-        shadow: "0px 0px 20px 0px rgba(129,19,36,0.5)",
+        duration: "3 months",
+        color: "#271C64",
     },
     {
         id: "Enterprise App Redesign",
@@ -26,7 +70,7 @@ export const portfolios = [
         name: "Enterprise App Redesign",
         desc: "A design for a navigation system that enables seamless transitions between various existing applications, ultimately enhancing the overall user experience.",
         tagline: "Some Tagline",
-        background: "#F8F7FF",
+        duration: "2 months",
         color: "#271C64",
         shadow: "0px 0px 20px 0px rgba(39,28,100,0.5)",
     }
@@ -36,10 +80,9 @@ export const works = [
     {
         id: "Curtain Menu Navigation",
         image: "images/works-curtainMenu.png",
-        background: "#EBE8FF",
         name: "Application Menu Redesign",
-        tagline: "Curtain Menu Prototype",
         desc: "Design a comprehensive mega menu, ensuring compatibility with both desktop and mobile platforms, while accommodating numerous links for improved accessibility and user experience.",
+        tagline: "Curtain Menu Prototype",
         shadow: "rgba(0, 24, 152, 0.5) 0px 0px 20px 0px",
         detailsTexts: [
             "How do you handle a situation where multiple legacy applications have been integrated within a single enterprise application and you're asked to design a mega menu that incorporates all of them?",
@@ -52,7 +95,6 @@ export const works = [
     {
         id: "Data Element Lengths",
         image: "images/works-DataElementLengths.png",
-        background: "#FDF0F2",
         name: "Decision Making Tool",
         tagline: "A data driven decision making tool for designers ",
         desc: "Streamline the utilization of real data to drive UI decision-making when dealing with unpredictable data element lengths across all screen sizes.",
@@ -65,11 +107,19 @@ export const works = [
         shadow: "rgba(129, 19, 36, 0.5) 0px 0px 20px 0px",
         completed: true,
         asset: <iframe height="600px" width="100%" title="Bell Curve for Data Element Lengths" src="https://codepen.io/jwshannon/embed/eYQzRBp?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">See the Pen <a href="https://codepen.io/jwshannon/pen/eYQzRBp"> Bell Curve for Data Element Lengths</a> by Jason Shannon (<a href="https://codepen.io/jwshannon">@jwshannon</a>)  on <a href="https://codepen.io">CodePen</a>.</iframe>,
-
         redirect: "https://codepen.io/jwshannon/pen/eYQzRBp"
     },
     
 ]
+
+export const currentWork = [
+    {
+        arr: [
+            "I'm currently crafting eye-catching, user-loved things for the energy industry at Enverus.",
+        ]
+
+    }
+] 
 
 export const skills = [
 
@@ -97,44 +147,147 @@ export const skills = [
 ]
 
 export const caseContent = [
-
     {
+        name: "Enverus Design System",
+        company: "Enverus",
+        duration: "Ongoing",
+        topics: [            
+            {
+                name: "The Challenge",
+            },
+            {
+                name: "Goals",
+            },
+            {
+                name: "Deliverables",
+            },
+            {
+                name: "Process",
+            },
+            {
+                name: "Results & Takeaways",
+            },
+        ],
+        contents: [
+            {
+                topic: "The Challenge",
+                texts: [
+                   "Due to a series of acquisitions in recent years, Enverus was faced with a fragmented user experience throughout its product range. This lack of uniformity in UI components, fonts, and color palettes contributed to an inconsistent brand presentation and a challenging onboarding process for new users. Additionally, development teams were unclear about what standards to follow when creating/updating UI elements, resulting in inefficiencies and prolonged timelines for product development."
+                ],
+            },
+            {
+                topic: "Goals",
+                texts: [
+                   "Unify the experience across all of Enverus’ products to improve user friendliness, maintain a cohesive brand identity, and enhance accessibility."
+                ],
+            },
+            {
+                topic: "Deliverables",
+                texts: [
+                   "To accomplish our goals, the following deliverables were identified:"
+                ],
+                 requirements: [
+                    { texts:  "Create a unified and scalable design system in Figma to assist designers in maintaining consistency across all product designs.", },
+                    { texts: "Create and document reusable components and templates to cut down on design time and speed up the rollout of new features and products.", },
+                    {  texts: "Establish a publicly available website to serve as a reference for designers, developers, and product managers for all visual components of Enverus' applications.",   }
+                ],
+            },
+            {
+                topic: "Process",
+                heading: "User Research",
+                texts: [
+                    "Numerous meetings were held to understand who our users are, to understand their needs, to identify brand requirements, and technical constraints.  Existing products were also evaluated to understand their unique requirements, and determine any inconsistencies and areas of improvement.",
+                ],
+            },
+            {
+                topic: "Process",
+                heading: "Design Principles",
+                texts: [
+                    "Established a set of design principles to guide the development of the design system. These principles focused on clarity, consistency, and responsiveness, ensuring that the design choices made would serve both the users and the business effectively.",
+                ]
+            },
+            {
+                topic: "Process",
+                heading: "Color Palette",
+                texts: [
+                    "Established a versatile color scheme that supports accessibility standards and reflects the brand's personality.",
+                ]
+            },
+            {
+                topic: "Process",
+                heading: "Documentation & Guidelines",
+                texts: [
+                    "Authored comprehensive documentation that outlined the usage of UI components, color schemes, and typography. This documentation also included best practices for accessibility and responsive design.",
+                ]
+            },
+             {
+                topic: "Process",
+                heading: "Implementation & Adoption",
+                texts: [
+                    "Worked closely with development teams across multiple products to implement the design system in various applications. Also conducted training sessions for designers and developers to ensure smooth adoption of the design system",
+                ]
+            },
+             {
+                topic: "Results & Takeaways",
+                texts: [
+                    "The Enverus Design System was a collaborative effort that required input and feedback from individuals across the organization, including marketing, product owners, designers, QA and Developers. One of the key lessons learned was the importance of maintaining the design system, requiring regular updates and revisions to meet evolving needs of Enverus' applications.",
+                    "View the Enverus Design System and Figma library using the links below:"
+                 ],
+                 links: [
+                    {
+                         href: "https://design.enverus.com",
+                         text: "https://design.enverus.com",
+                     },
+                     {
+                         href: "https://www.figma.com/file/xifUV3zBPcr8EVGabEedwY/Enverus-Design-System?type=design&node-id=0%3A1&mode=design&t=veHu81IJz03dllyW-1",
+                         text: "Enverus Figma Design System",
+                     }
+                ],
+            },
+        ],
+        img: "/images/EnverusDesignSystemScreens.png",
+        table: "/images/table 3.png",
+        id: "Enverus Design System",
+        linkName: "https://design.enverus.com",
+        linkUrl:"https://design.enverus.com",
+        role: "Lead Product Designer",
+        tagline: " A scalable, efficient, and cohesive design system that enhances user experience, promotes brand consistency, and streamlines the design and development processes across all Enverus' products", 
+    },
+    {
+        name: "RFX Document Management",
+        company: "Enverus",        
+        duration: "3 Months",
+        img: "/images/case-rfx-main.png",
+        table: "/images/table 3.png",
+        id: "RFX Application",
+        linkName: "View Figma Mockup",
+        linkUrl: "https://www.figma.com/proto/zCpzOBk7fc8bQOCZlDLW6B/Mind-Care?node-id=0%3A1",
+        role: "Lead Product Designer",
+        tagline: "An interactive design created in Figma for presentation at an annual user conference.",
         topics: [
-
             {
                 name: "Overview",
                 isHalf: true,
-                bg: "#FDF0F2"
             },
             {
                 name: "Problem",
             },
             {
                 name: "Research",
-                bg: "#FFFFFF"
             },
             {
                 name: "Ideation",
-                bg: "#f0fdf0"
             },
             {
                 name: "Style",
-                bg: "#F0F5FD"
             },
             {
                 name: "Design",
             },
             {
                 name: "Results and Takeaways",
-                bg: "#F0F5FD"
             },
         ],
-        bg: "#FFEDBD",
-        img: "/images/case-rfx-main.png",
-        table: "/images/table 3.png",
-        id: "RFX Application",
-        name: "RFX Document Management",
-        tagline: "An interactive design created in Figma for presentation at an annual user conference.",
         contents: [
             {
                 topic: "Overview",
@@ -144,7 +297,6 @@ export const caseContent = [
                     "Moreover, after RFx submissions are received, they are often numerous and inconsistent making them difficult to compare.  The process is outlined in the diagram below."                    
                 ],
                 img: "/images/rfxCase-process.png",
-                bg: "#FDF0F2",
             },
             {
                 topic: "The Goal",
@@ -189,7 +341,6 @@ export const caseContent = [
                     "Upon login, users are greeted with the dashboard screen where they can get a quick overview of the status of their outstanding RFX documents. They are also provided with a risk and performance overview of their supplier base as well as a central communications center.",
                 ],
                 img: "/images/case-rfx-dashboard.png",
-                bg: "#FDF0F2",
             },
             {
                 topic: "Design",
@@ -224,49 +375,47 @@ export const caseContent = [
                 ],
             },
         ],
-       
+        prototype: {
+            img: "/images/c1 p8.png",
+            link: "https://www.figma.com/proto/zCpzOBk7fc8bQOCZlDLW6B/Mind-Care?node-id=0%3A1"
+        }
     },
-    {
+    {        
+        table: "/images/table1.png",
+        company: "Enverus",
+        duration: "2 months",
+        img: "/images/solarSitesMacbook.png",
+        id: "Solar Sites",
+        linkName: "View the Mockup",
+        linkUrl: "https://codepen.io/jwshannon/pen/GRwjmBW",
+        name: "Solar Sites", 
+        role: "Lead Product Designer",
+        tagline: "Utilize satellite imagery to monitor the advancement of construction projects, identify changes, and facilitate comprehensive management of solar construction sites.",
         topics: [
             {
                 name: "Overview",
                 isHalf: true,
-                bg: "#FDF0F2",
             },
             {
                 name: "Problem",
-                bg: "#F3F0FD",
             },
             {
                 name: "Research",
-                bg: "#ffffff",
             },
             {
                 name: "Ideation",
-                bg: "#F0FDF0",
             },
             {
                 name: "Solution",
-                bg: "#FDFDF0"
-
             },
             {
                 name: "Features",
-                bg: "#F0FDF0"
             },
             {
                 name: "Results & Takeaways",
-                bg: "#FDF0F2"
-
             },
 
         ],
-        table: "/images/table1.png",
-        bg: "#FDF0F2",
-        img: "/images/solarSitesMacbook.png",
-        id: "Solar Sites",
-        name: "Solar Sites", 
-        tagline: "Utilize satellite imagery to monitor the advancement of construction projects, identify changes, and facilitate comprehensive management of solar construction sites.",
         contents: [
             {
                 topic: "Overview",
@@ -276,7 +425,6 @@ export const caseContent = [
                     "Stakeholders engaged in these initiatives lack a centralized and accessible platform that utilizes live satellite imagery for monitoring and tracking the diverse construction phases of solar sites. This gap hampers efficient decision-making, timely interventions, and comprehensive project management, leading to potential delays, cost overruns, and suboptimal outcomes in the execution of solar initiatives."
                 ],
                 img: "/images/project-manager.png",
-                bg: "#FDF0F2",
             },
             {
                 topic: "The Goal",
@@ -347,7 +495,6 @@ export const caseContent = [
 
                 ],
                  img: "/images/case-solarSites-mockup2.svg",
-                bg: "linear-gradient(89.03deg, rgba(201, 216, 255, 0.56) -7.98%, rgba(255, 209, 167, 0.35) 133.27%)"
             },
              {
                 topic: "Solution",
@@ -356,7 +503,6 @@ export const caseContent = [
                     "Each project features a common header area where specific details of the project are captured and displayed",
                 ],
                 img: "/images/solarSitesMac&IPad.png",
-                bg: "linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
             },
             {
                 topic: "Solution",
@@ -365,7 +511,6 @@ export const caseContent = [
                     "By providing larger, highly detailed imagery, users can easily detect changes to the project as they navigate between the satellite images",
                 ],
                 img: "/images/case-solarSites-mockup3.png",
-                bg: "linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
             },
              
                 {
@@ -375,7 +520,6 @@ export const caseContent = [
                     "By requiring users to sign in to the application, administrators can control which imagery is displayed to which users.  Users are only allowed to access projects they have permission to see",
                 ],
                 img: "/images/case-solarSites-mockup3.png",
-                bg: "linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
             }
         ],
         prototype: {
@@ -384,136 +528,77 @@ export const caseContent = [
         }
     },
     {
-        topics: [
-
-            {
-                name: "Overview",
-                isHalf: true,
-                bg: "#FDF0F2"
-            },
-            {
-                name: "Research",
-                bg: "#FFFFFF"
-            },
-            {
-                name: "Problem",
-                isHalf: true,
-            },
-            {
-                name: "Solution",
-                bg: "#FdFdF0"
-            },
-            {
-                name: "Results & Takeaways",
-                bg: "#FDF0F2"
-            },
-        ],
-
-        bg: "#BDD8FF",
+        name: "Enterprise Application Redesign",
         img: "/images/case-enterpriseApp-main.png",
         table: "/images/table2.png",
         id: "Enterprise App Redesign",
-        name: "Enterprise Application Redesign",
-        tagline: "Disney+ Hotstar is an Ott platform with over 34 million subscribers and provides the user with a variety of content ranging from live Cricket matches to exclusive movies and tv series.",
+        tagline: "When one company acquires another, the task of harmonizing the user experience each of the company's applications often presents a significant challenge.",
+        company: "Oildex",        
+        duration: "1.5 Months",
+        linkName: "View Live Prototype",
+        linkUrl: "https://codepen.io/EnverusUX/project/live/9df4201774e04e3925ab009652910bac",
+        role: "Lead Product Designer",
+        topics: [
+            {
+                name: "The Challenge",
+            },
+            {
+                name: "The Goal",
+            },
+            {
+                name: "Deliverables",
+            },
+            {
+                name: "Process",
+            },
+            {
+                name: "Results & Takeaways",
+            },
+        ],
         contents: [
             {
-                topic: "Overview",
-                heading: "Fix what’s wrong",
+                topic: "The Challenge",
                 texts: [
-                    "Disclaimer: I am not associated with Disney+ Hotstar. I  took on this project because I experienced trouble using the platform. This project only deals with the redesign of the website of the Ott platform.",
-                    "I took this project because I always used to get frustrated using the platform and many of my friends felt the same.",
-                ],
-                bg: "#FDF0F2",
-                img: "/images/c2 p2.png",
-            },
-            {
-                topic: "Research",
-                heading: "Survey and Interviews",
-                texts: [
-                    "Based on secondary research, my assumption, and experiences of using the platform, I created a survey."
-                ],
-                img: "/images/c2 p3.png",
-            },
-            {
-                topic: "Research",
-                texts: [
-                    "After the survey and multiple ones on one interviews, I was able to create user groups and empathy maps which gave me a much better insight into the problem and helped me understand the user&apos;s perspective of the platform."
-                ],
-                img: "/images/c2 p11.png",
-            },
-            {
-                topic: "Research",
-                heading: "User testing",
-                texts: [
-                    "I did a user testing session with five participants using the current version of the platform. One of the tasks for the users was to reach the page which contains the list of all the tv channels available. 90% of the users failed to navigate to the channel list."
+                    "The task of harmonizing the experience across multiple applications is more than just a superficial makeover.  ",
+                    "Sometimes, it requires a deeper integration involving a mix of design philosophies, user interface elements, and brand identities across diverse platforms and products. The task is made more daunting by differences in technology stacks, design systems, and user demographics. ",
                 ],
             },
             {
-                topic: "Problem",
-                heading: "Navigation, The Paradox of Choice, Layout are the core issues",
+                topic: "The Goal",
                 texts: [
-                    "The platform has multiple intricate issues of navigation, recommendation system, and layout of content. Users were also experiencing a lot of confusion while choosing the content to watch.",
+                    "A navigation system capable of handling a vast array of items across several levels."
                 ],
-                img: "/images/c2 p4.png",
             },
             {
-                topic: "Solution",
-                heading: "Navigation Bar",
+                topic: "Deliverables",
                 texts: [
-                    "The majority of users were able to separate the content on basis of channel, language, or genre. The sandwich menu seemed too hidden for the user to interact with. The new design made it much simpler and clear as all the options were right in front of them.",
+                    "Since the true indicator of a navigation system's intuitiveness lies in its ease of use, the project demanded the creation of an interactive prototype to facilitate user testing.",
+                    "The prototype was developed using Bootstrap and JQuery, reflecting the most frequently used technology across the applications."
                 ],
-                img: "/images/c2 p5.png",
-                bg: " linear-gradient(89.03deg, rgba(208, 255, 201, 0.56) -7.98%, rgba(255, 167, 246, 0.35) 133.27%)"
             },
             {
-                topic: "Solution",
+                topic: "Process",
+                heading: "Design & User Testing",
+                texts: [
+                    "At a usability lab that was held during our yearly user conference, one of the studies performed involved a card sort where people were asked to group navigation items according to any grouping that made sense to them.  The results of the card sort were compiled and we arrived at two sets of groupings which we used as our A/B test.",
+                    "User testing entailed presenting the interactive prototype to users, who were tasked with navigating to various parts of the application. The results were recorded on a scale ranging from 1 to 5, where 1 signified minimal difficulty in task completion and 5 denoted significant difficulty. "
+                ],
+            },
+            {
+                topic: "Results & Takeaways",
                 heading: "The Paradox Of Choice",
                 texts: [
-                    "I found that most of the users were viewing the content based on their mood. I appended a mood section where people can find the content according to their mood. This will help them solve their problem.",
-                ],
-                img: "/images/c2 p6.png",
-                bg: "linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
+                    "Users preferred the option with fewer top level navigational categories, and more sub navigation items.  Our test subjects frequently mentioned they preferred not to be presented with with too many options."
+                ]
             },
             {
-                topic: "Solution",
-                heading: "Navigate through 100+ episodes",
+                topic: "Results & Takeaways",
+                heading: "Implementation Details",
                 texts: [
-                    "Some Indian tv series have over 250+ episodes and to go through them by sliding the episodes is not practical. A dropdown menu increases the efficiency of navigating to a particular episode.",
-                ],
-                img: "/images/c2 p7.png",
-                bg: "linear-gradient(89.03deg, rgba(201, 206, 255, 0.56) -7.98%, rgba(179, 255, 167, 0.35) 133.27%)"
-            },
-            {
-                topic: "Solution",
-                heading: "Intimated by the Quantity",
-                texts: [
-                    "According to research, users were intimidated by the quantity of the content shown on a single screen. It results in user anxiety which would ultimately harm their experience.",
-                    "Decreased the number of content shown at once.",
-                ],
-                img: "/images/c2 p8.png",
-                bg: "linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
-            },
-            {
-                topic: "Solution",
-                heading: "Recommendation",
-                texts: [
-                    "Recommendation works on two sets of data: implicit and explicit.  To improve the recommendation a direct feedback button was added. This will enhance the recommendation system.",
-                ],
-                img: "/images/c2 p9.png",
-                bg: "linear-gradient(89.03deg, rgba(201, 255, 252, 0.56) -7.98%, rgba(255, 167, 167, 0.35) 133.27%)"
-            },
-            {
-                topic: "Results and Takeaways",
-                heading: "Don’t fear trying out new tools",
-                texts: [
-                    "Implementing new tools during a live project can overwhelm you, but you don’t always have the time to try them out beforehand.",
-                    "Before this, I used to design on Adobe XD but I used Figma for this project and quite liked using it."
+                    "When it came to Implementing the new navigation, we implemented a mechanism which allowed users to try out the new navigation and give feedback directly to the UX team.  The mechanism also allowed the option of returning to the old navigation if they chose to.  This immediately gave us two cohorts of users to solicit further feedback from.  The first were those who tried the new navigation and reverted back to the old.  The second were those who tried the new navigation and did NOT revert.",
                 ],
             },
         ],
-        prototype: {
-            img: "/images/c2 p10.png",
-            bg: "linear-gradient(89.03deg, rgba(255, 250, 201, 0.56) -7.98%, rgba(206, 167, 255, 0.35) 133.27%)"
-        }
+       
     } 
 ]

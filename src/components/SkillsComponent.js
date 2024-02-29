@@ -5,7 +5,7 @@ import { skills } from '../shared';
 function Skills() {
     return (
         <div>
-            <h2 className='about__heading mb-5' style={{ textAlign: 'start' }}>Skills</h2>
+            <h2 className='page__heading' style={{ textAlign: 'start' }}>Skills</h2>
 
             {skills.map(skill => (
                 <div key={skill.category} className="skill-category-container">

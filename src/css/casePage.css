@@ -1,3 +1,11 @@
+.case-container {
+  padding-top: 100px !important;
+  padding-bottom: 25px;
+}
+.case-container > .row {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
 .case__hero {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -5,7 +13,7 @@
 }
 
 .case__hero h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 56px;
   line-height: 56px;
@@ -27,19 +35,15 @@
 
 /* SUBPOINT */
 
-.heading {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 2;
-  color: #333333;
-}
 
 .subpoint__text {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.5;
   color: #333333;
+}
+.subpoint__heading {
+  white-space: nowrap;
 }
 
 .research {
@@ -75,8 +79,8 @@
 
 .subpoint__img .img-fluid {
   text-align: center;
-  max-height: 60%;
-  max-width: 60%;
+  max-height: 65%;
+  max-width: 85%;
 }
 .subpoint-container {
   margin-top: 16px;
@@ -88,7 +92,7 @@
 
 #bold {
   font-weight: 400;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
 }
 .alignfull {
   margin-left: calc(50% - 50vw);
@@ -107,33 +111,33 @@
 }
 
 .highlight_no{
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   color: #6C63FF;
   font-size: 33px;
   font-weight: 400;
 
 }
 .highlight_text{
-  font-family: Playfair Display;
-font-style: normal;
-font-weight: 400;
-font-size: 23.04px;
-line-height: 32px;
-/* or 139% */
-align-items: center;
-color: #6C63FF;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.04px;
+  line-height: 32px;
+  /* or 139% */
+  align-items: center;
+  color: #6C63FF;
 }
 
 .highlight_textint{
-  font-family: Playfair Display;
-font-style: normal;
-font-weight: 400;
-font-size: 23.04px;
-line-height: 32px;
-/* or 139% */
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.04px;
+  line-height: 32px;
+  /* or 139% */
 
-align-items: center;
-color: #315EFF;
+  align-items: center;
+  color: #315EFF;
 }
 
 .caseStudyTable {

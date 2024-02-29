@@ -14,41 +14,41 @@ function CasePage() {
 
     return (
         <React.Fragment>
-            <div className="container fixed-header-padding">
-                <div className="row align-center">
-                    <div className="col-lg-4 offset-1 col-10 ">
-                        <div className="col">
-                            <Link to="/home" class="arrow-link">
-                                <div class="separator"></div>  
-                                <span class="text">Back Home</span>
-                                <div class="separator"></div>
-                            </Link>
-                        </div>
-                        <h1 className='subpoint__heading mb-5'>{caseStudy.name}</h1>
-                        <p>{caseStudy.tagline}</p>
+            <div className="container case-container">
+                <div className="row mt-3">
+                    <div className="col-lg-5 offset-1 col-10 ">                        
+                                <Link to="/portfolio" class="arrow-link">
+                                    <div class="separator"></div>  
+                                    <span class="text">Back to Portfolio</span>
+                                    <div class="separator"></div>
+                                </Link>
+                                <h1 className='subpoint__heading mb-5'>{caseStudy.name}</h1>
+                                <p>{caseStudy.tagline}</p>                        
                     </div>
-                    <div className="col-lg-6 offset-1 col-10 mt-lg-0 mt-5 text-center ">
-                        <img className='img-fluid mt-5' src={process.env.PUBLIC_URL + caseStudy.img} alt={'image of ' + caseStudy.name} />
+                    <div className="col-lg-5 offset-1 col-10   text-center ">
+                        <img className='img-fluid' src={process.env.PUBLIC_URL + caseStudy.img} alt={'image of ' + caseStudy.name} />
                     </div>
                 </div>
             </div>
 
-            <div className="container table-container">
+            <div className="container">
                 <div className="row align-center ">
                     <div className="col-10 offset-1 ">
                         <table className="caseStudyTable" >
                             <thead>
                                 <tr>
-                                    <th width="60%">Role</th>
+                                    <th width="40%">Role</th>
                                     <th width="20%">Company</th>
                                     <th width="20%">Duration</th>
+                                    <th width="20%">Link</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td width="60%">Lead User Experience Designer</td>
-                                    <td width="20%">Enverus</td>
-                                    <td width="20%">4 months</td>
+                                    <td width="40%">{caseStudy.role}</td>
+                                    <td width="20%">{caseStudy.company}</td>
+                                    <td width="20%">{caseStudy.duration}</td>
+                                    <td width="20%"><a href={caseStudy.linkUrl} target="_blank" className="project__link" activeClassName="selected" rel="noreferrer"> {caseStudy.linkName} </a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -61,14 +61,14 @@ function CasePage() {
                 return (
                     <React.Fragment key={index} >
                         {caseStudy.contents.filter((content) => content.topic === topic.name).length > 0 ? 
-                            <div>
+                            <div class="container">
                                 {
                                     ((caseStudy.topics.length - 1) === index && caseStudy.prototype &&
                                     <Prototype prototype={caseStudy.prototype} /> )
                                 }
-                                <div style={{ background: topic.bg }}>
+                                <div class="col" style={{ background: topic.bg }}>
 
-                                    <div className='container case__topic'>
+                                    <div className='case__topic'>
                                         <CaseTopic heading={topic.name} />
                                     </div>
                                     {topic.isHalf ?
