@@ -1,0 +1,81 @@
+[debug] [2024-03-05T21:41:55.457Z] ----------------------------------------------------------------------
+[debug] [2024-03-05T21:41:55.460Z] Command:       /opt/homebrew/Cellar/node/21.6.1/bin/node /opt/homebrew/bin/firebase init
+[debug] [2024-03-05T21:41:55.460Z] CLI Version:   13.4.0
+[debug] [2024-03-05T21:41:55.461Z] Platform:      darwin
+[debug] [2024-03-05T21:41:55.461Z] Node Version:  v21.6.1
+[debug] [2024-03-05T21:41:55.462Z] Time:          Tue Mar 05 2024 14:41:55 GMT-0700 (Mountain Standard Time)
+[debug] [2024-03-05T21:41:55.462Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-05T21:41:55.495Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-05T21:41:55.495Z] > authorizing via signed-in user (jwshannon@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/jason.shannon/git/JaiDoubleU/ux_portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-05T21:42:08.473Z] Using project from CLI flag: website-ad1df
+[debug] [2024-03-05T21:42:08.474Z] > refreshing access token with scopes: []
+[debug] [2024-03-05T21:42:08.476Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-05T21:42:08.476Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-05T21:42:08.803Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-03-05T21:42:08.803Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-05T21:42:08.804Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/website-ad1df [none]
+[debug] [2024-03-05T21:42:08.964Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/website-ad1df 401
+[debug] [2024-03-05T21:42:08.965Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/website-ad1df {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-03-05T21:42:08.965Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-03-05T21:42:09.215Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project website-ad1df. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-03-05T21:47:02.365Z] ----------------------------------------------------------------------
+[debug] [2024-03-05T21:47:02.368Z] Command:       /opt/homebrew/Cellar/node/21.6.1/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2024-03-05T21:47:02.368Z] CLI Version:   13.4.0
+[debug] [2024-03-05T21:47:02.369Z] Platform:      darwin
+[debug] [2024-03-05T21:47:02.369Z] Node Version:  v21.6.1
+[debug] [2024-03-05T21:47:02.369Z] Time:          Tue Mar 05 2024 14:47:02 GMT-0700 (Mountain Standard Time)
+[debug] [2024-03-05T21:47:02.369Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-05T21:47:02.404Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-05T21:47:02.404Z] > authorizing via signed-in user (jwshannon@gmail.com)
+[debug] [2024-03-05T21:47:02.404Z] [iam] checking project website-ad1df for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-05T21:47:02.405Z] > refreshing access token with scopes: []
+[debug] [2024-03-05T21:47:02.405Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-05T21:47:02.405Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-05T21:47:02.693Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-03-05T21:47:02.693Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-05T21:47:02.693Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/website-ad1df:testIamPermissions [none]
+[debug] [2024-03-05T21:47:02.693Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/website-ad1df:testIamPermissions x-goog-quota-user=projects/website-ad1df
+[debug] [2024-03-05T21:47:02.693Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/website-ad1df:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-05T21:47:02.933Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/website-ad1df:testIamPermissions 401
+[debug] [2024-03-05T21:47:02.933Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/website-ad1df:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-03-05T21:47:02.934Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-03-05T21:47:02.935Z] > refreshing access token with scopes: []
+[debug] [2024-03-05T21:47:02.935Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-05T21:47:02.935Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-05T21:47:03.021Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-03-05T21:47:03.021Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-05T21:47:03.022Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/website-ad1df [none]
+[debug] [2024-03-05T21:47:03.271Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/website-ad1df 401
+[debug] [2024-03-05T21:47:03.272Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/website-ad1df {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-03-05T21:47:03.272Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
