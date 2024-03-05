@@ -1,44 +1,22 @@
 .about-container {
-  margin-top: 114px;
-  margin-bottom: 100px;
-
+  margin-top: 125px;
 }
 .about-container .row {
-  align-items: center;
+  align-items: start;
 }
 .about__img img {
   border-radius: 8px;
 }
-.about__heading {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 52.5px;
-  text-align: center;
-  line-height: 76px;
-  color: #000000;
-}
-
-.about__text__p {
-  font-weight: normal;
-  font-size: 19.2px;
-  line-height: 40px;
-  color: #333333;
-}
-
-.about__section {
-  margin-top: 80px;
-}
 
 /* skills */
 .skills__category {
-  font-size: 19.2px;
-  line-height: 24px;
-  color: rgba(194, 159, 159, 0.68);
+  font-size: 18px;
+  color: #666666;
 }
 .pill {
-  background: #333333;
+  background: #BDDCF0;
   border-radius: 13px;
-  font-size: 16px;
-  line-height: 24px;  
-  color: white;
+  font-size: 12px;
+  color: #121212;
+  margin: 0 4px;
 }

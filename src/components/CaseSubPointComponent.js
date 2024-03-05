@@ -1,86 +1,119 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 function CaseSubPoint({ caseSub, isHalf }) {
 
     return (
         <React.Fragment>
-            <div className={`pb-5`} >
-                <div className="container ">
+            {caseSub.length > 0 ?              
+                <div className="container">
                     {caseSub.map((subpoint, index) => {
                         return (
                             <React.Fragment key={index}>
                                 {
                                     isHalf ?
                                         <React.Fragment>
-                                            <div className='row subpoint-container'>
-                                                <div className="offset-1 col-10">
-                                                    <h2 className='subpoint__heading'>{subpoint.heading}</h2>
-                                                </div>
-                                            </div>
-                                            <div className="row align-center">
-                                                <div key={index} className="col-lg-6 offset-1 col-10">
+                                            <div className="row">
+                                                <div key={index} className="col-lg-5  offset-1 col-10">
+                                                    <h2 className='heading'>{subpoint.heading}</h2>
+
                                                     {subpoint.texts.map((text, index) => {
                                                         return (
                                                             <p key={index} className='subpoint__text'>{text}</p>
                                                         )
                                                     })}
                                                 </div>
-                                                <div className="col-lg-3 offset-1 d-none d-sm-block text-center mt-lg-0 mt-5" >
-                                                    <img className=' img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
+                                                <div className="col-lg-5 offset-1 d-none d-sm-block mt-lg-0 mt-0 subpoint__img" >
+                                                    <img className="img-fluid" src={process.env.PUBLIC_URL + subpoint.img} alt="" />
                                                 </div>
                                             </div>
                                         </React.Fragment>
-                                        :
+                                    :
+                                        <React.Fragment>
+                                            <div className={`row ${subpoint.bg ? 'text-left' : ''}`}>                                     
+                                                <div key={index} className="offset-1 col-10">
+                                                    <p className='heading'>{subpoint.heading}</p>
 
-                                        <div className={`row subpoint-container ${subpoint.bg ? 'text-center' : ''}`}>
-                                            <div className="offset-1 col-10">
-                                                <h2 className='subpoint__heading'>{subpoint.heading}</h2>
-                                            </div>
-                                            <div key={index} className="offset-1 col-10">
-                                                {subpoint.texts.map((text, index) => {
-                                                    return (
-                                                        <p key={index} className='subpoint__text'>{text}</p>
-                                                    )
-                                                })}
-                                            </div>
-                                            <div className="col-10 offset-1 subpoint__img">
-                                                {subpoint.bg ? <div className="alignfull" style={{ background: `${subpoint.bg}` }}>
-                                                    <img className='img-fluid' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
-                                                </div> :
-                                                    <img className='img-fluid ' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
+                                                    {subpoint.texts.map((text, index) => {
+                                                        return (
+                                                            <p key={index} className='subpoint__text'>{text}</p>
+                                                        )
+                                                    })}
 
-                                                }
-                                            </div>
-                                        </div>
-                                }
-                                {
-                                    subpoint.researches ?
-                                        subpoint.researches.map((research, index) => {
-                                            return (
-                                                <div key={index} className="row research align-center">
-                                                    <div className="offset-1 col-lg-6 col-10">
-                                                        <p className='research__text'>{research.texts}</p>
-                                                        <a href={research.link} target='_blank' className='research__source' rel="noreferrer">{research.source}</a>
-                                                    </div>
-                                                    <div className={`col-lg-3 d-none d-sm-block offset-1 col-10 mt-lg-0 text-center mt-5 subpoint__img ${index % 2 !== 0 ? 'order-lg-last' : 'order-lg-first'} `}>
-                                                        <img className='  img-fluid' src={process.env.PUBLIC_URL + research.img} alt="img" />
-                                                    </div>
+                                                    <ul>
+                                                    {
+                                                        subpoint.links ?
+                                                            subpoint.links.map((link, index) => {
+                                                                return (
+                                                                    <li>
+                                                                        <a href='{link.href}' className="project__link" key='{index}' > 
+                                                                            {link.text}                                                                 
+                                                                        </a>
+                                                                    </li>
+                                                                )
+                                                            })
+                                                            :
+                                                            null
+                                                    }
+                                                    </ul>
+
                                                 </div>
-                                            )
-                                        })
-                                        :
-                                        null
+                                            </div>
+                                            <div className={`row ${subpoint.bg ? 'text-left' : ''}`}>    
+                                                <div className="col-10 offset-1 subpoint__img">
+                                                    {subpoint.img ? <div className="align-center" >
+                                                        <img width="65%"className='' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
+                                                    </div>:
+                                                        ""
+                                                    }
+                                                </div>
+                                            </div>
+                                        </React.Fragment>
                                 }
-
-
+                                <div className="row">
+                                    <div className="offset-1 col-10 pb-0">
+                                        {
+                                            subpoint.requirements ?
+                                                subpoint.requirements.map((requirement, index) => {
+                                                    return (
+                                                        <p className="px-5 pb-1" key='{index}' > 
+                                                            - <span className='requirement__text'>{requirement.texts}</span>                                                                   
+                                                        </p>
+                                                    )
+                                                })
+                                                :
+                                                null
+                                        }
+                                        </div>
+                                    {
+                                        subpoint.researches ?
+                                            subpoint.researches.map((research, index) => {
+                                                return (
+                                                    <div key={index} className="row research align-center py-3">
+                                                        <div className="offset-1 col-10">
+                                                            <blockquote><span className='research__text'>{research.texts}</span></blockquote>           
+                                                                {research.source ? <div className="align-center" >
+                                                                <a href={research.link} target='_blank' className='research__source' rel="noreferrer"> ~ {research.source}</a>
+                                                            </div>:
+                                                                ""
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                )
+                                            })
+                                            :
+                                            null
+                                    }
+                                </div>
 
                             </React.Fragment>
                         )
                     })
                     }
                 </div>
-            </div>
-
+            
+                :
+                <div></div>
+            }
         </React.Fragment>
     )
 }

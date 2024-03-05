@@ -1,15 +1,22 @@
+.case-container {
+  padding-top: 100px !important;
+  padding-bottom: 25px;
+}
+.case-container > .row {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
 .case__hero {
-  padding-top: 89px;
-  padding-bottom: 80px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   min-height: 472px;
-  margin-bottom: 119px;
 }
 
 .case__hero h1 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 57.33px;
-  line-height: 76px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
   color: #333333;
 }
 .case__hero > p {
@@ -19,7 +26,7 @@
   color: #333333;
 }
 .case__problem {
-  margin-top: 80px;
+  margin-top: 36px;
 }
 
 .case__problem .row {
@@ -28,60 +35,55 @@
 
 /* SUBPOINT */
 
-.subpoint__heading {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 39.81px;
-  line-height: 53px;
-  color: #333333;
-  margin-bottom: 41px;
-}
 
 .subpoint__text {
   font-weight: normal;
-  font-size: 19.2px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 1.5;
   color: #333333;
-  margin-bottom: 23px;
+}
+.subpoint__heading {
+  white-space: nowrap;
 }
 
 .research {
-  margin-top: 130px;
+  margin-bottom: 0px;
 }
 
 .research__text {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: -0.011em;
   text-align: center;
-  color: #333333;
+  color: #000000;
+  text-indent: 16px;
 }
 .research__source {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   display: block;
-  line-height: 24px;
-  text-align: center;
+  line-height: 16px;
+  text-align: right;
   letter-spacing: -0.011em;
   color: #333333;
   opacity: 0.75;
 }
 
 .case__topic {
-  margin-bottom: 102px;
-  padding-top: 107px;
+   padding: 16px 0;
 }
 .topic__color {
   background: #b9b9b9;
 }
 
-.subpoint__img {
-  margin-top: 79px;
+.subpoint__img .img-fluid {
   text-align: center;
+  max-height: 65%;
+  max-width: 85%;
 }
 .subpoint-container {
-  margin-top: 101px;
+  margin-top: 16px;
 }
 
 .list {
@@ -89,58 +91,84 @@
 }
 
 #bold {
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 .alignfull {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   max-width: 800%;
   width: auto;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 .prototype__text {
-  margin-top: 30px;
+  margin-top: 18px;
   font-weight: 600;
   font-size: 19.2px;
-  line-height: 32px;
+  line-height: 36px;
   color: #333333;
 }
 
 .highlight_no{
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   color: #6C63FF;
   font-size: 33px;
-  font-weight: 700;
+  font-weight: 400;
 
 }
 .highlight_text{
-  font-family: Playfair Display;
-font-style: normal;
-font-weight: bold;
-font-size: 23.04px;
-line-height: 32px;
-/* or 139% */
-
-
-align-items: center;
-
-color: #6C63FF;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.04px;
+  line-height: 32px;
+  /* or 139% */
+  align-items: center;
+  color: #6C63FF;
 }
 
 .highlight_textint{
-  font-family: Playfair Display;
-font-style: normal;
-font-weight: bold;
-font-size: 23.04px;
-line-height: 32px;
-/* or 139% */
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.04px;
+  line-height: 32px;
+  /* or 139% */
 
-align-items: center;
-color: #315EFF;
+  align-items: center;
+  color: #315EFF;
 }
 
-.table-container{
-  margin-bottom: 119px;
+.caseStudyTable {
+  margin-bottom: 36px;
+}
+
+.caseStudyTable tr td, 
+.caseStudyTable tr th {
+  padding: 4px 16px; 
+  text-align: left; 
+} 
+
+blockquote {
+    border:none;
+    margin-bottom: 0px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote span {
+  font-size: 16px;
+}
+
+blockquote span:before { 
+  content: open-quote;
+  font-weight: bold;
+  font-size:18px;
+  color:#889c0b;
+} 
+blockquote span:after { 
+  content: close-quote;
+  font-weight: bold;
+  font-size:18px;
+  color:#889c0b;
 }

@@ -6,8 +6,9 @@ function CaseTopic({heading}) {
             <div className="row">
                 <div className="col-10 offset-1 topic">
                     <div className="d-flex heading">
-                        <p>{heading}</p>
-                        <span className="dash black"></span>
+                        {/* <span className="dash black"></span> */}
+                        <h4>{heading}</h4>
+                        {/* <span className="dash black"></span> */}
                     </div>
                 </div>
             </div>

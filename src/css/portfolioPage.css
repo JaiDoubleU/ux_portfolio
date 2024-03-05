@@ -1,0 +1,27 @@
+.portfolio-container {
+  margin-top: 125px;
+}
+
+.single-portfolio-container {
+  border-bottom: 1px solid #ddd
+}
+
+.portfolio-container > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.portfolio-container .row {
+  align-items: center;
+}
+
+.portfolio__img img {
+  border-radius: 8px;
+}
+
+.portfolio__row {
+  align-items: flex-end;
+}
