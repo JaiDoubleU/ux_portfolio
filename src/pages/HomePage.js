@@ -1,23 +1,11 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 
 import Hero from '../components/HeroComponent';
-import SinglePortfolio from '../components/SinglePortfolioComponent';
-import { myInfo, portfolios, works, principles } from '../shared';
-import { changeFooter } from '../utils/changeFooter';
-import { Link } from 'react-router-dom';
+import { principles } from '../shared';
 import '../css/homePage.css'
 
 
 function HomePage({ footerRef }) {
-    const myRef = useRef(null);
-
-    // useEffect(() => {
-    //     changeFooter(footerRef);
-    //     return () => {
-    //         changeFooter(footerRef)
-    //     }
-    // }, [footerRef])
-
     return (
         <div className='container'>
             <Hero />           

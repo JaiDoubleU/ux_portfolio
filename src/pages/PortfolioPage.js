@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import { portfolios, works, myInfo } from '../shared';
 import SinglePortfolio from '../components/SinglePortfolioComponent';
 import { Link } from 'react-router-dom';
