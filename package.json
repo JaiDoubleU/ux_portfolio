@@ -27,6 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "buildCopyStatic": "react-scripts build && cp -a ./build/static ./public/",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ncu": "npx npm-check-updates",
