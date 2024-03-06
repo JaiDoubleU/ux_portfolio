@@ -21,6 +21,7 @@
     "react-scripts": "^5.0.1",
     "reactstrap": "^9.2.0",
     "redux": "^4.2.1",
+    "serve": "^14.2.1",
     "web-vitals": "^3.5.0"
   },
   "scripts": {
@@ -28,6 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "ncu": "npx npm-check-updates",
     "firebase-buildThenDeploy": "yarn run build build && firebase deploy",
     "firebase-deploy": "yarn run build firebase use \"website-ad1df\" && firebase deploy"
   },
