@@ -111,41 +111,6 @@ export const works = [
     },
     
 ]
-
-export const currentWork = [
-    {
-        arr: [
-            "I'm currently crafting eye-catching, user-loved things for the energy industry at Enverus.",
-        ]
-
-    }
-] 
-
-export const skills = [
-
-    {
-        category: "General",
-        arr: [
-            "Enterprise UX", "Design Systems", "Frontend Dev", "User Research", "User Testing", "Agile/Scrum", "Responsive Design", "UX Analytics", "User Centered Design"
-        ]
-
-    },
-    {
-        category: "Tools",
-        arr: [
-            "Adobe Creative Suite", "Figma", "Sketch", "Invison", "Pendo", "AppCues"
-        ]
-    },
-    {
-        category: "Technical",
-        arr: [
-            "JavaScript", "HTML/CSS", "CSS Frameworks", "React", "Angular"
-        ]
-    }
-
-
-]
-
 export const caseContent = [
     {
         name: "Enverus Design System",
@@ -261,7 +226,7 @@ export const caseContent = [
         table: "/images/table 3.png",
         id: "RFX Application",
         linkName: "View Figma Mockup",
-        linkUrl: "https://www.figma.com/proto/zCpzOBk7fc8bQOCZlDLW6B/Mind-Care?node-id=0%3A1",
+        linkUrl: "https://www.figma.com/proto/5zGK92hDEAh9NSosqOLCEV/RFX-Concept?page-id=271%3A25473&type=design&node-id=271-25474&viewport=151%2C446%2C0.07&t=bo4jsVWsbJowLej3-1&scaling=min-zoom&starting-point-node-id=271%3A25474&mode=design",
         role: "Lead Product Designer",
         tagline: "An interactive design created in Figma for presentation at an annual user conference.",
         topics: [
@@ -374,11 +339,7 @@ export const caseContent = [
                     "We had lots of comments from attendees who stated they appreciated having a mockup they could interact with hands-on, stating it felt more real.  Many also expressed a desire to be involved in the project to give feedback as it's being developed.",
                 ],
             },
-        ],
-        prototype: {
-            img: "/images/c1 p8.png",
-            link: "https://www.figma.com/proto/zCpzOBk7fc8bQOCZlDLW6B/Mind-Care?node-id=0%3A1"
-        }
+        ]
     },
     {        
         table: "/images/table1.png",
@@ -521,11 +482,7 @@ export const caseContent = [
                 ],
                 img: "/images/case-solarSites-mockup3.png",
             }
-        ],
-        prototype: {
-            img: "/images/c1 p8.png",
-            link: "https://www.figma.com/proto/zCpzOBk7fc8bQOCZlDLW6B/Mind-Care?node-id=0%3A1"
-        }
+        ]
     },
     {
         name: "Enterprise Application Redesign",
@@ -602,3 +559,38 @@ export const caseContent = [
        
     } 
 ]
+
+export const currentWork = [
+    {
+        arr: [
+            "I'm currently crafting eye-catching, user-loved things for the energy industry at Enverus.",
+        ]
+
+    }
+] 
+
+export const skills = [
+
+    {
+        category: "General",
+        arr: [
+            "Enterprise UX", "Design Systems", "Frontend Dev", "User Research", "User Testing", "Agile/Scrum", "Responsive Design", "UX Analytics", "User Centered Design"
+        ]
+
+    },
+    {
+        category: "Tools",
+        arr: [
+            "Adobe Creative Suite", "Figma", "Sketch", "Invison", "Pendo", "AppCues"
+        ]
+    },
+    {
+        category: "Technical",
+        arr: [
+            "JavaScript", "HTML/CSS", "CSS Frameworks", "React", "Angular"
+        ]
+    }
+
+
+]
+

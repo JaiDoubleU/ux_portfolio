@@ -17,16 +17,16 @@ function CasePage() {
             <div className="container case-container">
                 <div className="row mt-3">
                     <div className="col-lg-5 offset-1 col-10 ">                        
-                                <Link to="/portfolio" class="arrow-link">
-                                    <div class="separator"></div>  
-                                    <span class="text">Back to Portfolio</span>
-                                    <div class="separator"></div>
+                                <Link to="/portfolio" className="arrow-link">
+                                    <div className="separator"></div>  
+                                    <span className="text">Back to Portfolio</span>
+                                    <div className="separator"></div>
                                 </Link>
                                 <h1 className='subpoint__heading mb-5'>{caseStudy.name}</h1>
                                 <p>{caseStudy.tagline}</p>                        
                     </div>
                     <div className="col-lg-5 offset-1 col-10   text-center ">
-                        <img className='img-fluid' src={process.env.PUBLIC_URL + caseStudy.img} alt={'image of ' + caseStudy.name} />
+                        <img className='img-fluid' src={process.env.PUBLIC_URL  + caseStudy.img} alt={'image of ' + caseStudy.name} />
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ function CasePage() {
                                     <td width="40%">{caseStudy.role}</td>
                                     <td width="20%">{caseStudy.company}</td>
                                     <td width="20%">{caseStudy.duration}</td>
-                                    <td width="20%"><a href={caseStudy.linkUrl} target="_blank" className="project__link" activeClassName="selected" rel="noreferrer"> {caseStudy.linkName} </a></td>
+                                    <td width="20%"><a href={caseStudy.linkUrl} target="_blank" className="project__link"  rel="noreferrer"> {caseStudy.linkName} </a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -61,12 +61,12 @@ function CasePage() {
                 return (
                     <React.Fragment key={index} >
                         {caseStudy.contents.filter((content) => content.topic === topic.name).length > 0 ? 
-                            <div class="container">
+                            <div className="container">
                                 {
                                     ((caseStudy.topics.length - 1) === index && caseStudy.prototype &&
                                     <Prototype prototype={caseStudy.prototype} /> )
                                 }
-                                <div class="col" style={{ background: topic.bg }}>
+                                <div className="col" style={{ background: topic.bg }}>
 
                                     <div className='case__topic'>
                                         <CaseTopic heading={topic.name} />

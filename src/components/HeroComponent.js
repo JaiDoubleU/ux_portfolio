@@ -23,7 +23,7 @@ function Hero() {
                 </div>
                 <div className=" col-lg-5 col-10  ">
                     <div className="bg-transparent border-0 flex" >
-                        <img height="300" src={process.env.PUBLIC_URL + '/images/profilePic.png'} alt="about-img" />
+                        <img height="300" src={process.env.PUBLIC_URL + '/images/profilePic.svg'} alt="about-img" />
                     </div>
                 </div>
             </div>       

@@ -15,10 +15,10 @@ function WorkPage() {
                 <div className="row align-center">
                     <div className="col-lg-10 offset-1 col-10 ">
                         <div className="col">
-                            <Link to="/portfolio" class="arrow-link">
-                                    <div class="separator"></div>  
-                                    <span class="text">Back to Portfolio</span>
-                                    <div class="separator"></div>
+                            <Link to="/portfolio" className="arrow-link">
+                                    <div className="separator"></div>  
+                                    <span className="text">Back to Portfolio</span>
+                                    <div className="separator"></div>
                             </Link>
                         </div>
                         <h1 className='heading mb-3'>{work.name}</h1>

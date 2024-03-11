@@ -49,7 +49,7 @@ function NavbarComp() {
 					<NavbarBrand >
 						<Link to="/" >
 							<img className="hover_img" height="40" src={process.env.PUBLIC_URL + '/jw-logo-red.svg'} alt="my logo" />
-							{/* <span class="small">https://jasonshannon.design</span> */}
+							{/* <span className="small">https://jasonshannon.design</span> */}
 						</Link>
 					</NavbarBrand>
 					<NavbarToggler onClick={toggle} />
@@ -58,9 +58,6 @@ function NavbarComp() {
 							<NavItem>
 								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home" >Home</NavHashLink>
 							</NavItem>
-							{/* <NavItem>
-								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home#portfolio" >Portfolio</NavHashLink>
-							</NavItem> */}
 							<NavItem>
 								<NavLink onClick={hideCollapse} className="nav-link" to="/portfolio">Portfolio</NavLink>
 							</NavItem>
@@ -70,9 +67,6 @@ function NavbarComp() {
 							<NavItem>
 								<NavLink onClick={hideCollapse} className="nav-link" to="/JasonShannonResume.pdf" target='_blank'>Resume</NavLink>
 							</NavItem>
-							{/* <NavItem>
-								<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="#contact" >Contact</NavHashLink>
-							</NavItem> */}
 						</Nav>
 					</Collapse>
 				</div>

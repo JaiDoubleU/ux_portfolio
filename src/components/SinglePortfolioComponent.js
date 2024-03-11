@@ -11,7 +11,7 @@ function SinglePortfolio(props) {
                 <div className="container work-container">
                     <div className="row ">
                         <div className={`col-10 col-lg-4 offset-1 ${props.index % 2 !== 0 ? '  order-lg-1' : 'order-lg-2 '}`}>
-                            <img className="hover_img project__img" src={process.env.PUBLIC_URL + props.portfolio.image} alt="portfolio-img" />
+                            <img className="hover_img project__img" src={process.env.PUBLIC_URL +"/" + props.portfolio.image} alt="portfolio-img" />
                         </div>
                         <div className={`col-lg-5 mb-5 mt-lg-0 offset-1 ${props.index % 2 !== 0 ? 'order-lg-2 ' : '.order-lg-1 ' }`}>
                             <h2 className="project__name" style={{ color: `${props.portfolio.color}` }}>{props.portfolio.name} </h2>
@@ -29,7 +29,7 @@ function SinglePortfolio(props) {
                     <div className='row'>
                         <div className={`col-10 col-lg-4 offset-1 ${props.index % 2 !== 0 ? '  order-lg-1' : 'order-lg-2 '}`}>
                             <Link to={`/work/${props.work.id}`}>
-                                <img className="hover_img project__img" src={process.env.PUBLIC_URL + props.work.image} alt="work-img" />
+                                <img className="hover_img project__img" src={process.env.PUBLIC_URL +"/" + props.work.image} alt="work-img" />
                             </Link>
                         </div>
                         <div className={`col-lg-5 mb-5 mt-lg-0 offset-1 ${props.index % 2 !== 0 ? 'order-lg-2 ' : '.order-lg-1 ' }`}>

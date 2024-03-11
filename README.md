@@ -1,3 +1,3 @@
-Portfolio for UX designer
+Portfolio of Jason Shannon, UX Designer
 
 https://jasonshannon.design/
