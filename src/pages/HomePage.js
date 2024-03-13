@@ -28,7 +28,7 @@ function HomePage({ footerRef }) {
                     <CardGroup className="d-flex flex-col flex-wrap principles">
                         {principles.map((principle, index) => {
                             return (
-                                <Card className="text-center">
+                                <Card className="text-center border-0">
                                     <CardImg
                                         alt={"Image for " +principle.text}
                                         src={principle.icon}

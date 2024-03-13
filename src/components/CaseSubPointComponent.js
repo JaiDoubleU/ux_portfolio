@@ -23,7 +23,7 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                                     })}
                                                 </div>
                                                 <div className="col-lg-5 offset-1 d-none d-sm-block mt-lg-0 mt-0 subpoint__img" >
-                                                    <img className="img-hover_img project__img" src={subpoint.img} alt="" />
+                                                    <img className="img-fluid img-hover_img " src={subpoint.img} alt="" />
                                                 </div>
                                             </div>
                                         </React.Fragment>

@@ -50,7 +50,7 @@ function NavbarComp() {
 						{/* <span className="small">https://jasonshannon.design</span> */}
 					</Link>
 				</NavbarBrand>
-				<NavbarToggler onClick={toggle} />
+				<NavbarToggler onClick={toggle}>Menu</NavbarToggler>
 				<Collapse isOpen={isNavOpen} navbar>
 					<Nav className="ml-auto" navbar>
 						<NavItem>

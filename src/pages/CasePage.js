@@ -35,18 +35,16 @@ function CasePage() {
                             <table className="caseStudyTable" >
                                 <thead>
                                     <tr>
-                                        <th width="40%">Role</th>
-                                        <th width="20%">Company</th>
-                                        <th width="20%">Duration</th>
-                                        <th width="20%">Link</th>
+                                        <th>Company</th>
+                                        <th>Duration</th>
+                                        <th>Link</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td width="40%">{caseStudy.role}</td>
-                                        <td width="20%">{caseStudy.company}</td>
-                                        <td width="20%">{caseStudy.duration}</td>
-                                        <td width="20%"><a href={caseStudy.linkUrl} target="_blank" className="project__link"  rel="noreferrer"> {caseStudy.linkName} </a></td>
+                                        <td>{caseStudy.company}</td>
+                                        <td>{caseStudy.duration}</td>
+                                        <td><a href={caseStudy.linkUrl} target="_blank" className="project__link"  rel="noreferrer"> {caseStudy.linkName} </a></td>
                                     </tr>
                                 </tbody>
                             </table>

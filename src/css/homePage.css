@@ -8,51 +8,14 @@
 }
 
 /* HERO */
- h1 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 36px;
-  color: #333333;
-}
+
 .hero__highlight {
-  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: inherit;
   color: #fc004d;
 }
-.hero__link {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: inherit;
-  color: #000000;
-}
-
-.hero__description {
-  padding-bottom: 15px;
-}
-
-.heading p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 4.5;
-  text-transform: none;
-  color: #000000;
-  margin-bottom: 0;
-}
-
-.dash {
-  border-bottom: 1px solid #117a8b;
-  align-self: center;
-  width: 25px;
-  margin: 0 16px;
-}
-
 
 
 .arrow-link { padding: 3px 0; text-align:center;}

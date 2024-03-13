@@ -215,7 +215,7 @@ export const caseContent = [
         id: "Enverus Design System",
         linkName: "https://design.enverus.com",
         linkUrl:"https://design.enverus.com",
-        role: "Lead Product Designer",
+        role: "Product Designer",
         tagline: " A scalable, efficient, and cohesive design system that enhances user experience, promotes brand consistency, and streamlines the design and development processes across all Enverus' products", 
     },
     {
@@ -225,9 +225,9 @@ export const caseContent = [
         img: "/images/case-rfx-main.png",
         table: "/images/table 3.png",
         id: "RFX Application",
-        linkName: "View Figma Mockup",
+        linkName: "View Mockup",
         linkUrl: "https://www.figma.com/proto/5zGK92hDEAh9NSosqOLCEV/RFX-Concept?page-id=271%3A25473&type=design&node-id=271-25474&viewport=151%2C446%2C0.07&t=bo4jsVWsbJowLej3-1&scaling=min-zoom&starting-point-node-id=271%3A25474&mode=design",
-        role: "Lead Product Designer",
+        role: "Product Designer",
         tagline: "An interactive design created in Figma for presentation at an annual user conference.",
         topics: [
             {
@@ -347,10 +347,10 @@ export const caseContent = [
         duration: "2 months",
         img: "/images/solarSitesMacbook.png",
         id: "Solar Sites",
-        linkName: "View the Mockup",
+        linkName: "View Mockup",
         linkUrl: "https://codepen.io/jwshannon/pen/GRwjmBW",
         name: "Solar Sites", 
-        role: "Lead Product Designer",
+        role: "Product Designer",
         tagline: "Utilize satellite imagery to monitor the advancement of construction projects, identify changes, and facilitate comprehensive management of solar construction sites.",
         topics: [
             {
@@ -491,9 +491,9 @@ export const caseContent = [
         tagline: "When one company acquires another, the task of harmonizing the user experience each of the company's applications often presents a significant challenge.",
         company: "Oildex",        
         duration: "1.5 Months",
-        linkName: "View Live Prototype",
+        linkName: "View Prototype",
         linkUrl: "https://codepen.io/EnverusUX/project/live/9df4201774e04e3925ab009652910bac",
-        role: "Lead Product Designer",
+        role: "Product Designer",
         topics: [
             {
                 name: "The Challenge",

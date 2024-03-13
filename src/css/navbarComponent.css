@@ -1,101 +1,18 @@
 .navbar.fixed-top {
   box-shadow: 0px 0px 11px rgba(33,33,33,.2)
 }
-.navbar-container .navbar {
-  transition: all 0.5s;
-  background-color: transparent;
-}
-/* .container {
-  
-} */
 
-.navbar-container {
-  position: fixed;
-  top: 0;
-  background-color: #ffffff;
-  width: 100%;
-  z-index: 1;
-  border-bottom: 1px solid #ddd
-}
-.navbar-container.navbar-fixed {
-  position: fixed;
-  top: 0;
-  background-color: #ffffff;
-  width: 100%;
-  z-index: 1;
+.navbar-toggler {
+  font-size: 12px;
+  line-height: 3;
 }
 
-.navbar-light .navbar-toggler-icon {
-  background-image: url("https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/menu-lines-list-512.png");
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.navbar-light .navbar-nav .nav-link.active {
-  border-bottom: 2px solid #fc004d;
-}
-
-.nav-item {
-  margin-left: auto;
-}
-
-.navbar-light .navbar-toggler {
-  border-color: #ffffff;
-}
-/* phones */
-
-@media screen and (max-width: 575px) {
-  .navbar-container {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-    width: 100%;
-    z-index: 1;
-  }
-  .navbar-light .navbar-nav .nav-link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 27.2px;
-    line-height: 33px;
-    color: #333333;
-  }
-  .nav-item {
-    border-bottom: 0.7px solid rgba(0, 0, 0, 0.5);
-    padding: 26px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .navbar-collapse {
-    height: 100vh;
-  }
-  .navbar-collapse.show,
-  .navbar-collapse.collapsing {
-    background: linear-gradient(180.64deg, #ffffff 0.55%, #fdf0f0 36.94%);
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-}
-
-/* small */
-
-@media screen and (min-width: 577px) and (max-width: 768px) {
-}
-
-/* medium */
-
-@media screen and (min-width: 767px) and (max-width: 992px) {
-}
-
-/* large and above */
-
-@media screen and (min-width: 993px) {
-  .navbar-nav .nav-link {
-    margin-right: 42px;
-  }
+a.nav-link.active {
+  border-bottom: 1px solid #fc004d;
 }

@@ -1,121 +1,27 @@
-:root {
-  /* footer bg */
-  --fbg: #333333;
-  /* footer h3 (lets connect)  */
-  --fh3: #ffffff;
-  /* footer para */
-  --fp: #111111;
-  /* footer email */
-  --femail: #ffffff;
-  /* footer logo circle bg */
-  --fcbg: #222222;
-  /*  footer logo circle text */
-  --fctext: black;
-  /* footer copyright text */
-  --fct: #ffffff;
+.navbar-fixed-bottom {
+  padding:0
 }
-.footer-navbar {
-    border-top: 1px solid #ddd;
-    position: fixed;
-    bottom: 0;
-    background-color: #ffffff;
-    width: 100%;
-    z-index: 1;
-    height: 100px;
-    /* box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 10px, rgba(0, 0, 0, 0.2) 3px 3px 10px */
-}
-.navbar-fixed-bottom,
-.footer-container {
-  max-width: 100%;
-  display: flex;
-}
-
-.footer-container .footer__content {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.footer__content__top__text h3 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.footer__content__top {
-  display: flex;
-  margin-top: 8px;
-  align-items: center;
-}
-
-.footer__content__top__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer__content__top__text p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  line-height: 24px;
-  margin-bottom: 0;
-  color: var(--fp);
-}
-
-.footer__content .email {
-  text-align: center;
-  margin-top: 15px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: underline;
-}
-
-.footer__content .email:hover {
-  text-decoration: none;
-}
-
-.footer__content__top img {
-  align-self: flex-end;
-}
-
-.footer__content > p {
-  font-style: normal;
-  margin-bottom: 0;
-  font-weight: 400;
+.navbar.fixed-bottom .navbar-brand {
   font-size: 12px;
-  line-height: 20px;
+  color: black;
 }
 
-.footer-container .icons {
+.icons {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
   width: auto;
   justify-content: space-evenly;
 }
-.footer-container .icons a {
+.icons a {
   margin: 0 15px;
 }
 
-.footer__content__link a{
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 24px;
-}
-
-.icons .circle {
+.circle {
   margin-top: 14px;
   height: 32px;
   width: 32px;
-  background-color: var(--fcbg);
+  background-color: black;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -124,10 +30,6 @@
 
 .icons .circle svg {
   fill: white;
-  font-size: large;
 }
 
-.footer__content__top__text p span {
-  font-family: "Montserrat", sans-serif;
-}
 
