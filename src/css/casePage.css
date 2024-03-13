@@ -1,11 +1,5 @@
-.case-container {
-  padding-top: 100px !important;
-  padding-bottom: 25px;
-}
-.case-container > .row {
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ddd;
-}
+
+
 .case__hero {
   padding-top: 36px;
   padding-bottom: 36px;

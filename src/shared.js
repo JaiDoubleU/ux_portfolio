@@ -16,12 +16,12 @@ export const principles = [
     },
     {
         text: "Seek First to Understand",
-        subtext: "Empathize with and comprehending others' perspectives before offering solutions or opinions",
+        subtext: "Empathize with and comprehend the perspectives of others before offering solutions or opinions",
         icon: "images/understanding.svg"
     },
     {
-        text: "Over Deliver",
-        subtext: " Set realistic expectations in everything you do, and then exceed them.",
+        text: "Set Expectations, Then Over Deliver",
+        subtext: "Set realistic expectations in everything you do, and then exceed them.",
         icon: "images/over-deliver.svg"
     },
     {

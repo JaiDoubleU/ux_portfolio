@@ -14,7 +14,7 @@ function CasePage() {
 
     return (
         <React.Fragment>
-            <div className="container case-container">
+            <div className="container">
                 <div className="row mt-3">
                     <div className="col-lg-5 offset-1 col-10 ">                        
                                 <Link to="/portfolio" className="arrow-link">
@@ -26,7 +26,7 @@ function CasePage() {
                                 <p>{caseStudy.tagline}</p>                        
                     </div>
                     <div className="col-lg-5 offset-1 col-10   text-center ">
-                        <img className='img-fluid' src={process.env.PUBLIC_URL  + caseStudy.img} alt={'image of ' + caseStudy.name} />
+                        <img className='hover_img project__img' src={process.env.PUBLIC_URL  + caseStudy.img} alt={'image of ' + caseStudy.name} />
                     </div>
                 </div>
             </div>
@@ -85,7 +85,18 @@ function CasePage() {
                        
                     </React.Fragment>
                 )
-            })}
+             })}
+            <div className='container'>
+                <div className="row">
+                    <div className='col-lg-5 offset-1 col-10 '>
+                        <Link to="/portfolio" className="arrow-link">
+                            <div className="separator"></div>  
+                            <span className="text">Back to Portfolio</span>
+                            <div className="separator"></div>
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </React.Fragment >
     )
 }

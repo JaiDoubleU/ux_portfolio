@@ -6,7 +6,8 @@
 
 body{
   overflow-x: hidden;
-  margin-bottom: 75px;
+  padding-top: 75px;
+  padding-bottom: 125px;
 }
 
 a,a:hover{
@@ -31,8 +32,6 @@ a,a:hover{
 .page__subheading {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
     color: #000000;
 }
 
@@ -42,10 +41,11 @@ a,a:hover{
   font-weight: 300;
   text-align: left;
   color: #000000;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .img-fluid {
-  max-width: 65%;
+  max-width: 20vw;
+  min-width: 50px
 }
 ::-webkit-scrollbar-track
 {

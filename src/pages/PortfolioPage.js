@@ -9,9 +9,9 @@ function PortfolioPage() {
     const myRef = useRef(null);
 
     return (
-        <div className="container portfolio-container">
+        <div className="">
            <div className="row ">
-                <div className="offset-1 col-lg-10 col-10 mb-5">
+                <div className="offset-1 col-lg-10 col-10">
                     <div className="row heading" id="portfolio" ref={myRef} >
                         <div className="col">
                             <div className="d-flex">

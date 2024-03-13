@@ -5,7 +5,7 @@ function CaseSubPoint({ caseSub, isHalf }) {
     return (
         <React.Fragment>
             {caseSub.length > 0 ?              
-                <div className="container">
+                <div>
                     {caseSub.map((subpoint, index) => {
                         return (
                             <React.Fragment key={index}>
@@ -23,7 +23,7 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                                     })}
                                                 </div>
                                                 <div className="col-lg-5 offset-1 d-none d-sm-block mt-lg-0 mt-0 subpoint__img" >
-                                                    <img className="img-fluid" src={process.env.PUBLIC_URL +"/" + subpoint.img} alt="" />
+                                                    <img className="img-hover_img project__img" src={subpoint.img} alt="" />
                                                 </div>
                                             </div>
                                         </React.Fragment>
@@ -61,7 +61,8 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                             <div className={`row ${subpoint.bg ? 'text-left' : ''}`}>    
                                                 <div className="col-10 offset-1 subpoint__img">
                                                     {subpoint.img ? <div className="align-center" >
-                                                        <img width="65%"className='' src={process.env.PUBLIC_URL + subpoint.img} alt="" />
+                                                        
+                                                        <img width="65%"className='' src={subpoint.img} alt="" />
                                                     </div>:
                                                         ""
                                                     }
@@ -104,13 +105,11 @@ function CaseSubPoint({ caseSub, isHalf }) {
                                             null
                                     }
                                 </div>
-
                             </React.Fragment>
                         )
                     })
                     }
                 </div>
-            
                 :
                 <div></div>
             }

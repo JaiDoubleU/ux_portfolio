@@ -8,8 +8,8 @@ function SinglePortfolio(props) {
     if (props.portfolio) {
         return (
             <div style={{ backgroundColor: `${props.portfolio.background}` }}>
-                <div className="container work-container">
-                    <div className="row ">
+                <div className="pt-0">
+                    <div className="row border-bottom">
                         <div className={`col-10 col-lg-4 offset-1 ${props.index % 2 !== 0 ? '  order-lg-1' : 'order-lg-2 '}`}>
                             <img className="hover_img project__img" src={process.env.PUBLIC_URL +"/" + props.portfolio.image} alt="portfolio-img" />
                         </div>
@@ -25,8 +25,8 @@ function SinglePortfolio(props) {
     } else {
         return (
             <div style={{ backgroundColor: `${props.work.background}` }}>
-                <div className="container  work-container">
-                    <div className='row'>
+                <div className="pt-3">
+                    <div className='row border-bottom'>
                         <div className={`col-10 col-lg-4 offset-1 ${props.index % 2 !== 0 ? '  order-lg-1' : 'order-lg-2 '}`}>
                             <Link to={`/work/${props.work.id}`}>
                                 <img className="hover_img project__img" src={process.env.PUBLIC_URL +"/" + props.work.image} alt="work-img" />

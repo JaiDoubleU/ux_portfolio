@@ -11,8 +11,8 @@ function WorkPage() {
 
     return (
         <React.Fragment>           
-            <div className="container fixed-header-padding">
-                <div className="row align-center">
+            <div className="container">
+                <div className="row mt-3">
                     <div className="col-lg-10 offset-1 col-10 ">
                         <div className="col">
                             <Link to="/portfolio" className="arrow-link">

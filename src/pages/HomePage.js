@@ -4,34 +4,48 @@ import Hero from '../components/HeroComponent';
 import { principles } from '../shared';
 import '../css/homePage.css'
 
-
+import {
+	Card, CardBody, CardTitle, CardGroup, CardImg, CardSubtitle
+} from 'reactstrap';
 function HomePage({ footerRef }) {
     return (
-        <div className='container'>
+        <div className='offset-1 col-lg-10 col-10'>
             <Hero />           
 
             <div className="row">
-                <div className=" offset-1 col-lg-5 col-10  ">
+                <div className="col-12">
                     <div className="mb-4">
-                        <h4>Personal Design Principles</h4>
+                        <h5>Personal Design Principles</h5>
                         <div>In my years as a designer, I've consciously and unconsciously developed some design principles that guide my behavior.</div>
                     </div>
                 </div>
-                
-                <div className="principles">
-                    <ul className="row">
+            </div>
+
+            <div className="row ">
+                <div className="col ">
+                    <CardGroup className="d-flex flex-col flex-wrap principles">
                         {principles.map((principle, index) => {
                             return (
-                                <li className="col align-top p-2 m-1 radius border border-radius-lg">
-                                    
-                                        <img height="125" width="125" src={principle.icon} alt="principle icon"/>
-                                        <p className="title">{principle.text} </p>
-                                        <p className="subtitle">{principle.subtext} </p>
-                                </li>
+                                <Card className="text-center">
+                                    <CardImg
+                                        alt={"Image for " +principle.text}
+                                        src={principle.icon}
+                                        top
+                                        className='mx-auto img-fluid '
+                                    />
+                                    <CardBody>
+                                        <CardTitle className="text-break text-wrap " tag="h6">
+                                            {principle.text}
+                                            
+                                        </CardTitle>
+                                        <CardSubtitle tag="small" className="text-break text-wrap">{principle.subtext} </CardSubtitle>
+                                    </CardBody>
+                                </Card>
+                                
                             )
                         })}
-                    </ul>
-                </div>
+                        </CardGroup>
+                    </div>
             </div>
         </div>
     )

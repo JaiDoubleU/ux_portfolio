@@ -13,7 +13,7 @@ import ScrollToTop from '../utils/scrollToTop';
 function Main() {
     const footerRef = useRef()
     return (
-        <div className="container-fluid">
+        <div className="container">
             <NavbarComp />
             <ScrollToTop />
             <Switch>

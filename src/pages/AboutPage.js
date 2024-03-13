@@ -6,7 +6,7 @@ import '../css/aboutPage.css'
 
 function AboutPage() {
     return (
-        <div className="container about-container ">
+        <div className=" ">
             
             <div className="row">
                 <div className="about__img offset-1 offset-lg-0 col-lg-5 col-10 order-lg-last p-5">

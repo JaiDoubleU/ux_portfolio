@@ -26,7 +26,6 @@
 }
 .navbar-fixed-bottom,
 .footer-container {
-  margin: 4px 0;
   max-width: 100%;
   display: flex;
 }
