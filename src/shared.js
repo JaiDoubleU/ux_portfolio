@@ -3,7 +3,9 @@ export const myInfo = {
     name: "Jason Shannon",
     firstName: "Jason",
     aboutPageTitle: "About Me",
-    aboutIntroText: "I'm a full stack User Experience Designer with over two decades of hands-on experience helping companies, from Fortune 500 to small start-ups, design amazing products that their customers love.",
+    aboutIntroText: "Throughout my twenty-year journey in user experience design, I've had the privilege of contributing to a variety of projects, from large-scale corporate initiatives to dynamic startups. My role has evolved from creating and implementing design concepts to leading and mentoring design teams at Enverus, always with a focus on enhancing user satisfaction and product usability.",
+    aboutIntroText2: "In each of my positions I've held I've embraced the challenge of merging technical proficiency with creative design, aiming to produce engaging and functional user experiences. My efforts have been dedicated to fostering collaboration across teams, refining design processes, and promoting best practices in UX design.",
+    aboutIntroText3:"Beyond my professional endeavors, I've committed to continuous learning and community involvement. Volunteering with organizations like C.H.A.D.D. Canada and coaching youth hockey have been particularly rewarding, allowing me to give back and stay connected with my community. My journey has been one of growth, learning, and a constant strive to make a meaningful impact through design.",
     portfolioPageTitle: "Portfolio",
     portfolioIntroText: "My UX design journey has featured a diverse range of projects that highlight my expertise in crafting intuitive, user-centered experiences across various platforms. Below are a few examples of projects that I've particularly enjoyed."
 }

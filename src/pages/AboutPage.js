@@ -9,12 +9,18 @@ function AboutPage() {
         <div className=" ">
             
             <div className="row">
-                <div className="about__img offset-1 offset-lg-0 col-lg-5 col-10 order-lg-last p-5">
-                    <img height="300" className="mx-auto d-block" src={process.env.PUBLIC_URL + '/images/profile-img.svg'} alt="about-img" />
+                <div className="about__img offset-1 offset-lg-0 col-lg-5 col-10 order-lg-last p-3">
+                    <img height="200" className="mx-auto d-block" src={process.env.PUBLIC_URL + '/images/profile-img.svg'} alt="about-img" />
                 </div>
-                <div className="about__text offset-1 col-lg-5 col-10 ">
-                    <h2 className='page__heading'>{myInfo.aboutPageTitle}</h2>
+                <div className="about__text offset-1 col-lg-6 col-10 ">
+                    <p className='page__heading'>{myInfo.aboutPageTitle}</p>
                     <p className='page__subheading'>{myInfo.aboutIntroText} </p>
+                </div>
+            </div>
+            <div className='row'>
+                <div className='about__text offset-1 col-10'>
+                    <p className='page__subheading'>{myInfo.aboutIntroText2} </p>
+                    <p className='page__subheading'>{myInfo.aboutIntroText3} </p>
                 </div>
             </div>
             <div className="row ">
