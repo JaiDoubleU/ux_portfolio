@@ -10,7 +10,7 @@ function AboutPage() {
             
             <div className="row">
                 <div className="about__img offset-1 offset-lg-0 col-lg-5 col-10 order-lg-last p-5">
-                    <img height="300"  src={process.env.PUBLIC_URL + '/images/about-img.svg'} alt="about-img" />
+                    <img height="300" className="mx-auto d-block" src={process.env.PUBLIC_URL + '/images/about-img.svg'} alt="about-img" />
                 </div>
                 <div className="about__text offset-1 col-lg-5 col-10 ">
                     <h2 className='page__heading'>{myInfo.aboutPageTitle}</h2>

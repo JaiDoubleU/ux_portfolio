@@ -5,7 +5,7 @@ import '../css/homePage.css'
 
 function Hero() {
     return (
-        <div class="row">
+        <div className="row">
             <div className="d-block d-sm-none ">
                     <div className="bg-transparent border-0 flex" >
                         <img className="mx-auto d-block" height="300" src={process.env.PUBLIC_URL + '/images/profilePic.svg'} alt="about-img" />

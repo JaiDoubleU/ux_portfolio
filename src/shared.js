@@ -393,7 +393,6 @@ export const caseContent = [
                 texts: [
                     "Gain acceptance from stakeholders on the feasibility of an application designed to monitor construction projects' advancement toward completion.",
                 ],
-                img: "/images/c1 p1.png",
             },
 
             {

@@ -12,6 +12,8 @@ function HomePage({ footerRef }) {
         <div className='offset-1 col-lg-10 col-10'>
             <Hero />           
 
+            <hr className='mb-4'/>
+
             <div className="row">
                 <div className="col-12">
                     <div className="mb-4">
