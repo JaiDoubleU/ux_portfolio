@@ -2,6 +2,7 @@
 export const myInfo = {
     name: "Jason Shannon",
     firstName: "Jason",
+    introText: "I'm a senior product designer with over two decades of experience shaping the intersection of design and technology. My work has ranged from small startups to Fortune 500 companies, where I've had the opportunity to learn from each project and contribute to designing  meaningful and accessible products that users love. ",
     aboutPageTitle: "About Me",
     aboutIntroText: "Throughout my twenty-year journey in user experience design, I've had the privilege of contributing to a variety of projects, from large-scale corporate initiatives to dynamic startups. My role has evolved from creating and implementing design concepts to leading and mentoring design teams at Enverus, always with a focus on enhancing user satisfaction and product usability.",
     aboutIntroText2: "In each of my positions I've held I've embraced the challenge of merging technical proficiency with creative design, aiming to produce engaging and functional user experiences. My efforts have been dedicated to fostering collaboration across teams, refining design processes, and promoting best practices in UX design.",
@@ -81,7 +82,7 @@ export const works = [
 
     {
         id: "Curtain Menu Navigation",
-        image: "images/works-curtainMenu.png",
+        image: "images/NavMenuRedesign.png",
         name: "Application Menu Redesign",
         desc: "Design a comprehensive mega menu, ensuring compatibility with both desktop and mobile platforms, while accommodating numerous links for improved accessibility and user experience.",
         tagline: "Curtain Menu Prototype",
@@ -96,7 +97,7 @@ export const works = [
     },
     {
         id: "Data Element Lengths",
-        image: "images/works-DataElementLengths.png",
+        image: "images/DataElementLengthsScreens.png",
         name: "Decision Making Tool",
         tagline: "A data driven decision making tool for designers ",
         desc: "Streamline the utilization of real data to drive UI decision-making when dealing with unpredictable data element lengths across all screen sizes.",

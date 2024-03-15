@@ -43,7 +43,7 @@ function NavbarComp() {
 	}
 
 	return (
-		<Navbar ref={navRef} light expand="sm" fixed="top" className='bg-white border-bottom '>
+		<Navbar ref={navRef} light expand="sm" fixed="top" full="true" className='bg-white border-bottom '>
 				<NavbarBrand >
 					<Link to="/" >
 						<img className="hover_img" height="40" src={process.env.PUBLIC_URL + '/jw-logo-red.svg'} alt="my logo" />

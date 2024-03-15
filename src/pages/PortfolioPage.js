@@ -9,29 +9,27 @@ function PortfolioPage() {
     const myRef = useRef(null);
 
     return (
-        <div className="">
-           <div className="row ">
-                <div className="offset-1 col-lg-10 col-10">
-                    <div className="row heading" id="portfolio" ref={myRef} >
-                        <div className="col">
-                            <div className="d-flex">
-                                <h2 className='page__heading'>{myInfo.portfolioPageTitle}</h2>
-                            </div>
+        <div className="row ">
+            <div className="offset-1 col-lg-10 col-10">
+                <div className="row heading" id="portfolio" ref={myRef} >
+                    <div className="col">
+                        <div className="d-flex">
+                            <h2 className='page__heading'>{myInfo.portfolioPageTitle}</h2>
                         </div>
                     </div>
-                    <p className="page__subheading" >{myInfo.portfolioIntroText}</p>
                 </div>
-                
-                {portfolios.map((portfolio, index) => {
-                    return (
-                        <Link to={`/case/${portfolio.id}`} key={portfolio.id}>
-                            <SinglePortfolio index={index} portfolio={portfolio} key={portfolio.id} />
-                        </Link>
-                    )
-                })}
+                <p className="page__subheading" >{myInfo.portfolioIntroText}</p>
             </div>
+            
+            {portfolios.map((portfolio, index) => {
+                return (
+                    <Link to={`/case/${portfolio.id}`} key={portfolio.id}>
+                        <SinglePortfolio index={index} portfolio={portfolio} key={portfolio.id} />
+                    </Link>
+                )
+            })}
 
-             {works.map((work, index) => {
+            {works.map((work, index) => {
                 return (
                     <Link to={`/work/${work.id}`} key={work.id}>
                         <SinglePortfolio index={index} work={work}  key={work.id} />

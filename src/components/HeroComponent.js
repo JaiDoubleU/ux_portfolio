@@ -15,8 +15,10 @@ function Hero() {
                 <div className="col-sm-7">
                     <h2 className='page__heading'>Hi, I'm {myInfo.firstName}</h2>
                     <p className="page__subheading">
-                        <p> I'm a <span className='hero__highlight'>Senior Product Designer</span>, with a passion for delighting users, one exceptional experience at a time.
-                    </p>
+                        <p>{myInfo.introText}</p>
+
+                        {/* <p> I'm a <span className='hero__highlight'>Senior Product Designer</span>, with a passion for delighting users, one exceptional experience at a time.</p> */}
+
                         {currentWork.map(work => (
                             <div key={work.arr} >
                                 {work.arr.map((s, index) => (
