@@ -8,7 +8,7 @@ function Hero() {
         <div className="row">
             <div className="d-block d-sm-none ">
                     <div className="bg-transparent border-0 flex" >
-                        <img className="mx-auto d-block" height="300" src={process.env.PUBLIC_URL + '/images/profilePic.svg'} alt="about-img" />
+                        <img className="mx-auto d-block" height="250" src={process.env.PUBLIC_URL + '/images/profilePic2.jpg'} alt="about-img" />
                     </div>
             </div>
             <div className="row">
@@ -30,7 +30,7 @@ function Hero() {
                 </div>
                 <div className="col-sm-5 d-none d-sm-block  ">
                     <div className="bg-transparent border-0 flex" >
-                        <img className=" mx-auto d-block" height="200" src={process.env.PUBLIC_URL + '/images/profilePic.svg'} alt="about-img" />
+                        <img className=" mx-auto d-block" height="250" src={process.env.PUBLIC_URL + '/images/profilePic2.jpg'} alt="about-img" />
                     </div>
                 </div>
             </div>       

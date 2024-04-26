@@ -1,10 +1,12 @@
 .navbar.fixed-top {
+	/*background: #ffffff url( '/src/images/header-bg-tile-2.png') left top repeat-x;*/
   box-shadow: 0px 0px 11px rgba(33,33,33,.2)
 }
 
 .navbar-toggler {
   font-size: 12px;
-  line-height: 3;
+  line-height: 1;
+  padding:0;
 }
 
 .navbar-toggler:focus {
@@ -12,7 +14,19 @@
     outline: 0;
     box-shadow: none;
 }
-
+a.nav-link {
+  color: black !important;
+  font-size: 14px;
+  line-height: 1.2;
+}
 a.nav-link.active {
-  border-bottom: 1px solid #fc004d;
+  color: black  !important;
+  border-bottom: 1px solid #FF0000;
+}
+
+.navbar-collapse.show {
+  background-color: #FFF;
+  width: 100vw;
+  margin: 0 -15px;
+  padding: 0 15px;
 }

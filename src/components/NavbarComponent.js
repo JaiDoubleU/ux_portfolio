@@ -43,30 +43,38 @@ function NavbarComp() {
 	}
 
 	return (
-		<Navbar ref={navRef} light expand="sm" fixed="top" full="true" className='bg-white border-bottom '>
-				<NavbarBrand >
+		<Navbar ref={navRef} light expand="sm" fixed="top" full="true" className='bg-white d-flex justify-content-center '>
+			<NavbarBrand>
 					<Link to="/" >
 						<img className="hover_img" height="40" src={process.env.PUBLIC_URL + '/jw-logo-red.svg'} alt="my logo" />
 						{/* <span className="small">https://jasonshannon.design</span> */}
 					</Link>
-				</NavbarBrand>
-				<NavbarToggler onClick={toggle}>Menu</NavbarToggler>
-				<Collapse isOpen={isNavOpen} navbar>
-					<Nav className="ml-auto" navbar>
-						<NavItem>
-							<NavHashLink onClick={hideCollapse} className="nav-link" smooth to="/home" >Home</NavHashLink>
-						</NavItem>
-						<NavItem>
+			</NavbarBrand>
+			<NavbarToggler onClick={toggle}>
+				<button className="btn btn-sm btn-outline-danger">Menu</button>
+			</NavbarToggler>
+			<Collapse isOpen={isNavOpen} navbar>
+				<Nav  navbar>
+					{/* <NavItem>
+						<NavLink className="mx-4" to="/" >
+							<img className="hover_img" height="40" src={process.env.PUBLIC_URL + '/jw-logo-light.svg'} alt="my logo" />
+			
+						</NavLink>
+					</NavItem> */}
+					<NavItem>
+						<NavHashLink onClick={hideCollapse} className="nav-link text-black" smooth to="/home" >Home</NavHashLink>
+					</NavItem>
+					<NavItem>
 							<NavLink onClick={hideCollapse} className="nav-link" to="/portfolio">Portfolio</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink onClick={hideCollapse} className="nav-link" to="/about">About</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink onClick={hideCollapse} className="nav-link" to="/JasonShannonResume.pdf" target='_blank'>Resume</NavLink>
-						</NavItem>
-					</Nav>
-				</Collapse>
+					</NavItem>
+					<NavItem>
+						<NavLink onClick={hideCollapse} className="nav-link" to="/about">About</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink onClick={hideCollapse} className="nav-link" to="/JasonShannonResume.pdf" target='_blank'>Resume</NavLink>
+					</NavItem>
+				</Nav>
+			</Collapse>
 		</Navbar>
 	)
 }
